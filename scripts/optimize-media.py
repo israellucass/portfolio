@@ -102,7 +102,31 @@ def gif_to_webp_and_mp4(src: Path) -> tuple[Path, Path | None]:
         return webp, mp4
     except subprocess.CalledProcessError:
         mp4.unlink(missing_ok=True)
-        return webp, None
+        try:
+            run(
+                [
+                    "ffmpeg",
+                    "-y",
+                    "-i",
+                    str(src),
+                    "-vf",
+                    f"fps=15,{scale},split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse",
+                    "-c:v",
+                    "libx264",
+                    "-pix_fmt",
+                    "yuv420p",
+                    "-movflags",
+                    "+faststart",
+                    "-an",
+                    "-crf",
+                    str(MP4_CRF),
+                    str(mp4),
+                ]
+            )
+            return webp, mp4
+        except subprocess.CalledProcessError:
+            mp4.unlink(missing_ok=True)
+            return webp, None
 
 
 def png_to_webp(src: Path) -> Path:

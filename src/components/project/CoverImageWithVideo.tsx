@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type CoverImageWithVideoProps = {
   src: string;
@@ -16,17 +16,45 @@ export function CoverImageWithVideo({
   sizes,
   priority = false,
 }: CoverImageWithVideoProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [loaded, setLoaded] = useState(false);
   const [showVideo, setShowVideo] = useState(true);
 
-  const handleVideoReady = () => {
-    setLoaded(true);
-  };
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !showVideo) {
+      return;
+    }
 
-  const handleVideoError = () => {
-    setShowVideo(false);
-    setLoaded(true);
-  };
+    const markReady = () => {
+      setLoaded(true);
+    };
+
+    const handleError = () => {
+      setShowVideo(false);
+      setLoaded(true);
+    };
+
+    if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+      markReady();
+    }
+
+    video.addEventListener("loadeddata", markReady);
+    video.addEventListener("canplay", markReady);
+    video.addEventListener("playing", markReady);
+    video.addEventListener("error", handleError);
+
+    void video.play().catch(() => {
+      /* Autoplay may be blocked; poster remains visible. */
+    });
+
+    return () => {
+      video.removeEventListener("loadeddata", markReady);
+      video.removeEventListener("canplay", markReady);
+      video.removeEventListener("playing", markReady);
+      video.removeEventListener("error", handleError);
+    };
+  }, [showVideo, videoSrc]);
 
   return (
     <>
@@ -41,11 +69,14 @@ export function CoverImageWithVideo({
         alt=""
         fill
         sizes={sizes}
-        className="cover__img cover__img--poster cover__img--loaded"
+        className={`cover__img cover__img--poster${
+          loaded ? " cover__img--poster-hidden" : " cover__img--loaded"
+        }`}
         priority={priority}
       />
       {showVideo ? (
         <video
+          ref={videoRef}
           src={videoSrc}
           className={`cover__img cover__video${
             loaded ? " cover__img--loaded" : ""
@@ -55,8 +86,6 @@ export function CoverImageWithVideo({
           muted
           playsInline
           preload={priority ? "auto" : "metadata"}
-          onLoadedData={handleVideoReady}
-          onError={handleVideoError}
         />
       ) : null}
     </>

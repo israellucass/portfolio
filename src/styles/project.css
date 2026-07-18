@@ -276,6 +276,16 @@
   z-index: 0;
 }
 
+.project-cover .cover__img--poster-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.project-cover .cover-image-wrap:has(.cover__video.cover__img--loaded) .cover__img--poster {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .project-cover .cover__video {
   z-index: 1;
 }
