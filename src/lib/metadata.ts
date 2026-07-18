@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { categoryRoutes, site, type Category } from "@/data/site";
 import type { Project } from "@/types/project";
 
-const ogImage = "/images/site/og-image.gif";
+const ogImage = "/images/site/og-image.jpg";
 
 function ogImages(url: string, alt: string) {
   return [{ url, alt }];

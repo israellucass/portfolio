@@ -20,7 +20,7 @@ export function ProjectBlocks({ blocks, title }: ProjectBlocksProps) {
   const [lightbox, setLightbox] = useState<LightboxState>(null);
 
   const openLightbox = useCallback(
-    (src: string) => {
+    (src: string, _lightboxSrc?: string) => {
       const index = images.findIndex((image) => image.src === src);
       if (index >= 0) setLightbox({ index });
     },

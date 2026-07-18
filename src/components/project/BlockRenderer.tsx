@@ -1,13 +1,15 @@
 import Image from "next/image";
+import { ProjectBlockImage } from "@/components/project/ProjectBlockImage";
 import { ProjectEmbed } from "@/components/project/ProjectEmbed";
 import { RichText } from "@/components/project/RichText";
+import { getImageVideoPath } from "@/lib/media";
 import type { ProjectBlock } from "@/types/project";
 
 type BlockRendererProps = {
   block: ProjectBlock;
   blockIndex: string;
   title: string;
-  onImageClick: (src: string) => void;
+  onImageClick: (src: string, lightboxSrc: string) => void;
 };
 
 export function BlockRenderer({
@@ -43,25 +45,15 @@ export function BlockRenderer({
   }
 
   if (block.type === "image") {
+    const lightboxSrc = block.lightboxSrc ?? block.src;
     return (
-      <figure className="project-module-image mb-0 pb-10">
-        <button
-          type="button"
-          onClick={() => onImageClick(block.src)}
-          className="js-lightbox block w-full cursor-zoom-in text-left"
-          aria-label={`Open ${title} image in lightbox`}
-        >
-          <Image
-            src={block.src}
-            alt={`${title} — project image`}
-            width={1920}
-            height={1080}
-            className="h-auto w-full"
-            sizes="100vw"
-            unoptimized={block.src.endsWith(".gif")}
-          />
-        </button>
-      </figure>
+      <ProjectBlockImage
+        src={block.src}
+        videoSrc={getImageVideoPath(block.src)}
+        title={title}
+        lightboxSrc={lightboxSrc}
+        onImageClick={onImageClick}
+      />
     );
   }
 

@@ -1,5 +1,6 @@
 import { CoverImage } from "@/components/project/CoverImage";
 import Link from "next/link";
+import { getCoverVideoPath } from "@/lib/media";
 import { formatProjectCoverLabel } from "@/lib/project-label";
 import type { Project } from "@/types/project";
 
@@ -48,6 +49,7 @@ export function ProjectCover({
   variant = "default",
 }: ProjectCoverProps) {
   const coverLabel = formatProjectCoverLabel(project);
+  const coverVideo = getCoverVideoPath(project.cover);
   const isSpotlight = variant === "spotlight";
   const isFeatureSidebar = variant === "feature-sidebar";
   const isFeatureFold = isSpotlight || isFeatureSidebar;
@@ -67,6 +69,7 @@ export function ProjectCover({
           <div className="cover-image-wrap relative aspect-[202/158] w-full overflow-hidden">
             <CoverImage
               src={project.cover}
+              videoSrc={coverVideo}
               sizes={getCoverImageSizes(variant)}
               priority={isSpotlight}
             />

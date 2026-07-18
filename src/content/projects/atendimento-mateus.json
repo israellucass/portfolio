@@ -4,7 +4,7 @@
   "subtitle": "Android app helping Grupo Mateus managers with daily store operations.",
   "year": "2020",
   "tags": "User Interface Design, User Research",
-  "cover": "/images/covers/atendimento-mateus.gif",
+  "cover": "/images/covers/atendimento-mateus.webp",
   "categories": [],
   "featured": false,
   "blocks": [
@@ -889,8 +889,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/0af7313c-fbd5-4ca3-a617-e3eeecb4b344_rw_600.gif",
-              "lightboxSrc": "/images/assets/0af7313c-fbd5-4ca3-a617-e3eeecb4b344.gif"
+              "src": "/images/assets/0af7313c-fbd5-4ca3-a617-e3eeecb4b344_rw_600.webp",
+              "lightboxSrc": "/images/assets/0af7313c-fbd5-4ca3-a617-e3eeecb4b344.webp"
             }
           ]
         },
@@ -949,8 +949,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/c269d7c9-c936-4391-94e7-d8d8627870b9_rw_600.gif",
-              "lightboxSrc": "/images/assets/c269d7c9-c936-4391-94e7-d8d8627870b9.gif"
+              "src": "/images/assets/c269d7c9-c936-4391-94e7-d8d8627870b9_rw_600.webp",
+              "lightboxSrc": "/images/assets/c269d7c9-c936-4391-94e7-d8d8627870b9.webp"
             }
           ]
         },
@@ -995,8 +995,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/a5aafc23-024f-4c17-8eda-e4a1530c088a_rw_600.gif",
-              "lightboxSrc": "/images/assets/a5aafc23-024f-4c17-8eda-e4a1530c088a.gif"
+              "src": "/images/assets/a5aafc23-024f-4c17-8eda-e4a1530c088a_rw_600.webp",
+              "lightboxSrc": "/images/assets/a5aafc23-024f-4c17-8eda-e4a1530c088a.webp"
             }
           ]
         },

@@ -253,6 +253,51 @@
   opacity: 1;
 }
 
+.project-cover .cover__video {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: contain;
+  object-position: center;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.25s ease;
+}
+
+.project-cover .cover__video.cover__img--loaded {
+  opacity: 1;
+}
+
+.project-cover .cover__img--poster {
+  opacity: 1;
+  z-index: 0;
+}
+
+.project-cover .cover__video {
+  z-index: 1;
+}
+
+.project-covers-feature .project-cover .cover__video {
+  object-fit: cover;
+}
+
+.project-module-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-cover .cover__video,
+  .project-module-video,
+  .lightbox-video {
+    display: none;
+  }
+}
+
 .project-cover .cover-skeleton {
   position: absolute;
   inset: 0;

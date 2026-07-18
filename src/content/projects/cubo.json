@@ -4,7 +4,7 @@
   "subtitle": "Android app helping Grupo Mateus retail managers with store operations.",
   "year": "2020",
   "tags": "User Interface Design, User Research",
-  "cover": "/images/covers/cubo.gif",
+  "cover": "/images/covers/cubo.webp",
   "categories": [
     "featured",
     "ux"
@@ -892,8 +892,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/2abb66a5-1e8a-43fb-8b34-21039275f401_rw_600.gif",
-              "lightboxSrc": "/images/assets/2abb66a5-1e8a-43fb-8b34-21039275f401.gif"
+              "src": "/images/assets/2abb66a5-1e8a-43fb-8b34-21039275f401_rw_600.webp",
+              "lightboxSrc": "/images/assets/2abb66a5-1e8a-43fb-8b34-21039275f401.webp"
             }
           ]
         },
@@ -952,8 +952,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/0ba1e645-61db-443e-ba52-90f6cfe4c94b_rw_600.gif",
-              "lightboxSrc": "/images/assets/0ba1e645-61db-443e-ba52-90f6cfe4c94b.gif"
+              "src": "/images/assets/0ba1e645-61db-443e-ba52-90f6cfe4c94b_rw_600.webp",
+              "lightboxSrc": "/images/assets/0ba1e645-61db-443e-ba52-90f6cfe4c94b.webp"
             }
           ]
         },
@@ -998,8 +998,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/8d4512ff-529a-4d75-a0ad-982154705bf9_rw_600.gif",
-              "lightboxSrc": "/images/assets/8d4512ff-529a-4d75-a0ad-982154705bf9.gif"
+              "src": "/images/assets/8d4512ff-529a-4d75-a0ad-982154705bf9_rw_600.webp",
+              "lightboxSrc": "/images/assets/8d4512ff-529a-4d75-a0ad-982154705bf9.webp"
             }
           ]
         },

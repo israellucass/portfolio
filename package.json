@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "optimize-media": "python3 scripts/optimize-media.py"
   },
   "dependencies": {
     "@keystatic/core": "^0.5.51",

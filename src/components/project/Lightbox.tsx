@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import type { LightboxImage } from "@/types/project";
 
 type LightboxProps = {
@@ -11,7 +11,21 @@ type LightboxProps = {
   onNavigate: (delta: number) => void;
 };
 
-export function Lightbox({ images, index, title, onClose, onNavigate }: LightboxProps) {
+function getLightboxVideoSrc(lightboxSrc: string): string | undefined {
+  if (!lightboxSrc.endsWith(".webp")) {
+    return undefined;
+  }
+
+  return lightboxSrc.replace(/\.webp$/, ".mp4");
+}
+
+export function Lightbox({
+  images,
+  index,
+  title,
+  onClose,
+  onNavigate,
+}: LightboxProps) {
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
@@ -28,10 +42,16 @@ export function Lightbox({ images, index, title, onClose, onNavigate }: Lightbox
   }, [onClose, onNavigate]);
 
   const image = images[index];
+  const videoSrc = getLightboxVideoSrc(image.lightboxSrc);
+  const [useVideo, setUseVideo] = useState(Boolean(videoSrc));
   const imageLabel =
     images.length > 1
       ? `${title} — image ${index + 1} of ${images.length}`
       : `${title} — full size image`;
+
+  useEffect(() => {
+    setUseVideo(Boolean(videoSrc));
+  }, [videoSrc, index]);
 
   return (
     <div
@@ -77,13 +97,28 @@ export function Lightbox({ images, index, title, onClose, onNavigate }: Lightbox
         </>
       )}
 
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={image.lightboxSrc}
-        alt={imageLabel}
-        className="max-h-[92vh] max-w-[92vw] object-contain"
-        onClick={(event) => event.stopPropagation()}
-      />
+      {videoSrc && useVideo ? (
+        <video
+          src={videoSrc}
+          poster={image.lightboxSrc}
+          className="lightbox-video max-h-[92vh] max-w-[92vw] object-contain"
+          autoPlay
+          loop
+          muted
+          playsInline
+          controls
+          onClick={(event) => event.stopPropagation()}
+          onError={() => setUseVideo(false)}
+        />
+      ) : (
+        /* eslint-disable-next-line @next/next/no-img-element */
+        <img
+          src={image.lightboxSrc}
+          alt={imageLabel}
+          className="max-h-[92vh] max-w-[92vw] object-contain"
+          onClick={(event) => event.stopPropagation()}
+        />
+      )}
     </div>
   );
 }

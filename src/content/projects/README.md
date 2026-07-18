@@ -53,7 +53,7 @@ That overwrites meta + homepage from the current project JSON / index (use when 
   "title": "CUBO",
   "year": "2020",
   "tags": "User Interface Design, User Research",
-  "cover": "/images/covers/cubo.gif",
+  "cover": "/images/covers/cubo.webp",
   "categories": ["featured", "ux"],
   "featured": true,
   "blocks": [

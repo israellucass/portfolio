@@ -4,7 +4,7 @@
   "subtitle": "Short retro pixel-art animation made frame by frame.",
   "year": "2016",
   "tags": "Academic Project, Motion Graphics, Illustration",
-  "cover": "/images/covers/dark-feelings-2d-animation.gif",
+  "cover": "/images/covers/dark-feelings-2d-animation.webp",
   "categories": [
     "featured",
     "motion"
@@ -13,8 +13,8 @@
   "blocks": [
     {
       "type": "image",
-      "src": "/images/assets/3e01e06742c9bd6a4c172e1a_rw_1920.gif",
-      "lightboxSrc": "/images/assets/3e01e06742c9bd6a4c172e1a.gif"
+      "src": "/images/assets/3e01e06742c9bd6a4c172e1a_rw_1920.webp",
+      "lightboxSrc": "/images/assets/3e01e06742c9bd6a4c172e1a.webp"
     },
     {
       "type": "tree",
@@ -246,8 +246,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/3e6104df-d9c9-475a-8524-3afc600ab3a9_rw_600.gif",
-              "lightboxSrc": "/images/assets/3e6104df-d9c9-475a-8524-3afc600ab3a9.gif"
+              "src": "/images/assets/3e6104df-d9c9-475a-8524-3afc600ab3a9_rw_600.webp",
+              "lightboxSrc": "/images/assets/3e6104df-d9c9-475a-8524-3afc600ab3a9.webp"
             }
           ]
         },
@@ -271,8 +271,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/ba09242019ced68a91a78b4e_rw_600.gif",
-              "lightboxSrc": "/images/assets/ba09242019ced68a91a78b4e.gif"
+              "src": "/images/assets/ba09242019ced68a91a78b4e_rw_600.webp",
+              "lightboxSrc": "/images/assets/ba09242019ced68a91a78b4e.webp"
             }
           ]
         },
@@ -296,8 +296,8 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/339dde7af566b486ba4eefe8_rw_600.gif",
-              "lightboxSrc": "/images/assets/339dde7af566b486ba4eefe8.gif"
+              "src": "/images/assets/339dde7af566b486ba4eefe8_rw_600.webp",
+              "lightboxSrc": "/images/assets/339dde7af566b486ba4eefe8.webp"
             }
           ]
         },
