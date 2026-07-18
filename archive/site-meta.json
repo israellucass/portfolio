@@ -1,0 +1,28 @@
+{
+  "source": "https://isrrr.com",
+  "home": {
+    "title": "Israel Silva - Product Designer",
+    "description": "Brazilian Product Designer based in São Luís, Brazil",
+    "keywords": "design,ux design,ui design,graphic design,animation,pixel art,illustration",
+    "ogTitle": "Israel Silva - Product Designer",
+    "ogDescription": "Brazilian Product Designer based in São Luís, Brazil",
+    "ogImage": "https://cdn.myportfolio.com/b983f42b545d35df7ea610688890b76a/5f1b8646-237d-4bc7-a21e-e7ababd8c767_car_202x158.gif?h=f5aca3f6ae61671a391682ca80bacb7b",
+    "twitterCard": "summary_large_image",
+    "twitterSite": "@AdobePortfolio",
+    "favicon": "https://cdn.myportfolio.com/b983f42b545d35df7ea610688890b76a/e6981c7b-b85b-4ddf-ac67-20285a3beb34_carw_1x1x32.png?h=6a3d239ce95bd42a7060dd908fce99c4",
+    "appleTouchIcon": "https://cdn.myportfolio.com/b983f42b545d35df7ea610688890b76a/d1227c42-9447-4561-829f-0910833b3575_carw_1x1x180.jpg?h=294f62cb03729db359343089420e0fb1"
+  },
+  "about": {
+    "title": "Israel Silva - Product Designer - About me",
+    "description": "Brazilian Product Designer based in São Luís, Brazil",
+    "keywords": "design,ux design,ui design,graphic design,animation,pixel art,illustration",
+    "ogTitle": "Israel Silva - Product Designer - About me",
+    "ogDescription": "Brazilian Product Designer based in São Luís, Brazil",
+    "ogImage": null,
+    "twitterCard": "summary_large_image",
+    "twitterSite": "@AdobePortfolio",
+    "favicon": "https://cdn.myportfolio.com/b983f42b545d35df7ea610688890b76a/e6981c7b-b85b-4ddf-ac67-20285a3beb34_carw_1x1x32.png?h=6a3d239ce95bd42a7060dd908fce99c4",
+    "appleTouchIcon": "https://cdn.myportfolio.com/b983f42b545d35df7ea610688890b76a/d1227c42-9447-4561-829f-0910833b3575_carw_1x1x180.jpg?h=294f62cb03729db359343089420e0fb1"
+  },
+  "analyticsId": null
+}

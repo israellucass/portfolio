@@ -1,0 +1,112 @@
+{
+  "slug": "unused-2d-animation",
+  "title": "Pilotage in São Luís",
+  "subtitle": "Unfinished explainer animation about ship pilotage in São Luís.",
+  "year": "2017",
+  "tags": "Motion Graphics, Illustration",
+  "cover": "/images/covers/unused-2d-animation.gif",
+  "categories": [
+    "featured",
+    "motion"
+  ],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 5,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Pilotage in São Luís",
+                      "marks": [
+                        "bold",
+                        "display"
+                      ],
+                      "color": "#1ec2e3"
+                    },
+                    {
+                      "text": " is an unfinished 2D animation for for "
+                    },
+                    {
+                      "text": "SmartPilotsMa",
+                      "href": "http://www.smartpilotsma.com.br/"
+                    },
+                    {
+                      "text": ", focused on providing an overview of the current pilotage process to a lay audience.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 3,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Timeframe",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n1 week\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Tools",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nAdobe Illustrator, Adobe After Effects"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "PROBLEM",
+              "color": "#1ec2e3"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The client identified inconsistencies in pilots’ scheduling but needed to communicate these issues to a non-specialist audience (e.g., stakeholders or public groups). Given the technical complexity of pilotage regulations (e.g., duty cycles, rest periods, and jurisdictional rules), a simplified yet accurate visual explanation was required to gather actionable feedback.\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1074 @@
+{
+  "slug": "cubo",
+  "title": "CUBO",
+  "subtitle": "Android app helping Grupo Mateus retail managers with store operations.",
+  "year": "2020",
+  "tags": "User Interface Design, User Research",
+  "cover": "/images/covers/cubo.gif",
+  "categories": [
+    "featured",
+    "ux"
+  ],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/012ffbdf-3828-47d8-8998-ee971a98711b_rw_1920.png",
+      "lightboxSrc": "/images/assets/012ffbdf-3828-47d8-8998-ee971a98711b.png"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 5,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "CUBO",
+                      "marks": [
+                        "bold",
+                        "display"
+                      ],
+                      "color": "#ffc239"
+                    },
+                    {
+                      "text": " is an Android app developed for ",
+                      "color": "#f0f3f5"
+                    },
+                    {
+                      "text": "Grupo Mateus",
+                      "color": "#f0f3f5",
+                      "href": "https://www.grupomateus.com.br/"
+                    },
+                    {
+                      "text": ", a retail company, designed to help managers and supervisors on their daily activities.",
+                      "color": "#f0f3f5"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "This project will be presented in two distinct phases, each related to unique features that contributed to the final product.",
+                      "color": "#f0f3f5"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "All NDA-protected items, including store financial data, have been replaced with fictional information to ensure confidentiality and compliance.",
+                      "marks": [
+                        "italic"
+                      ],
+                      "color": "#f0f3f5"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 3,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Timeframe",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n6 months"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Role",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nUI/UX Designer"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Team",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n"
+                    },
+                    {
+                      "text": "Ana Beatriz Avelar",
+                      "href": "https://www.linkedin.com/in/ana-beatriz-avelar-519b1b39/"
+                    },
+                    {
+                      "text": " / "
+                    },
+                    {
+                      "text": "UX Writer",
+                      "marks": [
+                        "italic"
+                      ]
+                    },
+                    {
+                      "text": "\n"
+                    },
+                    {
+                      "text": "Elizeu Louzeiro",
+                      "href": "https://www.linkedin.com/in/elizeulouzeiro/"
+                    },
+                    {
+                      "text": " / "
+                    },
+                    {
+                      "text": "Full-stack engineer",
+                      "marks": [
+                        "italic"
+                      ]
+                    },
+                    {
+                      "text": "\n"
+                    },
+                    {
+                      "text": "Vitor Thomaz",
+                      "href": "https://www.linkedin.com/in/vitorthomaz155/"
+                    },
+                    {
+                      "text": " / "
+                    },
+                    {
+                      "text": "Full-stack engineer",
+                      "marks": [
+                        "italic"
+                      ]
+                    },
+                    {
+                      "text": "\n"
+                    },
+                    {
+                      "text": "Joel Bispo",
+                      "href": "https://www.linkedin.com/in/joelbispo/"
+                    },
+                    {
+                      "text": " / "
+                    },
+                    {
+                      "text": "Product Manager",
+                      "marks": [
+                        "italic"
+                      ],
+                      "color": "#f0f3f5"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "PHASE I",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": " - Retail store data",
+              "marks": [
+                "display"
+              ]
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "How might we improve the accessibility of retail store data for managers and supervisors?",
+              "marks": [
+                "italic",
+                "display"
+              ],
+              "color": "#888888"
+            }
+          ]
+        },
+        {
+          "kind": "subheading",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "PROBLEM FRAMING",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Managers and supervisors used an internal system and app to monitor and manage sales in their stores. However, there were numerous complaints regarding the complexity required to access and interpret the data, leading to inefficiencies in daily operations. Based on some reports, our team was asked to evaluate the potential of incorporating a voice interaction feature to streamline the workflow and improve user experience.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "RESEARCH",
+              "color": "#ffc239"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "CSD Matrix",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "On the discovery phase, we decided to build a CSD Matrix to support our collaborative understanding of the problem. Based on the reports received, we built a first draft that would allow us to define our research strategy.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/26599159-8af2-4c0b-84b4-cc38d3f052aa_rw_3840.png",
+      "lightboxSrc": "/images/assets/26599159-8af2-4c0b-84b4-cc38d3f052aa.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Desk research & Direct observation",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "To answer questions about the app and its use, we analyzed the app team's materials (documentation, surveys, complaints) and spoke with team members. In addition, we conducted field observations in the stores, following the routine of the managers and supervisors and taking notes about their habits.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 103,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/95c70067-3232-460c-9b86-8312bba2b2ae_rw_3840.png",
+              "lightboxSrc": "/images/assets/95c70067-3232-460c-9b86-8312bba2b2ae.png"
+            }
+          ]
+        },
+        {
+          "flex": 97,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/b23445cd-0865-4460-afd7-a273cfafe19b_rw_1920.jpg",
+              "lightboxSrc": "/images/assets/b23445cd-0865-4460-afd7-a273cfafe19b.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Interviews",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ],
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "To address questions that couldn't be directly observed, such as the main problems faced when using the system and their decision-making process, we conducted interviews with the app's users between these observation sessions.",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "IDEATION",
+              "color": "#ffc239"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "When all the necessary data was gathered (i.e. data saturation), we identified some key information:",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Users were",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "already used to voice interfaces",
+              "color": "#ffc239"
+            },
+            {
+              "text": ", having used another messaging app to communicate with each other",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " In their day-to-day activities, users",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "learned and used different terms",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "from those presented by the app",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " Accessing store information via the app",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "was time-consuming",
+              "color": "#ffc239"
+            },
+            {
+              "text": ", with users having to tap the screen from 5 to 8 times",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Due to the busy routine, monitoring the store data was usually done ",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "while carrying out other tasks",
+              "color": "#ffc239"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "After discussing these findings, the team decided to build a prototype for a feature that would be embedded in the current app. For this task, research was done on VUIs used in the industry and the screens of the main app were reviewed, so we would adhere to its visual guidelines.",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/0589a854-6b21-453b-90cb-ae1414a0340a_rw_3840.png",
+      "lightboxSrc": "/images/assets/0589a854-6b21-453b-90cb-ae1414a0340a.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Then, some proposals were made until we got the",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Version ",
+              "color": "#ffc239"
+            },
+            {
+              "text": "#1",
+              "marks": [
+                "bold"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "of the solution, which had the main voice feature and a simple response structure.",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/490eefaa-7a05-4d2f-9c74-d44b1cd6d699_rw_1920.png",
+      "lightboxSrc": "/images/assets/490eefaa-7a05-4d2f-9c74-d44b1cd6d699.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "VALIDATION",
+              "color": "#ffc239"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "To validate the prototype, we conducted some sessions of usability testing with managers and supervisors and then iterated the UI from the key findings. The main objectives of the sessions were to understand the relevance of the voice user interface and its value to users, as well as how it could be better integrated into the existing app.",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/d1685959-3e81-4109-bf66-ed0aab748bf8_rw_1920.png",
+      "lightboxSrc": "/images/assets/d1685959-3e81-4109-bf66-ed0aab748bf8.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "After presenting and discussing the key findings, the team voted on the adjustments that needed to be made according to their impact, to prioritize and streamline the development process. Some of these adjustments on the "
+            },
+            {
+              "text": "Version ",
+              "color": "#ffc239"
+            },
+            {
+              "text": "#2",
+              "marks": [
+                "bold"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": " include:\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/aae95f81-f59e-4055-a40c-14292e2aa897_rw_1920.png",
+      "lightboxSrc": "/images/assets/aae95f81-f59e-4055-a40c-14292e2aa897.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "heading",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "PHASE II",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": " ",
+              "marks": [
+                "display"
+              ]
+            },
+            {
+              "text": "- Handling standard operating procedures",
+              "marks": [
+                "display"
+              ],
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "How might we use a conversational interface to support procedures updates and manager training?",
+              "marks": [
+                "italic",
+                "display"
+              ],
+              "color": "#888888"
+            }
+          ]
+        },
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "PROBLEM FRAMING",
+              "color": "#ffc239"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The quality assurance department was responsible for restructuring standard operating procedures (SOP) for certain areas, as well as communicating updates and conducting training sessions for managers — a process that required a significant amount of their time. To optimize this workflow, the board requested a feasibility study on implementing a conversational interface to handle inquiries.",
+              "color": "#f0f3f5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "RESEARCH",
+              "color": "#ffc239"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/7d081d45-68e4-4926-8761-6ad23b6a1cda_rw_1200.png",
+      "lightboxSrc": "/images/assets/7d081d45-68e4-4926-8761-6ad23b6a1cda.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Direct observation",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ],
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "IDEATION",
+              "color": "#ffc239"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Based on the information gathered, the team convened to prioritize the key aspects of the experience in order to enable the execution of further tests. Some of the agreed-upon topics were:"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Combine the features:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " the app would be organized into “Store” and “Work” modules, according to the users' mental model"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Simulate real training:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " the procedures would be displayed step by step, as presented in the training sessions"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Improve accessibility:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " buttons would be added to access the information even in noisy environments\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Leverage the old interface:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " due to the similarity of functions, minor adjustments would be made to the interface to accommodate both modules"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/2abb66a5-1e8a-43fb-8b34-21039275f401_rw_600.gif",
+              "lightboxSrc": "/images/assets/2abb66a5-1e8a-43fb-8b34-21039275f401.gif"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "1.",
+                      "marks": [
+                        "bold"
+                      ],
+                      "color": "#ffc239"
+                    },
+                    {
+                      "text": " Features combined",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "The app now includes a dedicated section for retail information, featuring store indicators (in red), as well as a section for accessing standard operating procedures (in yellow).",
+                      "color": "#f0f3f5"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 13,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/0ba1e645-61db-443e-ba52-90f6cfe4c94b_rw_600.gif",
+              "lightboxSrc": "/images/assets/0ba1e645-61db-443e-ba52-90f6cfe4c94b.gif"
+            }
+          ]
+        },
+        {
+          "flex": 27,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "2.",
+                      "marks": [
+                        "bold"
+                      ],
+                      "color": "#ffc239"
+                    },
+                    {
+                      "text": " Retail store data",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 13,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/8d4512ff-529a-4d75-a0ad-982154705bf9_rw_600.gif",
+              "lightboxSrc": "/images/assets/8d4512ff-529a-4d75-a0ad-982154705bf9.gif"
+            }
+          ]
+        },
+        {
+          "flex": 27,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "3.",
+                      "marks": [
+                        "bold"
+                      ],
+                      "color": "#ffc239"
+                    },
+                    {
+                      "text": " Information on procedures",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "RESULTS",
+              "color": "#ffc239"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Feel free to explore the outcome of this process in greater detail through the prototype below:\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "embed",
+      "src": "https://xd.adobe.com/embed/7c6b3c57-33dd-42cd-8ea6-7a37cf2de096-2938/?fullscreen"
+    }
+  ]
+}

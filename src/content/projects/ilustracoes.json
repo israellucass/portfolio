@@ -1,0 +1,99 @@
+{
+  "slug": "ilustracoes",
+  "title": "Illustrations",
+  "subtitle": "Personal gallery of original illustrations, drawings, and paintings.",
+  "year": "2014",
+  "tags": "Drawing, Illustration, Painting",
+  "cover": "/images/covers/ilustracoes.jpg",
+  "categories": [
+    "graphic"
+  ],
+  "featured": false,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/2cb57f7c0efc964a2ec501c5_rw_1920.png",
+      "lightboxSrc": "/images/assets/2cb57f7c0efc964a2ec501c5.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/07fa989bd8f596acba1b2ac0_rw_1200.png",
+      "lightboxSrc": "/images/assets/07fa989bd8f596acba1b2ac0.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/98cb1d69ca57eb0445d138b4_rw_1200.png",
+      "lightboxSrc": "/images/assets/98cb1d69ca57eb0445d138b4.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/dcde1c301204159773086323_rw_1200.jpg",
+      "lightboxSrc": "/images/assets/dcde1c301204159773086323.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/30ac2d636bb58be73132d179_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/30ac2d636bb58be73132d179.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/8e10e4b256c0dff87c60c768_rw_1920.png",
+      "lightboxSrc": "/images/assets/8e10e4b256c0dff87c60c768.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/9ea14bf055cd7615b13dbab1_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/9ea14bf055cd7615b13dbab1.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/95b2f9703681b608facce1ee_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/95b2f9703681b608facce1ee.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/e10c1dce54f25ada5102be5a_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/e10c1dce54f25ada5102be5a.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/aa13c455d4e4286c3b4a38ba_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/aa13c455d4e4286c3b4a38ba.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/2655e75b7d0e1dfa52ade012_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/2655e75b7d0e1dfa52ade012.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/2cd41562a059a9607a8677a1_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/2cd41562a059a9607a8677a1.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/2e07fc3e5e399e701ee28964_rw_1200.jpg",
+      "lightboxSrc": "/images/assets/2e07fc3e5e399e701ee28964.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/9506782855a7f647dd7fb108_rw_600.jpg",
+      "lightboxSrc": "/images/assets/9506782855a7f647dd7fb108.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/1143429557b4f5b4c93b5012_rw_600.jpg",
+      "lightboxSrc": "/images/assets/1143429557b4f5b4c93b5012.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/1e22c97e8ff5a9aabdfb07e0_rw_600.jpg",
+      "lightboxSrc": "/images/assets/1e22c97e8ff5a9aabdfb07e0.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/713256796c9d48391f8978a8_rw_600.JPG",
+      "lightboxSrc": "/images/assets/713256796c9d48391f8978a8.JPG"
+    }
+  ]
+}

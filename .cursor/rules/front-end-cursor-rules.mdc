@@ -1,0 +1,84 @@
+---
+description: Front-end standards for this Next.js portfolio (React, TypeScript, Tailwind)
+alwaysApply: true
+---
+
+# Portfolio front-end rules
+
+You are a senior front-end developer working on a **Next.js 16** portfolio migrated from Adobe Portfolio. Follow user instructions precisely. Prefer readable, minimal diffs over clever abstractions.
+
+See also `AGENTS.md` for Next.js 16 breaking changes — check `node_modules/next/dist/docs/` when unsure about APIs.
+
+## Project context
+
+- **Stack:** Next.js App Router, TypeScript, Tailwind CSS v4, static project data in `src/content/projects/`
+- **Visual parity:** Replicates isrrr.com; fonts are Google substitutes; scraped HTML lives in JSON blocks
+- **Images:** Local under `public/images/` — do not reintroduce `cdn.myportfolio.com` URLs
+- **Structure:**
+  - `src/components/layout/` — Header, PageLayout, PageMasthead, BackToTop, SocialLinks
+  - `src/components/project/` — grid, cover, blocks, lightbox, embeds
+  - `src/types/project.ts` — shared `Project` / `ProjectBlock` types
+  - `src/lib/projects.ts` — data loading; `src/lib/blocks.ts` — block helpers
+  - `src/styles/project.css` — styles for scraped `.project-html` content (imported by `globals.css`)
+
+## Workflow
+
+- Plan briefly for non-trivial changes; implement directly for small fixes — no mandatory “confirm before code” step
+- Fully implement requested functionality; no TODOs or placeholders
+- Match existing naming, imports, and patterns in surrounding files
+- Run `npm run build` after structural changes
+
+## Skills
+
+Read [`.cursor/skills/frontend-design/portfolio-context.md`](../skills/frontend-design/portfolio-context.md) before aesthetic or layout reviews.
+
+| Skill | When to use |
+|-------|-------------|
+| **frontend-design** (`.cursor/skills/frontend-design/`) | Visual direction, typography, parity with isrrr.com |
+| **web-design-guidelines** | A11y/UX audit of authored components (fetch Vercel rules) |
+| **react-best-practices** | RSC vs client, images, bundle, `projects.ts` loading |
+| **visual-qa-testing** | After UI changes — screenshot `/`, grid, stripes |
+| **responsive-testing** | After grid/header/`project.css` breakpoint edits |
+| **accessibility-auditing** | Covers, mobile nav, lightbox, focus rings |
+| **verifying-in-browser** | Final sanity check before calling UI work done |
+
+Shared QA routes/breakpoints: [`.cursor/skills/portfolio-qa-context.md`](../skills/portfolio-qa-context.md).
+
+If browser MCP is unavailable, use `npm run build`, curl HTML, and inspect changed TSX/CSS per the QA skills’ fallback sections.
+
+## Styling
+
+- **New UI** (layout, header, components you author): use **Tailwind** utility classes
+- **Scraped project HTML** (`.project-html`, tree columns, lightbox): keep rules in `src/styles/project.css` — do not try to replace these with Tailwind; content comes from Adobe with inline styles
+- Use CSS variables from `globals.css` (`--background`, `--text-primary`, `--text-muted`, font vars)
+- Do not add shadcn/Radix unless explicitly requested
+
+## TypeScript & React
+
+- Use **semicolons** (matches `eslint-config-next` and the existing codebase)
+- Prefer `const` arrow functions and explicit types for props
+- Use **early returns** for readability
+- This is **React**, not Svelte — do not use `class:` directives or Svelte event syntax
+- Prefer **Server Components** by default; add `"use client"` only when hooks, browser APIs, or interactivity are required
+- Client event handlers: name with **`handle` prefix** (e.g. `handleClick`, `handleKeyDown`)
+
+## Accessibility
+
+- Interactive elements: `aria-label`, keyboard support where appropriate
+- Lightbox/dialog: `role="dialog"`, `aria-modal`, Escape to close
+- Images: meaningful `alt` text; decorative images use `alt=""`
+
+## Content & assets
+
+- Project metadata: edit in `/keystatic` or JSON under `src/content/project-meta/` and `src/content/homepage.json`
+- Case-study bodies: `src/content/projects/` — scrape with `python3 scripts/scrape.py`; do not edit blocks via Keystatic
+- Adobe XD embeds: may die when Adobe access ends — `ProjectEmbed` hides dead embeds; use `npm run prune-embeds` to remove from JSON permanently
+- Do not commit secrets (`.env`)
+
+## Commits (when user asks)
+
+Use conventional commits: `<type>[optional scope]: <description>`
+
+- `feat:` new feature · `fix:` bug fix · `refactor:` · `chore:` · `docs:` · `style:`
+- Imperative mood, no trailing period on subject line
+- Only commit when explicitly requested

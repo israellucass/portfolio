@@ -1,0 +1,12 @@
+{
+  "title": "CUBO",
+  "subtitle": "Android app helping Grupo Mateus retail managers with store operations.",
+  "year": "2020",
+  "tags": "User Interface Design, User Research",
+  "cover": "/images/covers/cubo.gif",
+  "featured": true,
+  "categories": [
+    "featured",
+    "ux"
+  ]
+}

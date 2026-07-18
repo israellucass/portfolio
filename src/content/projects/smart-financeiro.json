@@ -1,0 +1,510 @@
+{
+  "slug": "smart-financeiro",
+  "title": "Smart Financeiro",
+  "subtitle": "iOS app helping ship-pilot managers visualize company financial data.",
+  "year": "2020",
+  "tags": "User Interface Design, User Research",
+  "cover": "/images/covers/smart-financeiro.png",
+  "categories": [
+    "featured",
+    "ux"
+  ],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/38cf91c9-31b1-4e76-9fc5-0c3464a141e3_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/38cf91c9-31b1-4e76-9fc5-0c3464a141e3.jpg"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 5,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Smart Financeiro",
+                      "marks": [
+                        "bold",
+                        "display"
+                      ],
+                      "color": "#ff3b4a"
+                    },
+                    {
+                      "text": " is an iOS app developed for "
+                    },
+                    {
+                      "text": "SmartPilotsMa",
+                      "href": "http://www.smartpilotsma.com.br/"
+                    },
+                    {
+                      "text": ", a company that manages ship pilot's maneuvers, designed to help managers visualize the company’s financial data.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 3,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Timeframe",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n1 month"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Role",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nUI/UX Designer"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Team",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n"
+                    },
+                    {
+                      "text": "Rafael Fróes",
+                      "href": "https://github.com/rafroes1"
+                    },
+                    {
+                      "text": " / "
+                    },
+                    {
+                      "text": "Engineer",
+                      "marks": [
+                        "italic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "heading",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "How might we enable the remote and safe monitoring\nof the financial data?",
+              "marks": [
+                "italic",
+                "display"
+              ],
+              "color": "#888888"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "PROBLEM FRAMING",
+              "color": "#ff3b4a"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Managers used to consult the revenue generated in each working cycle through spreadsheets on their personal computers. However, the increasing volume of information and the difficulty of accessing these spreadsheets highlighted significant limitations. Consequently, the necessity for a solution that enables secure and remote access to this data became evident.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "RESEARCH",
+              "color": "#ff3b4a"
+            },
+            {
+              "text": "\n",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Considering we had limited time to understand the problem, I opted for a combination of field observation and qualitative feedback to collect insights.\n",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Direct observation",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ],
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "To understand how users accessed their data, a field study was conducted. Use cases were identified, and an analysis of the tasks performed by the clients was carried out.",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Interviews",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ],
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "To dive deeper into the context of the activity, interviews were conducted with the managers, aiming to answer the following questions:",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "1.",
+              "color": "#ff3b4a"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "How is the data being presented?",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "2.",
+              "color": "#ff3b4a"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "What are the key elements of the data?",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "3.",
+              "color": "#ff3b4a"
+            },
+            {
+              "text": " What is the monitoring frequency?"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "4.",
+              "color": "#ff3b4a"
+            },
+            {
+              "text": " How is this data being used?\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "SOLUTION",
+              "color": "#ff3b4a"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Upon the identification of the primary requirements, it was determined that a mobile application would be developed. This application would incorporate the features previously available in the spreadsheets while optimizing the user experience.\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Although we couldn't establish a baseline to the time on task metric, users reported spending "
+            },
+            {
+              "text": "less than 50%",
+              "marks": [
+                "bold"
+              ],
+              "color": "#ff3b4a"
+            },
+            {
+              "text": " of the previous time on performing the consulting tasks.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/63159581-4d3a-47b6-a113-093ea4bda332_rw_1200.png",
+              "lightboxSrc": "/images/assets/63159581-4d3a-47b6-a113-093ea4bda332.png"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "subheading",
+                  "inlines": [
+                    {
+                      "text": "1.",
+                      "color": "#ff3b4a"
+                    },
+                    {
+                      "text": " Data privacy\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "To address the concern of privacy and ensure that only authorized individuals can access the data, it was crucial to set up access to the application using credentials.",
+                      "color": "#f0f3f5"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/8f69a297-1152-49bf-9c6f-2506f705fb5c_rw_1200.png",
+              "lightboxSrc": "/images/assets/8f69a297-1152-49bf-9c6f-2506f705fb5c.png"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "heading",
+                  "inlines": [
+                    {
+                      "text": "2.",
+                      "color": "#ff3b4a"
+                    },
+                    {
+                      "text": " Revenue composition"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "With the “View details” (\""
+                    },
+                    {
+                      "text": "Ver detalhes\", in portuguese",
+                      "marks": [
+                        "italic"
+                      ]
+                    },
+                    {
+                      "text": ") feature, users can analyze the performance of the cycle, monitor payments, and gain deeper insights into financial metrics to facilitate better decision-making."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/4c5163ab-d5de-4e1a-be53-39c5e1b4002e_rw_1200.png",
+              "lightboxSrc": "/images/assets/4c5163ab-d5de-4e1a-be53-39c5e1b4002e.png"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "heading",
+                  "inlines": [
+                    {
+                      "text": "3.",
+                      "color": "#ff3b4a"
+                    },
+                    {
+                      "text": " Segmentation of data"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "By switching through different cycles, managers would be able to segment the data and check a summary of the revenue. This summary encompasses average revenue, variation between cycles, and a chart representation of cycle performance."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "In the prototype displayed below, you can explore all the mentioned features and delve deeper into the application’s details."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "embed",
+      "src": "https://xd.adobe.com/embed/87a613ec-1050-4395-9798-cf620bc9f8a4-d2f5/"
+    }
+  ]
+}

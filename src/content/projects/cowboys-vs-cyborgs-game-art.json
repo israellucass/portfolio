@@ -1,0 +1,270 @@
+{
+  "slug": "cowboys-vs-cyborgs-game-art",
+  "title": "Cowboys VS Cyborgs",
+  "subtitle": "Western sci-fi tower defense web game concept and pixel art.",
+  "year": "2015",
+  "tags": "Academic Project, Concept Art, Pixel Art",
+  "cover": "/images/covers/cowboys-vs-cyborgs-game-art.jpg",
+  "categories": [
+    "featured",
+    "games"
+  ],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 1,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Cowboys VS Cyborgs",
+                      "marks": [
+                        "bold",
+                        "display"
+                      ],
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": " is a web-based game developed as part of an academic project, inspired by the movie ",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "Cowboys & Aliens",
+                      "color": "#14191d",
+                      "href": "http://www.imdb.com/title/tt0409847/"
+                    },
+                    {
+                      "text": ", and designed to combine classic tower defense mechanics with thematic elements from the film.\n",
+                      "color": "#14191d"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "This project was developed by a multidisciplinary team of students from Art and Animation, Game Design, and Software Development, aiming to create an engaging gameplay experience that blends sci-fi and Western aesthetics.",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 1,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Timeframe",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n",
+                      "color": "#17252b"
+                    },
+                    {
+                      "text": "10 weeks",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Role",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n",
+                      "color": "#17252b"
+                    },
+                    {
+                      "text": "Unit Artist",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "Team",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n",
+                      "color": "#17252b"
+                    },
+                    {
+                      "text": "Juha Salmijärvi / ",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "UI Artist",
+                      "marks": [
+                        "italic"
+                      ],
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "\n",
+                      "color": "#14191d"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "Louise Still / ",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "Environment and Tower Artist",
+                      "marks": [
+                        "italic"
+                      ],
+                      "color": "#14191d"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "Mark Restrick / ",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "Game Designer and Programmer",
+                      "marks": [
+                        "italic"
+                      ],
+                      "color": "#14191d"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "Oliver Morrison / ",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "Programmer",
+                      "marks": [
+                        "italic"
+                      ],
+                      "color": "#14191d"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "Stephen McCallion / ",
+                      "color": "#14191d"
+                    },
+                    {
+                      "text": "Game Designer",
+                      "marks": [
+                        "italic"
+                      ],
+                      "color": "#14191d"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/bdbb56f532439c7d4770abd9_rw_1920.png",
+      "lightboxSrc": "/images/assets/bdbb56f532439c7d4770abd9.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/9c6c3accc6de63875a95186f_rw_1920.png",
+      "lightboxSrc": "/images/assets/9c6c3accc6de63875a95186f.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ab563186cc51bbc4d94f8b2d_rw_600.gif",
+      "lightboxSrc": "/images/assets/ab563186cc51bbc4d94f8b2d.gif"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/8c7ca14329afd284ed0dae04_rw_1920.png",
+      "lightboxSrc": "/images/assets/8c7ca14329afd284ed0dae04.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/29aeff4d3e67c61a219f5c9b_rw_600.gif",
+      "lightboxSrc": "/images/assets/29aeff4d3e67c61a219f5c9b.gif"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/e0acd6ff3ad8a1b93303b3ee_rw_600.gif",
+      "lightboxSrc": "/images/assets/e0acd6ff3ad8a1b93303b3ee.gif"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/2f61644caa931b564a691e77_rw_600.gif",
+      "lightboxSrc": "/images/assets/2f61644caa931b564a691e77.gif"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/cf42ad4c5823b993ce194e0e_rw_600.gif",
+      "lightboxSrc": "/images/assets/cf42ad4c5823b993ce194e0e.gif"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/4f081ea4c9a9146b89c74592_rw_1920.png",
+      "lightboxSrc": "/images/assets/4f081ea4c9a9146b89c74592.png"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/138450981",
+      "localSrc": "/videos/cowboys-vs-cyborgs-game-art.mp4"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/9e7d1091bbc58ed5ec1900d0_rw_1920.png",
+      "lightboxSrc": "/images/assets/9e7d1091bbc58ed5ec1900d0.png"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "slug": "dark-feelings-2d-animation",
+  "title": "Dark Feelings",
+  "subtitle": "Short retro pixel-art animation made frame by frame.",
+  "year": "2016",
+  "tags": "Academic Project, Motion Graphics, Illustration",
+  "cover": "/images/covers/dark-feelings-2d-animation.gif",
+  "categories": [
+    "featured",
+    "motion"
+  ],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/3e01e06742c9bd6a4c172e1a_rw_1920.gif",
+      "lightboxSrc": "/images/assets/3e01e06742c9bd6a4c172e1a.gif"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 31,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Developed a short 2D pixel art animation as part of an academic project, employing traditional frame-by-frame techniques to achieve retro-style motion sequences.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 19,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Timeframe",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n2 weeks"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Tools",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nAdobe Photoshop, Adobe Premiere"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 107,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "subheading",
+                  "inlines": [
+                    {
+                      "text": "story",
+                      "color": "#84d1b9"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "The animation depicts a pivotal moment in the life of Nathilda Rockeira, a deeply introspective teenager. After a heated argument with her parents about her lack of academic motivation and their concerns for her future, an upset Nathilda flees to her sanctuary – the cemetery. There, she walks solemnly to her hidden radio, presses play on an Evanescence song (her favorite band), and climbs onto a tombstone's steps to sit alone with the music.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 93,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/5bb23d7394e8eaa2438aa903_rw_600.png",
+              "lightboxSrc": "/images/assets/5bb23d7394e8eaa2438aa903.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 27,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "subheading",
+                  "inlines": [
+                    {
+                      "text": "storyboard",
+                      "color": "#84d1b9"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Despite the animation's simplicity, the storyboard played a fundamental role in defining the key poses and movements to be illustrated and animated.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 23,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/4f362cc5-b8a3-4609-a7ad-d3df347832e4_rw_1920.png",
+              "lightboxSrc": "/images/assets/4f362cc5-b8a3-4609-a7ad-d3df347832e4.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 27,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "subheading",
+                  "inlines": [
+                    {
+                      "text": "SKETCHES",
+                      "color": "#84d1b9"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "The sketches were part of the experimentation process with different elements for both the character and the environment. The aim was to identify the character’s key poses and to assess potential limitations for animation.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 23,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/dec0818e-ef9e-4693-b4eb-a155b7c6c108_rw_1920.jpg",
+              "lightboxSrc": "/images/assets/dec0818e-ef9e-4693-b4eb-a155b7c6c108.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "background",
+              "color": "#84d1b9"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/8b014aa3-22bc-4d1d-b134-5cb19fcb6e4c_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/8b014aa3-22bc-4d1d-b134-5cb19fcb6e4c.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "sprites",
+              "color": "#84d1b9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 72000000,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/3e6104df-d9c9-475a-8524-3afc600ab3a9_rw_600.gif",
+              "lightboxSrc": "/images/assets/3e6104df-d9c9-475a-8524-3afc600ab3a9.gif"
+            }
+          ]
+        },
+        {
+          "flex": 414117647,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/15deca74-8a10-4887-a9f4-dea9f7ce9ff7_rw_1920.png",
+              "lightboxSrc": "/images/assets/15deca74-8a10-4887-a9f4-dea9f7ce9ff7.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 47000000,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ba09242019ced68a91a78b4e_rw_600.gif",
+              "lightboxSrc": "/images/assets/ba09242019ced68a91a78b4e.gif"
+            }
+          ]
+        },
+        {
+          "flex": 239692953,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/622877da-6658-4575-9827-84760fc3bd36_rw_1200.png",
+              "lightboxSrc": "/images/assets/622877da-6658-4575-9827-84760fc3bd36.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/339dde7af566b486ba4eefe8_rw_600.gif",
+              "lightboxSrc": "/images/assets/339dde7af566b486ba4eefe8.gif"
+            }
+          ]
+        },
+        {
+          "flex": 167,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/429ea115-6b39-40c6-8e2b-398264f2b29f_rw_1200.png",
+              "lightboxSrc": "/images/assets/429ea115-6b39-40c6-8e2b-398264f2b29f.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "final animation",
+              "color": "#84d1b9"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

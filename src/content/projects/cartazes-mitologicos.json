@@ -1,0 +1,77 @@
+{
+  "slug": "cartazes-mitologicos",
+  "title": "Myth Posters",
+  "subtitle": "Minimalist poster series inspired by Greco-Roman mythology.",
+  "year": "2013",
+  "tags": "Academic project, Graphic Design, Illustration",
+  "cover": "/images/covers/cartazes-mitologicos.jpg",
+  "categories": [
+    "graphic"
+  ],
+  "featured": false,
+  "blocks": [
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Myth Posters is a graphic design project developed during the second semester of a Design degree, as part of the Color and Digital Image course. The assignment consisted of creating a visual piece with an open theme. The final result is a series of minimalist posters inspired by Greco-Roman mythology, featuring graphic elements influenced by literature and the Microsoft PC game Age of Mythology.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/eaadb3e78ce009cb9b558c1b_rw_1200.jpg",
+      "lightboxSrc": "/images/assets/eaadb3e78ce009cb9b558c1b.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/53c12cdfcbfd3471d132ee73_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/53c12cdfcbfd3471d132ee73.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/008a8613a2fb39f236690e1f_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/008a8613a2fb39f236690e1f.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/6afcfedda464ed7efb2ed923_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/6afcfedda464ed7efb2ed923.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/77d888d48ae78ab2c60b2531_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/77d888d48ae78ab2c60b2531.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/d46f86e850ae0980f78bdb48_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/d46f86e850ae0980f78bdb48.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/4fc484904bc9d3cfe642c345_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/4fc484904bc9d3cfe642c345.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/1b8e7266b81f51be63612427_rw_3840.jpg",
+      "lightboxSrc": "/images/assets/1b8e7266b81f51be63612427.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/bf430afe76e8f7f7f29c9e6d_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/bf430afe76e8f7f7f29c9e6d.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/328ff270f668b1afe5e31745_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/328ff270f668b1afe5e31745.jpg"
+    }
+  ]
+}

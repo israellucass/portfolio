@@ -1,0 +1,217 @@
+{
+  "slug": "boho-identidade-visual",
+  "title": "BOHO Arquitetura",
+  "subtitle": "Bohemian-inspired visual identity for architecture studio BOHO.",
+  "year": "2016",
+  "tags": "Graphic Design, Branding",
+  "cover": "/images/covers/boho-identidade-visual.jpg",
+  "categories": [
+    "graphic"
+  ],
+  "featured": false,
+  "blocks": [
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ],
+              "color": "#17252b"
+            },
+            {
+              "text": " Thays Rios\n",
+              "color": "#17252b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Moodboard",
+              "color": "#17252b"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The visual identity proposal for ",
+              "color": "#17252b"
+            },
+            {
+              "text": "BOHO Arquitetura",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#17252b"
+            },
+            {
+              "text": " is inspired by the Bohemian style, which embraces a harmonious blend of trends through the use of textures, patterns, and a sense of creative freedom. ",
+              "color": "#17252b"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/00175908-0ce9-4355-9c50-b05c2b7705eb_rw_1200.png",
+      "lightboxSrc": "/images/assets/00175908-0ce9-4355-9c50-b05c2b7705eb.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "SYMBOL",
+              "color": "#17252b"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The symbol combines the concept of home with the imagery of a dreamcatcher—representing the hippie influence—using alternating lines in two colors to emphasize the fusion of different styles.",
+              "color": "#17252b"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/e2c606e38daf7c8f56df4942_rw_1920.gif",
+      "lightboxSrc": "/images/assets/e2c606e38daf7c8f56df4942.gif"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "SIGNATURES",
+              "color": "#17252b"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 970000000,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/48642369-be5a-49b7-9113-a5e5491e1187_rw_1200.png",
+              "lightboxSrc": "/images/assets/48642369-be5a-49b7-9113-a5e5491e1187.png"
+            }
+          ]
+        },
+        {
+          "flex": 970000000,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/8a46b849-60de-4a3d-8edf-86eea54fcbe8_rw_1200.png",
+              "lightboxSrc": "/images/assets/8a46b849-60de-4a3d-8edf-86eea54fcbe8.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Applications",
+              "color": "#17252b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/9471aa3731ace71f131a06dc_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/9471aa3731ace71f131a06dc.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/4ebba7a83716371499c73601_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/4ebba7a83716371499c73601.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/17df9398cce1cdce709dd483_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/17df9398cce1cdce709dd483.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/31470bbb65ffec8d63e7baf8_rw_3840.png",
+      "lightboxSrc": "/images/assets/31470bbb65ffec8d63e7baf8.png"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 1080000000,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/777e8fec-39bc-43ef-b2e8-c11c48f14b02_rw_1200.jpg",
+              "lightboxSrc": "/images/assets/777e8fec-39bc-43ef-b2e8-c11c48f14b02.jpg"
+            }
+          ]
+        },
+        {
+          "flex": 5034312661,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ee9bd590-68eb-4c51-89ec-23213903f888_rw_1920.jpg",
+              "lightboxSrc": "/images/assets/ee9bd590-68eb-4c51-89ec-23213903f888.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

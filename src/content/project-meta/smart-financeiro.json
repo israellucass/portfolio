@@ -1,0 +1,12 @@
+{
+  "title": "Smart Financeiro",
+  "subtitle": "iOS app helping ship-pilot managers visualize company financial data.",
+  "year": "2020",
+  "tags": "User Interface Design, User Research",
+  "cover": "/images/covers/smart-financeiro.png",
+  "featured": true,
+  "categories": [
+    "featured",
+    "ux"
+  ]
+}

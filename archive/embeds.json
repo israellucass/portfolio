@@ -1,0 +1,38 @@
+{
+  "embeds": [
+    {
+      "id": "cubo-xd",
+      "type": "adobe-xd",
+      "url": "https://xd.adobe.com/embed/7c6b3c57-33dd-42cd-8ea6-7a37cf2de096-2938/?fullscreen",
+      "projects": [
+        "cubo",
+        "atendimento-mateus"
+      ],
+      "note": "Export prototype from Adobe XD as MP4/PDF before account closes."
+    },
+    {
+      "id": "smart-financeiro-xd",
+      "type": "adobe-xd",
+      "url": "https://xd.adobe.com/embed/87a613ec-1050-4395-9798-cf620bc9f8a4-d2f5/",
+      "projects": [
+        "smart-financeiro",
+        "copia-de-smart-financeiro"
+      ],
+      "note": "Export prototype from Adobe XD as MP4/PDF before account closes."
+    },
+    {
+      "id": "cowboys-vimeo",
+      "type": "vimeo",
+      "url": "https://player.vimeo.com/video/138450981",
+      "projects": [
+        "cowboys-vs-cyborgs-game-art"
+      ],
+      "localVideo": "/videos/cowboys-vs-cyborgs-game-art.mp4"
+    }
+  ],
+  "vimeoArchived": true,
+  "manualSteps": [
+    "Export Adobe XD prototypes (cubo-xd, smart-financeiro-xd) as MP4 or PDF from Adobe XD.",
+    "Verify Mega.nz download links in brasilero-game still work; re-host game files if needed."
+  ]
+}

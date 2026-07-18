@@ -1,0 +1,232 @@
+{
+  "slug": "brasilero-game",
+  "title": "Brasilero",
+  "subtitle": "Game art inspired by Brazilian hand-painted sign typography.",
+  "year": "2014",
+  "tags": "Academic Project, Game Design, Game Art",
+  "cover": "/images/covers/brasilero-game.png",
+  "categories": [
+    "featured",
+    "games"
+  ],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/e184dbe1f0c15dcc5e83014b_rw_1920.png",
+      "lightboxSrc": "/images/assets/e184dbe1f0c15dcc5e83014b.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Brasilero",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#35b57e"
+            },
+            {
+              "text": " is a graphic design project "
+            },
+            {
+              "text": "developed as",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": " part of an academic assignment, inspired by the Brasilêro typeface created by Crystian Cruz. The typeface was designed based on the analysis of hundreds of hand-painted signs found in cities across Brazil, aiming to translate the impact of this popular visual culture into a digital font.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/b71916a491b2da722222aabe_rw_1920.png",
+      "lightboxSrc": "/images/assets/b71916a491b2da722222aabe.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/de71216abd03275eccb7fdde_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/de71216abd03275eccb7fdde.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/87b089707400f1da10225d4d_rw_1200.png",
+      "lightboxSrc": "/images/assets/87b089707400f1da10225d4d.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/1c04645a2e6a16648d2c3bd6_rw_3840.png",
+      "lightboxSrc": "/images/assets/1c04645a2e6a16648d2c3bd6.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ebdf07e48a4e8ba6efdf7d63_rw_600.gif",
+      "lightboxSrc": "/images/assets/ebdf07e48a4e8ba6efdf7d63.gif"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/670e60802841b485fb4c2921_rw_600.jpg",
+      "lightboxSrc": "/images/assets/670e60802841b485fb4c2921.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/55888973a1ba55efceabf9c7_rw_600.gif",
+      "lightboxSrc": "/images/assets/55888973a1ba55efceabf9c7.gif"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/5770897792f86b00a4a97a91_rw_600.gif",
+      "lightboxSrc": "/images/assets/5770897792f86b00a4a97a91.gif"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/4cf7a4e4aa9e418c9b61dbb6_rw_600.png",
+      "lightboxSrc": "/images/assets/4cf7a4e4aa9e418c9b61dbb6.png"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 31,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "O jogo está disponível para download nas plataformas Windows (32/64) e Mac OS X nos links abaixo:",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Windows (32 bits)",
+                      "color": "#ffffff",
+                      "href": "https://mega.co.nz/#!0lpj0KCT!rdtvu-TtzTiK5eRcn_4leV-EYJfuL24NfaMBwdTJ7oE"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Windows (64 bits)",
+                      "color": "#ffffff",
+                      "href": "https://mega.co.nz/#!VkwDQJ5A!RRabuRqA7jHJJ6elPwPmAlUsevmkzgGvkutdENe0oVU"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Mac OS X",
+                      "color": "#ffffff",
+                      "href": "https://mega.co.nz/#!x8YSwIKA!4rJqsrX4BFqTnm1_yY5xddTcH8356-6FlqeICVc-n8w"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Para jogar, basta executar o arquivo .exe (Windows) ou .app (Mac).",
+                      "color": "#ffffff"
+                    },
+                    {
+                      "text": "\n\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 19,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Há a versão online para quem preferir e usuários de Mac OS X que não conseguirem executar o aplicativo:",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "- Baixem o Unity Web Player: ",
+                      "color": "#ffffff"
+                    },
+                    {
+                      "text": "Windows",
+                      "color": "#ffffff",
+                      "href": "http://webplayer.unity3d.com/download_webplayer-3.x/UnityWebPlayer.exe"
+                    },
+                    {
+                      "text": " | ",
+                      "color": "#ffffff"
+                    },
+                    {
+                      "text": "Mac OS X",
+                      "color": "#ffffff",
+                      "href": "http://webplayer.unity3d.com/download_webplayer-3.x/webplayer-mini.dmg"
+                    },
+                    {
+                      "text": ";",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "- Instalem o Unity Web Player;",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "- Acessem o ",
+                      "color": "#ffffff"
+                    },
+                    {
+                      "text": "jogo",
+                      "color": "#ffffff",
+                      "href": "http://bit.ly/1lgjYCd"
+                    },
+                    {
+                      "text": ".",
+                      "color": "#ffffff"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

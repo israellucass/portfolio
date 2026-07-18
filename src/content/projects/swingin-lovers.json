@@ -1,0 +1,66 @@
+{
+  "slug": "swingin-lovers",
+  "title": "Swingin' Lovers /art direction",
+  "subtitle": "Art direction and editorial layouts for Swingin' Lovers jazz promotion.",
+  "year": "2013",
+  "tags": "Editorial Design, Graphic Design",
+  "cover": "/images/covers/swingin-lovers.jpg",
+  "categories": [],
+  "featured": false,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/eebcfb13981b6d84146a0abf_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/eebcfb13981b6d84146a0abf.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Layout externo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/b0c99d957b9f6e85b3a5a3d8_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/b0c99d957b9f6e85b3a5a3d8.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Layout interno"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/b38e9c05a0e25127a02c3015_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/b38e9c05a0e25127a02c3015.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Folder"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "baralho-samba",
+  "title": "Baralho \"Samba\"",
+  "subtitle": "Illustrated Samba-themed playing card deck product design.",
+  "year": "2014",
+  "tags": "Product Design, Graphic Design, Illustration",
+  "cover": "/images/covers/baralho-samba.jpg",
+  "categories": [],
+  "featured": false,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/4d72e516-e415-4ded-bea2-ac29f32500d2_rw_1920.png",
+      "lightboxSrc": "/images/assets/4d72e516-e415-4ded-bea2-ac29f32500d2.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/482f56b9f86aabdfeb7f589f_rw_1200.jpg",
+      "lightboxSrc": "/images/assets/482f56b9f86aabdfeb7f589f.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/998ec8faa0eb5fe15da3bd02_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/998ec8faa0eb5fe15da3bd02.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/123f560b6109678e056394f0_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/123f560b6109678e056394f0.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/38aff6fa4c046bf6d199fc80_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/38aff6fa4c046bf6d199fc80.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/93c9fa2c5811a6b943f6b90a_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/93c9fa2c5811a6b943f6b90a.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/3c2947def7eacf941b49a8df_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/3c2947def7eacf941b49a8df.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/2967763629334517e48e15c7_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/2967763629334517e48e15c7.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/d245efdb21ab945a444e24fd_rw_1200.jpg",
+      "lightboxSrc": "/images/assets/d245efdb21ab945a444e24fd.jpg"
+    }
+  ]
+}

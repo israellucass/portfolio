@@ -1,0 +1,804 @@
+{
+  "slug": "olhe-e-aprenda",
+  "title": "Olhe e Aprenda",
+  "subtitle": "Android learning game supporting autistic children through school activities.",
+  "year": "2018",
+  "tags": "Academic Project, Game Design, User Interface Design, User Research",
+  "cover": "/images/covers/olhe-e-aprenda.png",
+  "categories": [
+    "featured",
+    "ux",
+    "games"
+  ],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/9d98af8a-e84f-4753-9c6d-7a290da1a6c7_rw_1920.png",
+      "lightboxSrc": "/images/assets/9d98af8a-e84f-4753-9c6d-7a290da1a6c7.png"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "Olhe e Aprenda ",
+                      "marks": [
+                        "bold",
+                        "display"
+                      ],
+                      "color": "#ffa92f"
+                    },
+                    {
+                      "text": "(en: Watch and Learn)",
+                      "marks": [
+                        "italic",
+                        "display"
+                      ],
+                      "color": "#ffa92f"
+                    },
+                    {
+                      "text": " is an Android game developed to assist kids with Autism spectrum disorder on their learning journey during school years, by reinforcing educational competencies through activities. It is the final project of my academic research and a personal work in progress.",
+                      "color": "#f0f3f5"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 17,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Timeframe",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n8 months\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Role",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nResearcher\nDesigner"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Team",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n"
+                    },
+                    {
+                      "text": "José Paulo",
+                      "href": "https://www.linkedin.com/in/jose-paulo-dev/"
+                    },
+                    {
+                      "text": " / "
+                    },
+                    {
+                      "text": "Unity Developer",
+                      "marks": [
+                        "italic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "A test version of the game is available on Unity Play and you can access at "
+            },
+            {
+              "text": "this link",
+              "color": "#ffa92f",
+              "href": "https://play.unity.com/en/games/fa2f53e5-e98f-4f54-a562-0bcf4bd773cb/olhe-e-aprenda-testes"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/c55c13b3-f466-443d-872a-807bd36f6f7d_rw_1920.png",
+      "lightboxSrc": "/images/assets/c55c13b3-f466-443d-872a-807bd36f6f7d.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "PROBLEM FRAMING",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#ffa92f"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "RESEARCH",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Autism spectrum disorder",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Understanding unique needs:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Children with ASD have distinct cognitive, emotional, and sensory profiles, so it’s essential to understand their specific learning styles and challenges.\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Tailored interaction strategies:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Research provides insights into communication preferences, attention span, and behavioral patterns, guiding the design of accessible and engaging interactions.\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Avoiding overstimulation:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Knowing common sensory sensitivities helps in avoiding overwhelming visual or auditory stimuli that may hinder learning.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Assistive technologies",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Enhanced accessibility:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " These technologies provide tools and features that help remove barriers to learning, such as alternative input methods or communication aids.\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Support for autonomy:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Assistive tools empower children with ASD to engage more independently and confidently in educational activities.\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Evidence-based practices:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Research helps identify which technologies have been proven effective in supporting educational development in neurodivergent learners.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Serious digital games",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "GAME DESIGN",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The methodology chosen for this project is based on the TEACCH program (Treatment and Education of Autistic and Communication-Handicapped Children), which views autism not just as a disorder, but as a unique way of interacting with the world—marked by specific communication styles, behaviors, and individual strengths and challenges. TEACCH promotes “Structured Teaching,” which uses visual supports and clear routines to help individuals with autism better understand and engage with their environment."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "In the game, this method was adapted into a system of "
+            },
+            {
+              "text": "progressive levels",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": ", each designed to match different stages of cognitive development — from basic motor coordination to more complex tasks like reading and math. By translating these educational strategies into interactive digital elements, the game aims to support learning in a way that is both accessible and effective for children with autism."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Initial Analysis of TEACCH Activities",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Activities commonly used in the TEACCH intervention program, in real world environment, were reviewed and cataloged according to the different stages of cognitive development.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/0394a4f7-3037-4579-8321-fbd3e8a593bb_rw_1920.png",
+      "lightboxSrc": "/images/assets/0394a4f7-3037-4579-8321-fbd3e8a593bb.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Selection criteria for game content",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "A selection of activities was made based on two criteria:"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Alignment with "
+            },
+            {
+              "text": "Brazil’s National Common Curriculum Base (BNCC)",
+              "marks": [
+                "bold"
+              ],
+              "href": "https://basenacionalcomum.mec.gov.br/"
+            },
+            {
+              "text": " for early childhood and primary education (up to 5th grade).\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Feasibility of adapting them into a 2D game environment.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/f950e75a-c985-41fc-b7c2-523df390e832_rw_1920.png",
+      "lightboxSrc": "/images/assets/f950e75a-c985-41fc-b7c2-523df390e832.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Structured progression by work levels",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The game was organized into 5 progressive phases, each corresponding to a TEACCH work level. Tasks gradually increase in complexity to support skill development.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/abe0a8db-e1f7-4941-9983-5cb9d75c8ba7_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/abe0a8db-e1f7-4941-9983-5cb9d75c8ba7.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Work system design (Task Layout)",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Visual organization followed TEACCH recommendations to support independent task completion:"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Left/top",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " area stores movable items (stimuli).\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Right/bottom",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " area is where tasks are executed.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ba84fc80-d396-44a7-89a2-9131e02ed19e_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/ba84fc80-d396-44a7-89a2-9131e02ed19e.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Use of visual instructions and errorless learning",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Visual clarity was prioritized in all interface elements.\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "A color-coded feedback system ("
+            },
+            {
+              "text": "green",
+              "color": "#35b57e"
+            },
+            {
+              "text": " for correct, "
+            },
+            {
+              "text": "red",
+              "color": "#eb113d"
+            },
+            {
+              "text": " for incorrect) was implemented, aligned to behavior analysis techniques such as “errorless learning.”\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/f9f2643c-d75e-4c31-ba26-33dbcb2b56ae_rw_1920.png",
+      "lightboxSrc": "/images/assets/f9f2643c-d75e-4c31-ba26-33dbcb2b56ae.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Feedback and accessibility features",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "Pop-up windows provide visual charts indicating skill stimulation per level (motor, cognitive and academic).\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• ",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "A settings menu includes a performance dashboard and options to mute sound — important for users with auditory hypersensitivity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 1920000000,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/dd599b5d-fbdd-4d43-aed2-fd56fc480278_rw_1920.png",
+              "lightboxSrc": "/images/assets/dd599b5d-fbdd-4d43-aed2-fd56fc480278.png"
+            }
+          ]
+        },
+        {
+          "flex": 1920000000,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/25f3a264-61de-49ae-9b61-722224e7d9c1_rw_1920.png",
+              "lightboxSrc": "/images/assets/25f3a264-61de-49ae-9b61-722224e7d9c1.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "In the end, a flowchart with game screens and inputs was designed to guide the development team on the game navigation on the Unity engine.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/5e73416c-6287-4dfa-ba57-f396bcf99bcb_rw_1200.png",
+      "lightboxSrc": "/images/assets/5e73416c-6287-4dfa-ba57-f396bcf99bcb.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "VALIDATION AND TESTING",
+              "color": "#ffa92f"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "To validate the initial version, a ",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "usability evaluation",
+              "marks": [
+                "bold"
+              ],
+              "color": "#f0f3f5"
+            },
+            {
+              "text": ", comprising ",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "heuristic evaluation",
+              "color": "#ffa92f"
+            },
+            {
+              "text": ", ",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "usability testing",
+              "color": "#ffa92f"
+            },
+            {
+              "text": " and a ",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "group-based expert walkthrough",
+              "color": "#ffa92f"
+            },
+            {
+              "text": ", was conducted as part of my Master's thesis. Since it contains unpublished data, the ",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "full process will be added to this section once the publication is released.\n \n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

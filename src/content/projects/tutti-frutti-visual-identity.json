@@ -1,0 +1,158 @@
+{
+  "slug": "tutti-frutti-visual-identity",
+  "title": "Tutti Frutti",
+  "subtitle": "Branding for a fresh fruit salad company focused on wellbeing.",
+  "year": "2016",
+  "tags": "Graphic Design, Branding",
+  "cover": "/images/covers/tutti-frutti-visual-identity.png",
+  "categories": [
+    "graphic"
+  ],
+  "featured": false,
+  "blocks": [
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ],
+              "color": "#14191d"
+            },
+            {
+              "text": " Nathália Rodrigues",
+              "color": "#14191d"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/94506917aa0cc832469f242a_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/94506917aa0cc832469f242a.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "Moodboard\n",
+              "color": "#14191d"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "Tutti Frutti",
+              "marks": [
+                "bold"
+              ],
+              "color": "#14191d"
+            },
+            {
+              "text": " is a branding project developed for a company focused on offering fresh fruit salads in small containers, promoting health and well-being to the general public.\n",
+              "color": "#14191d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/adf98c79740045162af5ad61_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/adf98c79740045162af5ad61.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "LOGO DESIGN\n",
+              "color": "#14191d"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The logo design was guided by concepts of healthy eating and natural food, emphasizing the blend of flavors and a sense of lightness. Organic lettering shapes combined with a vibrant color palette were used to visually communicate the freshness and nature of the service provided.\n",
+              "color": "#14191d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/9e3c8e0ea5052abd307d06d5_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/9e3c8e0ea5052abd307d06d5.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "CoLORS\n",
+              "color": "#14191d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/06dc9ecf7871f998830027ff_rw_1920.jpg",
+      "lightboxSrc": "/images/assets/06dc9ecf7871f998830027ff.jpg"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "Applications\n",
+              "color": "#14191d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/04343106904355c22441c88a_rw_3840.jpg",
+      "lightboxSrc": "/images/assets/04343106904355c22441c88a.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/f2df24fedd2ac936ec11b17d_rw_1920.png",
+      "lightboxSrc": "/images/assets/f2df24fedd2ac936ec11b17d.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/423e950d5a670f30bfb0920b_rw_1200.jpg",
+      "lightboxSrc": "/images/assets/423e950d5a670f30bfb0920b.jpg"
+    }
+  ]
+}

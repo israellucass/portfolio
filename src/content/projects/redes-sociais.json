@@ -1,0 +1,374 @@
+{
+  "slug": "redes-sociais",
+  "title": "Social Media",
+  "subtitle": "Social media advertising visuals for Maximize agency brand clients.",
+  "year": "2016",
+  "tags": "Art Direction, Advertising",
+  "cover": "/images/covers/redes-sociais.jpg",
+  "categories": [
+    "graphic"
+  ],
+  "featured": false,
+  "blocks": [
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Empório Fribal\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Agency:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Maximize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/5fa157f8aca98e8a18e5541a_rw_1920.png",
+      "lightboxSrc": "/images/assets/5fa157f8aca98e8a18e5541a.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/0fac58b684d3877b463825c1_rw_1920.png",
+      "lightboxSrc": "/images/assets/0fac58b684d3877b463825c1.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Fribal\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Agency:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Maximize\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ed01525b9c78af3725634e02_rw_1920.png",
+      "lightboxSrc": "/images/assets/ed01525b9c78af3725634e02.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " TVN São Luís\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Agency:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Maximize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/5a135b928b47305cd5328cb8_rw_1920.png",
+      "lightboxSrc": "/images/assets/5a135b928b47305cd5328cb8.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/a6bd19265bfeaf3411629b9d_rw_1920.png",
+      "lightboxSrc": "/images/assets/a6bd19265bfeaf3411629b9d.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/73be28b0c46aa516826ccf55_rw_1920.png",
+      "lightboxSrc": "/images/assets/73be28b0c46aa516826ccf55.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Enova\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Agency:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Maximize\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/26f9c869662775bba3d17cd4_rw_1920.png",
+      "lightboxSrc": "/images/assets/26f9c869662775bba3d17cd4.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/4b163a3ad76bb32d8368f601_rw_1920.png",
+      "lightboxSrc": "/images/assets/4b163a3ad76bb32d8368f601.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Via Mundo\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Agency:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Maximize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/46b5ebc7550528e7f18d2ec6_rw_1200.png",
+      "lightboxSrc": "/images/assets/46b5ebc7550528e7f18d2ec6.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/bdc8c9191d14871f6d081fab_rw_1920.png",
+      "lightboxSrc": "/images/assets/bdc8c9191d14871f6d081fab.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " ISAN FGV\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Agency:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Maximize\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/d612e2ba6a6a44fe5b8b5a5c_rw_1920.png",
+      "lightboxSrc": "/images/assets/d612e2ba6a6a44fe5b8b5a5c.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/4580c71144fb55bb0aa27735_rw_1920.png",
+      "lightboxSrc": "/images/assets/4580c71144fb55bb0aa27735.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Barlivery\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/789f70c7d475a52877a31aba_rw_1920.png",
+      "lightboxSrc": "/images/assets/789f70c7d475a52877a31aba.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/053ec7a514b0542df501d864_rw_1920.png",
+      "lightboxSrc": "/images/assets/053ec7a514b0542df501d864.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Satchmo Produções\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/9d5b78c078c9c2cc472121c6_rw_1920.png",
+      "lightboxSrc": "/images/assets/9d5b78c078c9c2cc472121c6.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/a052bc92f5086820a3672a42_rw_1200.png",
+      "lightboxSrc": "/images/assets/a052bc92f5086820a3672a42.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/1c36afcc54a6a2ad4c8d9749_rw_1920.png",
+      "lightboxSrc": "/images/assets/1c36afcc54a6a2ad4c8d9749.png"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "Client:",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " Restaurante Panela de Minas\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/10ac5ae21e4c22fae763ecbb_rw_1920.png",
+      "lightboxSrc": "/images/assets/10ac5ae21e4c22fae763ecbb.png"
+    }
+  ]
+}

@@ -1,26 +1,174 @@
 @import "tailwindcss";
+@import "../styles/project.css";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --surface: #ffffff;
+  --text-primary: #14191d;
+  --text-muted: #666666;
+  --text-min: 12px;
+  --font-body: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-logo: var(--font-display);
+  --font-sans: var(--font-body);
+  --header-height: 3.5rem;
+  --feature-fold-inset: 24px;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-body);
+  /* Breakpoints: mobile <768px · tablet 768–1023px · desktop ≥1024px */
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.focus-ring:focus {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.75rem;
+  z-index: 100000;
+  padding: 0.5rem 1rem;
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: 2px solid var(--text-primary);
+  border-radius: 0.125rem;
+}
+
+.skip-link:focus {
+  left: 0.75rem;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-body), sans-serif;
+  font-size: 16px;
+}
+
+/* Floor for scraped Adobe inline sizes below accessible minimum */
+.project-html [style*="font-size:8px"],
+.project-html [style*="font-size: 8px"],
+.project-html [style*="font-size:9px"],
+.project-html [style*="font-size: 9px"],
+.project-html [style*="font-size:10px"],
+.project-html [style*="font-size: 10px"],
+.project-html [style*="font-size:11px"],
+.project-html [style*="font-size: 11px"] {
+  font-size: var(--text-min) !important;
+}
+
+.font-logo {
+  font-family: var(--font-logo), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Animated underline — draws in from the left on hover/focus */
+.link-underline {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  padding-bottom: 1px;
+  transition:
+    background-size 0.28s ease,
+    color 0.2s ease;
+}
+
+.link-underline:hover,
+.link-underline:focus-visible {
+  background-size: 100% 1.5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline {
+    transition: color 0.2s ease;
+  }
+
+  .link-underline:hover,
+  .link-underline:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    background-size: 0% 1.5px;
+  }
+}
+
+.site-wrap,
+.site-content {
+  width: 100%;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #eceff1 0%,
+    #f5f6f7 45%,
+    #eceff1 90%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.project-cover-skeleton {
+  pointer-events: none;
+}
+
+/* Let Keystatic paint body/surface colors for light and dark schemes */
+.keystatic-shell {
+  background: transparent;
 }
