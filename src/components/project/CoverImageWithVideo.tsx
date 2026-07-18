@@ -17,8 +17,14 @@ export function CoverImageWithVideo({
   priority = false,
 }: CoverImageWithVideoProps) {
   const [loaded, setLoaded] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
 
-  const handleComplete = () => {
+  const handleVideoReady = () => {
+    setLoaded(true);
+  };
+
+  const handleVideoError = () => {
+    setShowVideo(false);
     setLoaded(true);
   };
 
@@ -38,19 +44,21 @@ export function CoverImageWithVideo({
         className="cover__img cover__img--poster cover__img--loaded"
         priority={priority}
       />
-      <video
-        src={videoSrc}
-        className={`cover__img cover__video${
-          loaded ? " cover__img--loaded" : ""
-        }`}
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload={priority ? "auto" : "metadata"}
-        onLoadedData={handleComplete}
-        onError={handleComplete}
-      />
+      {showVideo ? (
+        <video
+          src={videoSrc}
+          className={`cover__img cover__video${
+            loaded ? " cover__img--loaded" : ""
+          }`}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload={priority ? "auto" : "metadata"}
+          onLoadedData={handleVideoReady}
+          onError={handleVideoError}
+        />
+      ) : null}
     </>
   );
 }

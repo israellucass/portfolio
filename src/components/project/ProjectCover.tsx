@@ -1,6 +1,6 @@
 import { CoverImage } from "@/components/project/CoverImage";
 import Link from "next/link";
-import { getCoverVideoPath } from "@/lib/media";
+import { resolveCoverVideoPath } from "@/lib/media-server";
 import { formatProjectCoverLabel } from "@/lib/project-label";
 import type { ProjectCoverCard } from "@/types/project";
 
@@ -49,7 +49,7 @@ export function ProjectCover({
   variant = "default",
 }: ProjectCoverProps) {
   const coverLabel = formatProjectCoverLabel(project);
-  const coverVideo = getCoverVideoPath(project.cover);
+  const coverVideo = resolveCoverVideoPath(project.cover);
   const isSpotlight = variant === "spotlight";
   const isFeatureSidebar = variant === "feature-sidebar";
   const isFeatureFold = isSpotlight || isFeatureSidebar;
