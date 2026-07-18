@@ -383,8 +383,8 @@
     transform 0.2s ease;
 }
 
-.project-cover:hover .cover__img,
-.project-cover:focus-visible .cover__img {
+.project-cover:hover .cover__img:not(.cover__video),
+.project-cover:focus-visible .cover__img:not(.cover__video) {
   transform: scale(1.03);
 }
 
@@ -410,8 +410,8 @@
     transition: none;
   }
 
-  .project-cover:hover .cover__img,
-  .project-cover:focus-visible .cover__img {
+  .project-cover:hover .cover__img:not(.cover__video),
+  .project-cover:focus-visible .cover__img:not(.cover__video) {
     transform: none;
   }
 

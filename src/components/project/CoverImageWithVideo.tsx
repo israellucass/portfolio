@@ -26,13 +26,51 @@ export function CoverImageWithVideo({
       return;
     }
 
+    let disposed = false;
+
     const markReady = () => {
-      setLoaded(true);
+      if (!disposed) {
+        setLoaded(true);
+      }
+    };
+
+    const playVideo = () => {
+      if (disposed || document.hidden) {
+        return;
+      }
+
+      void video.play().catch(() => {
+        /* Autoplay may be blocked; poster remains visible. */
+      });
+    };
+
+    const handleEnded = () => {
+      video.currentTime = 0;
+      playVideo();
     };
 
     const handleError = () => {
-      setShowVideo(false);
-      setLoaded(true);
+      if (disposed) {
+        return;
+      }
+
+      video.currentTime = 0;
+      playVideo();
+
+      window.setTimeout(() => {
+        if (disposed || !video.error) {
+          return;
+        }
+
+        setShowVideo(false);
+        setLoaded(true);
+      }, 400);
+    };
+
+    const handleVisibility = () => {
+      if (document.visibilityState === "visible") {
+        playVideo();
+      }
     };
 
     if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
@@ -42,17 +80,41 @@ export function CoverImageWithVideo({
     video.addEventListener("loadeddata", markReady);
     video.addEventListener("canplay", markReady);
     video.addEventListener("playing", markReady);
+    video.addEventListener("ended", handleEnded);
     video.addEventListener("error", handleError);
+    document.addEventListener("visibilitychange", handleVisibility);
 
-    void video.play().catch(() => {
-      /* Autoplay may be blocked; poster remains visible. */
-    });
+    const wrap = video.closest(".cover-image-wrap");
+    const observer =
+      wrap &&
+      new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              playVideo();
+            } else {
+              video.pause();
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: "64px 0px" },
+      );
+
+    if (wrap && observer) {
+      observer.observe(wrap);
+    } else {
+      playVideo();
+    }
 
     return () => {
+      disposed = true;
       video.removeEventListener("loadeddata", markReady);
       video.removeEventListener("canplay", markReady);
       video.removeEventListener("playing", markReady);
+      video.removeEventListener("ended", handleEnded);
       video.removeEventListener("error", handleError);
+      document.removeEventListener("visibilitychange", handleVisibility);
+      observer?.disconnect();
     };
   }, [showVideo, videoSrc]);
 
