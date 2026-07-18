@@ -311,6 +311,11 @@
   pointer-events: none;
 }
 
+.project-cover .cover-image-wrap:has(.cover__img--loaded) .cover-skeleton:not(.cover-skeleton--hidden) {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .project-cover .details-wrap {
   background: var(--background);
 }

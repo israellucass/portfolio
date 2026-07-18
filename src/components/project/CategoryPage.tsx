@@ -1,5 +1,5 @@
 import { ProjectGrid } from "@/components/project/ProjectGrid";
-import { getProjectsByCategory } from "@/lib/projects";
+import { getProjectCoverCardsByCategory } from "@/lib/projects";
 import type { Category } from "@/data/site";
 
 type CategoryPageProps = {
@@ -7,6 +7,6 @@ type CategoryPageProps = {
 };
 
 export function CategoryPage({ category }: CategoryPageProps) {
-  const projects = getProjectsByCategory(category);
+  const projects = getProjectCoverCardsByCategory(category);
   return <ProjectGrid projects={projects} />;
 }

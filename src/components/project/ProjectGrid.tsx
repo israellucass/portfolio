@@ -1,9 +1,9 @@
 import { ProjectCover } from "@/components/project/ProjectCover";
 import type { FeatureSideCount } from "@/lib/projects";
-import type { Project } from "@/types/project";
+import type { ProjectCoverCard } from "@/types/project";
 
 type ProjectGridProps = {
-  projects: Project[];
+  projects: ProjectCoverCard[];
   /** When set, that project is the left-column hero beside stacked sidebar projects. */
   spotlightSlug?: string | null;
   featureSideCount?: FeatureSideCount;

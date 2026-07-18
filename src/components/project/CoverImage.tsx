@@ -1,7 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
+import { CoverImageWithVideo } from "@/components/project/CoverImageWithVideo";
 
 type CoverImageProps = {
   src: string;
@@ -16,56 +14,28 @@ export function CoverImage({
   sizes,
   priority = false,
 }: CoverImageProps) {
-  const [loaded, setLoaded] = useState(false);
-
-  const handleComplete = () => {
-    setLoaded(true);
-  };
+  if (videoSrc) {
+    return (
+      <CoverImageWithVideo
+        src={src}
+        videoSrc={videoSrc}
+        sizes={sizes}
+        priority={priority}
+      />
+    );
+  }
 
   return (
     <>
-      <div
-        className={`cover-skeleton skeleton-shimmer${
-          loaded ? " cover-skeleton--hidden" : ""
-        }`}
-        aria-hidden
+      <div className="cover-skeleton skeleton-shimmer" aria-hidden />
+      <Image
+        src={src}
+        alt=""
+        fill
+        sizes={sizes}
+        className="cover__img cover__img--loaded"
+        priority={priority}
       />
-      {videoSrc ? (
-        <>
-          <Image
-            src={src}
-            alt=""
-            fill
-            sizes={sizes}
-            className="cover__img cover__img--poster cover__img--loaded"
-            priority={priority}
-          />
-          <video
-            src={videoSrc}
-            className={`cover__img cover__video${
-              loaded ? " cover__img--loaded" : ""
-            }`}
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload={priority ? "auto" : "metadata"}
-            onLoadedData={handleComplete}
-            onError={() => setLoaded(true)}
-          />
-        </>
-      ) : (
-        <Image
-          src={src}
-          alt=""
-          fill
-          sizes={sizes}
-          className={`cover__img${loaded ? " cover__img--loaded" : ""}`}
-          priority={priority}
-          onLoad={handleComplete}
-          onLoadingComplete={handleComplete}
-        />
-      )}
     </>
   );
 }

@@ -2,12 +2,12 @@ import { CoverImage } from "@/components/project/CoverImage";
 import Link from "next/link";
 import { getCoverVideoPath } from "@/lib/media";
 import { formatProjectCoverLabel } from "@/lib/project-label";
-import type { Project } from "@/types/project";
+import type { ProjectCoverCard } from "@/types/project";
 
 type ProjectCoverVariant = "default" | "spotlight" | "feature-sidebar";
 
 type ProjectCoverProps = {
-  project: Project;
+  project: ProjectCoverCard;
   variant?: ProjectCoverVariant;
 };
 

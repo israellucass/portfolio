@@ -20,6 +20,12 @@ export type Project = {
   blocks: ProjectBlock[];
 };
 
+/** Minimal fields for project grid covers — avoids loading case-study blocks. */
+export type ProjectCoverCard = Pick<
+  Project,
+  "slug" | "title" | "subtitle" | "cover"
+>;
+
 export type LightboxImage = {
   src: string;
   lightboxSrc: string;

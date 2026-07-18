@@ -47,7 +47,7 @@ export function ProjectBlockImage({
             width={1920}
             height={1080}
             className="h-auto w-full"
-            sizes="100vw"
+            sizes="(max-width: 1023px) 100vw, 66vw"
           />
         )}
       </button>
