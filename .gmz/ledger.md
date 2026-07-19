@@ -1,8 +1,8 @@
 # GMZ Ledger (auto — gerado pelo plugin; não editar à mão)
-atualizado: 2026-07-19T15:59:35.172Z
+atualizado: 2026-07-19T16:25:30.512Z
 
 ## Arquivos mutados nesta sessão
-- /Volumes/WD_BLACK SN7100 2TB/Projetos Cursor/portfolio/src/styles/project.css (2 edições)
+- /Volumes/WD_BLACK SN7100 2TB/Projetos Cursor/portfolio/src/styles/project.css (6 edições)
 - /Volumes/WD_BLACK SN7100 2TB/Projetos Cursor/portfolio/src/app/globals.css (2 edições)
 - /Volumes/WD_BLACK SN7100 2TB/Projetos Cursor/portfolio/scripts/optimize-media.mjs (5 edições)
 - /Volumes/WD_BLACK SN7100 2TB/Projetos Cursor/portfolio/src/content/projects/copia-de-smart-financeiro.json (1 edições)

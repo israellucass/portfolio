@@ -642,8 +642,19 @@
 .tree-wrapper {
   display: flex;
   width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8%;
+  padding-right: 8%;
   align-items: flex-start;
   gap: 0;
+}
+
+.project-feature-gallery .tree-wrapper {
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 .tree-wrapper.valign-top {
@@ -753,17 +764,22 @@
 }
 
 /* ── RichText: Design question (How might we …) ──────────────── */
-.project-html .project-design-question {
-  font-family: var(--font-handwriting, "Caveat"), cursive;
-  font-size: clamp(18px, 3vw, 28px);
+.project-html .project-design-question,
+.project-html blockquote.project-design-question {
+  font-family: var(--font-handwriting, "Caveat"), cursive !important;
+  font-size: clamp(20px, 3.5vw, 30px) !important;
   font-weight: 500;
+  font-style: normal;
   line-height: 1.35;
   color: var(--project-phase-label-color);
-  margin: 32px 0 16px;
-  padding: 16px 20px;
+  margin: 40px auto 24px;
+  padding: 20px 24px;
   background: #fef7e0;
-  border-radius: 4px;
+  border-radius: 6px;
   max-width: 36rem;
+  border: none;
+  text-align: left;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 /* ── RichText: Section headings (creative showcase) ──────────── */
@@ -815,14 +831,6 @@
 /* ── BlockRenderer: Tree media+copy ───────────────────────────── */
 .tree-wrapper--media-copy {
   gap: 24px;
-}
-
-.tree-wrapper--media-copy .project-module-image {
-  padding-bottom: 0;
-}
-
-.tree-wrapper--media-copy .project-module-image img {
-  max-width: 100%;
 }
 
 /* ── Header: auto-hide on scroll down ─────────────────────────── */
@@ -1026,6 +1034,72 @@
 .project-phase-sticky__subtitle {
   font-weight: 400;
   color: var(--text-muted);
+}
+
+/* ── Feature gallery: consecutive image+text trees (3-col row) ── */
+.project-feature-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+.project-feature-gallery__item {
+  min-width: 0;
+}
+
+.project-feature-gallery .project-module-image {
+  padding-bottom: 0;
+}
+
+.project-feature-gallery .project-module-image img,
+.project-feature-gallery .project-module-image video {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .project-feature-gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-feature-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ── Standalone body image: constrain to 960px reading column ─── */
+.project-module-image {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.tree-wrapper .project-module-image {
+  max-width: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ── Phone/demo images in media-copy trees: compact (max 376px) ─ */
+.tree-wrapper--media-copy .project-module-image {
+  display: flex;
+  justify-content: center;
+}
+
+.tree-wrapper--media-copy .project-module-image img,
+.tree-wrapper--media-copy .project-module-image video {
+  max-width: 376px;
+  width: 100%;
+  height: auto;
 }
 
 /* ── main-text default ────────────────────────────────────────── */
