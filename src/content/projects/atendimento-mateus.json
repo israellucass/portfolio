@@ -27,7 +27,7 @@
                   "align": "left",
                   "inlines": [
                     {
-                      "text": "CUBO",
+                      "text": "Atendimento Mateus",
                       "marks": [
                         "bold",
                         "display"
@@ -660,7 +660,7 @@
       "type": "richtext",
       "paragraphs": [
         {
-          "kind": "heading",
+          "kind": "paragraph",
           "align": "center",
           "inlines": [
             {
@@ -672,13 +672,7 @@
               "color": "#ffc239"
             },
             {
-              "text": " ",
-              "marks": [
-                "display"
-              ]
-            },
-            {
-              "text": "- Handling standard operating procedures",
+              "text": " - Handling standard operating procedures",
               "marks": [
                 "display"
               ],

@@ -663,7 +663,7 @@
       "type": "richtext",
       "paragraphs": [
         {
-          "kind": "heading",
+          "kind": "paragraph",
           "align": "center",
           "inlines": [
             {
@@ -675,13 +675,7 @@
               "color": "#ffc239"
             },
             {
-              "text": " ",
-              "marks": [
-                "display"
-              ]
-            },
-            {
-              "text": "- Handling standard operating procedures",
+              "text": " - Handling standard operating procedures",
               "marks": [
                 "display"
               ],
@@ -745,6 +739,44 @@
               "color": "#ffc239"
             }
           ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Since the expected medium (conversational interface) had already been defined, it was necessary to assess stakeholders’ needs to ensure their specific requirements were effectively accommodated.",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Group interviews",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ],
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "To accommodate multiple perspectives within the tight deadline and the availability of employees, group interviews were conducted with the quality assurance team and the managers undergoing training. This approach facilitated the prompt identification of patterns and discrepancies and enabled the identification of relevant use cases in day-to-day operations.",
+              "color": "#f0f3f5"
+            },
+            {
+              "text": "\n"
+            }
+          ]
         }
       ]
     },
@@ -770,6 +802,14 @@
             },
             {
               "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "In order to observe the behavioral aspects of the managers, visits were conducted to the training sessions organized by the quality department. This observation provided valuable insights into the primary challenges encountered, both in the presentation of the procedures and in their comprehension."
             }
           ]
         }
@@ -983,6 +1023,18 @@
                       "text": "\n"
                     }
                   ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Real-time feedback on spoken content has been added, and the presentation of store information has been adjusted to enhance readability.",
+                      "color": "#f0f3f5"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
                 }
               ]
             }
@@ -1020,10 +1072,22 @@
                       "color": "#ffc239"
                     },
                     {
-                      "text": " Information on procedures",
+                      "text": " Database integration",
                       "marks": [
                         "bold"
                       ]
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Data and updates regarding standard operating procedures are delivered to managers more efficiently through the seamless integration between the app and the quality assurance department’s database.",
+                      "color": "#f0f3f5"
                     },
                     {
                       "text": "\n"
@@ -1045,6 +1109,115 @@
             {
               "text": "RESULTS",
               "color": "#ffc239"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Following the app's implementation, we monitored predefined usability and adoption metrics to evaluate its impact on operational efficiency. Key outcomes within the first two weeks included:"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "82% daily active usage",
+              "marks": [
+                "bold"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": " among managers and supervisors, demonstrating strong engagement"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "72% reduction",
+              "marks": [
+                "bold"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": " in average task time for store data retrieval, decreasing from 52 seconds to 15 seconds",
+              "color": "#f0f3f5"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "93% accuracy rate",
+              "marks": [
+                "bold"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": " in command recognition, ensuring reliable system performance"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "•",
+              "color": "#ffc239"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "62.5% decrease",
+              "marks": [
+                "bold"
+              ],
+              "color": "#ffc239"
+            },
+            {
+              "text": " in weekly QA training time, from 4 hours to 1.5 hours"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Our next steps would involve assessing the ROI by calculating the cost savings from reduced training and time waste, in comparison to the implementation costs.",
+              "color": "#f0f3f5"
             },
             {
               "text": "\n"

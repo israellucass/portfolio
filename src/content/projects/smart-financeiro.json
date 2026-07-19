@@ -4,7 +4,7 @@
   "subtitle": "iOS app helping ship-pilot managers visualize company financial data.",
   "year": "2020",
   "tags": "User Interface Design, User Research",
-  "cover": "/images/covers/smart-financeiro.png",
+  "cover": "/images/covers/smart-financeiro.webp",
   "categories": [
     "featured",
     "ux"
@@ -302,7 +302,7 @@
       "type": "richtext",
       "paragraphs": [
         {
-          "kind": "paragraph",
+          "kind": "subheading",
           "inlines": [
             {
               "text": "SOLUTION",
@@ -361,14 +361,24 @@
               "type": "richtext",
               "paragraphs": [
                 {
-                  "kind": "subheading",
+                  "kind": "paragraph",
+                  "align": "left",
                   "inlines": [
                     {
                       "text": "1.",
+                      "marks": [
+                        "bold"
+                      ],
                       "color": "#ff3b4a"
                     },
                     {
-                      "text": " Data privacy\n"
+                      "text": " Data privacy",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
                     }
                   ]
                 },
@@ -410,14 +420,24 @@
               "type": "richtext",
               "paragraphs": [
                 {
-                  "kind": "heading",
+                  "kind": "paragraph",
+                  "align": "left",
                   "inlines": [
                     {
                       "text": "2.",
+                      "marks": [
+                        "bold"
+                      ],
                       "color": "#ff3b4a"
                     },
                     {
-                      "text": " Revenue composition"
+                      "text": " Revenue composition",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
                     }
                   ]
                 },
@@ -464,14 +484,24 @@
               "type": "richtext",
               "paragraphs": [
                 {
-                  "kind": "heading",
+                  "kind": "paragraph",
+                  "align": "left",
                   "inlines": [
                     {
                       "text": "3.",
+                      "marks": [
+                        "bold"
+                      ],
                       "color": "#ff3b4a"
                     },
                     {
-                      "text": " Segmentation of data"
+                      "text": " Segmentation of data",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
                     }
                   ]
                 },

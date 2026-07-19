@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { LightboxImage } from "@/types/project";
 
 type LightboxProps = {
@@ -26,6 +27,20 @@ export function Lightbox({
   onClose,
   onNavigate,
 }: LightboxProps) {
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const [useVideo, setUseVideo] = useState(true);
+
+  const image = images[index];
+  const videoSrc = getLightboxVideoSrc(image.lightboxSrc);
+  const imageLabel =
+    images.length > 1
+      ? `${title} — image ${index + 1} of ${images.length}`
+      : `${title} — full size image`;
+
+  useEffect(() => {
+    setUseVideo(Boolean(videoSrc));
+  }, [videoSrc]);
+
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
@@ -34,6 +49,7 @@ export function Lightbox({
     };
 
     document.body.style.overflow = "hidden";
+    overlayRef.current?.focus();
     window.addEventListener("keydown", onKeyDown);
     return () => {
       document.body.style.overflow = "";
@@ -41,22 +57,21 @@ export function Lightbox({
     };
   }, [onClose, onNavigate]);
 
-  const image = images[index];
-  const videoSrc = getLightboxVideoSrc(image.lightboxSrc);
-  const [useVideo, setUseVideo] = useState(Boolean(videoSrc));
-  const imageLabel =
-    images.length > 1
-      ? `${title} — image ${index + 1} of ${images.length}`
-      : `${title} — full size image`;
-
-  useEffect(() => {
-    setUseVideo(Boolean(videoSrc));
-  }, [videoSrc, index]);
+  const handleOverlayClick = useCallback(
+    (event: React.MouseEvent) => {
+      if (event.target === overlayRef.current) {
+        onClose();
+      }
+    },
+    [onClose],
+  );
 
   return (
     <div
+      ref={overlayRef}
+      tabIndex={-1}
       className="lightbox-overlay fixed inset-0 z-[100000] flex items-center justify-center overscroll-contain bg-white/[0.94] p-6"
-      onClick={onClose}
+      onClick={handleOverlayClick}
       role="dialog"
       aria-modal="true"
       aria-label="Image lightbox"
@@ -111,12 +126,14 @@ export function Lightbox({
           onError={() => setUseVideo(false)}
         />
       ) : (
-        /* eslint-disable-next-line @next/next/no-img-element */
-        <img
+        <Image
           src={image.lightboxSrc}
           alt={imageLabel}
+          width={1920}
+          height={1080}
           className="max-h-[92vh] max-w-[92vw] object-contain"
           onClick={(event) => event.stopPropagation()}
+          sizes="92vw"
         />
       )}
     </div>

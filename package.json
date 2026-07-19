@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "optimize-media": "python3 scripts/optimize-media.py"
+    "optimize-media": "python3 scripts/optimize-media.py",
+    "audit:projects": "npx tsx scripts/audit-project-structure.ts"
   },
   "dependencies": {
     "@keystatic/core": "^0.5.51",
@@ -15,7 +16,8 @@
     "next": "16.2.10",
     "node-html-parser": "^9.0.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "sharp": "^0.35.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

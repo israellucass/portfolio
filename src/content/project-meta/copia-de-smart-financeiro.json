@@ -7,5 +7,6 @@
   "featured": true,
   "categories": [
     "featured"
-  ]
+  ],
+  "description": "Mobile application to aggregate retail and courses."
 }

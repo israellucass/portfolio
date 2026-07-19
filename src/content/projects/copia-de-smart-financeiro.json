@@ -4,7 +4,7 @@
   "subtitle": "iOS app helping ship-pilot managers visualize company financial data.",
   "year": "2020",
   "tags": "Interface Design, Information Design, Interaction Design",
-  "cover": "/images/covers/copia-de-smart-financeiro.png",
+  "cover": "/images/covers/copia-de-smart-financeiro.webp",
   "categories": [
     "featured"
   ],
@@ -324,14 +324,24 @@
               "type": "richtext",
               "paragraphs": [
                 {
-                  "kind": "heading",
+                  "kind": "paragraph",
+                  "align": "left",
                   "inlines": [
                     {
                       "text": "1.",
+                      "marks": [
+                        "bold"
+                      ],
                       "color": "#ff3b4a"
                     },
                     {
-                      "text": " Data privacy"
+                      "text": " Data privacy",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
                     }
                   ]
                 },
@@ -369,14 +379,24 @@
               "type": "richtext",
               "paragraphs": [
                 {
-                  "kind": "heading",
+                  "kind": "paragraph",
+                  "align": "left",
                   "inlines": [
                     {
                       "text": "2.",
+                      "marks": [
+                        "bold"
+                      ],
                       "color": "#ff3b4a"
                     },
                     {
-                      "text": " Revenue composition"
+                      "text": " Revenue composition",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
                     }
                   ]
                 },
@@ -423,14 +443,24 @@
               "type": "richtext",
               "paragraphs": [
                 {
-                  "kind": "heading",
+                  "kind": "paragraph",
+                  "align": "left",
                   "inlines": [
                     {
                       "text": "3.",
+                      "marks": [
+                        "bold"
+                      ],
                       "color": "#ff3b4a"
                     },
                     {
-                      "text": " Segmentation of data"
+                      "text": " Segmentation of data",
+                      "marks": [
+                        "bold"
+                      ]
+                    },
+                    {
+                      "text": "\n"
                     }
                   ]
                 },

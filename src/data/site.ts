@@ -1,8 +1,9 @@
 export const fonts = {
-  logo: "Space Grotesk",
+  logo: "Merriweather",
   body: "Inter",
-  display: "Space Grotesk",
+  display: "Merriweather",
   tags: "Inter",
+  handwriting: "Caveat",
 } as const;
 
 export const site = {

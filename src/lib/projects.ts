@@ -2,9 +2,9 @@ import fs from "fs";
 import path from "path";
 import { cache } from "react";
 import type { Category } from "@/data/site";
-import type { Project, ProjectBlock, ProjectCoverCard } from "@/types/project";
+import type { Project, ProjectCoverCard } from "@/types/project";
 
-export type { Project, ProjectBlock, ProjectCoverCard } from "@/types/project";
+export type { Project, ProjectCoverCard } from "@/types/project";
 
 type ProjectsIndex = {
   source: string;
@@ -17,6 +17,7 @@ type ProjectsIndex = {
 type ProjectMeta = {
   title: string;
   subtitle?: string;
+  description?: string;
   year?: string;
   tags?: string;
   cover?: string;
@@ -111,6 +112,7 @@ function readProjectFile(slug: string): Project {
     ...base,
     title: resolveMetaTitle(meta.title) || base.title,
     subtitle: meta.subtitle ?? base.subtitle,
+    description: meta.description ?? base.description ?? meta.subtitle ?? base.subtitle,
     year: meta.year ?? base.year,
     tags: meta.tags ?? base.tags,
     cover: meta.cover ?? base.cover,
@@ -263,6 +265,4 @@ export function getAllProjectSlugs(): string[] {
   return readIndex().slugs;
 }
 
-export function getDisplayBlocks(blocks: ProjectBlock[]): ProjectBlock[] {
-  return blocks;
-}
+

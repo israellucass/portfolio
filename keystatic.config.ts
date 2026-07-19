@@ -73,6 +73,11 @@ export default config({
           description: "One sentence shown on project cards",
           multiline: true,
         }),
+        description: fields.text({
+          label: "Description",
+          description: "Short summary shown under the project title on case-study pages",
+          multiline: true,
+        }),
         year: fields.text({ label: "Year" }),
         tags: fields.text({
           label: "Tags",

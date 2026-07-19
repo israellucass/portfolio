@@ -3,10 +3,11 @@
   "subtitle": "Game art inspired by Brazilian hand-painted sign typography.",
   "year": "2014",
   "tags": "Academic Project, Game Design, Game Art",
-  "cover": "/images/covers/brasilero-game.png",
+  "cover": "/images/covers/brasilero-game.webp",
   "featured": true,
   "categories": [
     "featured",
     "games"
-  ]
+  ],
+  "description": "2D platform game inspired by the brazilian typeface Brasilêro, developed as an academic project."
 }

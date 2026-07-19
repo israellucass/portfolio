@@ -12,6 +12,7 @@ export type Project = {
   slug: string;
   title: string;
   subtitle: string;
+  description?: string;
   year: string;
   tags: string;
   cover: string;

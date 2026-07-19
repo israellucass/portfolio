@@ -77,3 +77,15 @@ That overwrites meta + homepage from the current project JSON / index (use when 
 ```
 
 Blocks preserve the original page order (images and text interleaved).
+
+## Before publishing a project
+
+Run the structure audit (tier detection + checklist):
+
+```bash
+npm run audit:projects
+```
+
+Fix any failing rules for that project’s tier. See [`.cursor/skills/frontend-design/portfolio-context.md`](../../.cursor/skills/frontend-design/portfolio-context.md) for the full universal / case study / creative / gallery checklists.
+
+Reference routes: `/cubo` (UX), `/tutti-frutti-visual-identity` (creative), `/the-life-of-ratildo-flash-animation` (gallery).

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 
 function BackToTopIcon() {
   return (
@@ -24,31 +24,25 @@ export function BackToTop() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  return (
-    <>
-      <a
-        href="#top"
-        aria-label="Back to top"
-        aria-hidden={!visible}
-        tabIndex={visible ? 0 : -1}
-        className={`focus-ring fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-[var(--background)] text-[var(--text-primary)] shadow-[0_1px_8px_rgba(0,0,0,0.12)] transition-[opacity,transform,color] duration-200 hover:text-[var(--text-muted)] ${
-          visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-2 opacity-0"
-        }`}
-      >
-        <BackToTopIcon />
-      </a>
+  const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-      <section className="back-to-top-section clear-both px-[8%] pt-[60px] text-center md:pt-[60px]">
-        <a
-          href="#top"
-          className="focus-ring inline-flex items-center gap-2.5 rounded-sm text-lg text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)] md:text-lg"
-        >
-          <span aria-hidden className="inline-block">
-            ↑
-          </span>
-          Back to Top
-        </a>
-      </section>
-    </>
+  return (
+    <a
+      href="#top"
+      onClick={handleClick}
+      aria-label="Back to top"
+      aria-hidden={!visible}
+      tabIndex={visible ? 0 : -1}
+      className={`focus-ring fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-[var(--background)] text-[var(--text-primary)] shadow-[0_1px_8px_rgba(0,0,0,0.12)] transition-[opacity,transform,color] duration-200 hover:text-[var(--text-muted)] ${
+        visible
+          ? "translate-y-0 opacity-100"
+          : "pointer-events-none translate-y-2 opacity-0"
+      }`}
+    >
+      <BackToTopIcon />
+    </a>
   );
 }

@@ -5,7 +5,9 @@
   "year": "2014",
   "tags": "Product Design, Graphic Design, Illustration",
   "cover": "/images/covers/baralho-samba.jpg",
-  "categories": [],
+  "categories": [
+    "graphic"
+  ],
   "featured": false,
   "blocks": [
     {

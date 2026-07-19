@@ -35,6 +35,7 @@ export function CoverImage({
         sizes={sizes}
         className="cover__img cover__img--loaded"
         priority={priority}
+        loading={priority ? "eager" : "lazy"}
       />
     </>
   );

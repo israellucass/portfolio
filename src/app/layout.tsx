@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Caveat, Inter, Merriweather } from "next/font/google";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { Header } from "@/components/layout/Header";
 import { createRootMetadata } from "@/lib/metadata";
 import "./globals.css";
@@ -12,9 +13,17 @@ const fontBody = Inter({
   style: ["normal", "italic"],
 });
 
-/** Logo + project titles / display headings (Adonis → Space Grotesk) */
-const fontDisplay = Space_Grotesk({
+/** Project titles, mastheads, section labels */
+const fontDisplay = Merriweather({
   variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["300", "400", "700", "900"],
+  style: ["normal", "italic"],
+});
+
+/** Handwritten HMW post-it callouts — casual but readable */
+const fontHandwriting = Caveat({
+  variable: "--font-handwriting",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -29,13 +38,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fontBody.variable} ${fontDisplay.variable} h-full`}
+      className={`${fontBody.variable} ${fontDisplay.variable} ${fontHandwriting.variable} h-full`}
     >
       <body className="site-wrap min-h-full font-body antialiased">
         <a href="#main" className="skip-link focus-ring">
           Skip to content
         </a>
-        <Header />
+        <ErrorBoundary>
+          <Header />
+        </ErrorBoundary>
         <main
           id="main"
           tabIndex={-1}

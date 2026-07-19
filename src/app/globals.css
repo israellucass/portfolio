@@ -107,11 +107,11 @@ a {
   text-decoration: none;
 }
 
-/* Animated underline — draws in from the left on hover/focus */
+/* Animated underline — draws out from the center on hover/focus */
 .link-underline {
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0 100%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 0% 1.5px;
   padding-bottom: 1px;

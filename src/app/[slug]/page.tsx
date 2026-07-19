@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { ProjectBlocks } from "@/components/project/ProjectBlocks";
+import { ProjectHeroFold } from "@/components/project/ProjectHeroFold";
 import { createProjectMetadata } from "@/lib/metadata";
+import { splitProjectFold } from "@/lib/project-fold";
 import {
   getAllProjectSlugs,
-  getDisplayBlocks,
   getProjectBySlug,
 } from "@/lib/projects";
 import { site } from "@/data/site";
@@ -34,11 +36,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   if (!project) notFound();
 
-  const blocks = getDisplayBlocks(project.blocks);
+  const { fold, remainingBlocks } = splitProjectFold(project);
+  const blocks = remainingBlocks;
 
   return (
-    <PageLayout as="article" title={project.title} showBackToTop>
-      <ProjectBlocks blocks={blocks} title={project.title} />
+    <PageLayout as="article" showBackToTop>
+      <ProjectHeroFold title={project.title} fold={fold} />
+      <ErrorBoundary>
+        <ProjectBlocks blocks={blocks} title={project.title} />
+      </ErrorBoundary>
     </PageLayout>
   );
 }

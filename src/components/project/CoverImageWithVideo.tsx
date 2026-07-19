@@ -135,6 +135,7 @@ export function CoverImageWithVideo({
           loaded ? " cover__img--poster-hidden" : " cover__img--loaded"
         }`}
         priority={priority}
+        loading={priority ? "eager" : "lazy"}
       />
       {showVideo ? (
         <video

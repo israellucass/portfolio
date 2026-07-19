@@ -34,8 +34,10 @@ export function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [headerVisible, setHeaderVisible] = useState(true);
   const menuRef = useRef<HTMLDivElement>(null);
   const closeMenuRef = useRef<HTMLButtonElement>(null);
+  const lastScrollYRef = useRef(0);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -96,19 +98,60 @@ export function Header() {
   }, [menuOpen]);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
+    const topThreshold = 8;
+    const directionThreshold = 4;
+    let frameId = 0;
+
+    const update = () => {
+      frameId = 0;
+      const currentY = window.scrollY;
+      const previousY = lastScrollYRef.current;
+      const delta = currentY - previousY;
+
+      setScrolled(currentY > topThreshold);
+
+      if (menuOpen || currentY <= topThreshold) {
+        setHeaderVisible(true);
+      } else if (delta > directionThreshold) {
+        setHeaderVisible(false);
+      } else if (delta < -directionThreshold) {
+        setHeaderVisible(true);
+      }
+
+      lastScrollYRef.current = currentY;
+    };
+
+    const onScroll = () => {
+      if (frameId !== 0) {
+        return;
+      }
+      frameId = window.requestAnimationFrame(update);
+    };
+
+    update();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frameId !== 0) {
+        window.cancelAnimationFrame(frameId);
+      }
+    };
+  }, [menuOpen]);
+
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      "--site-header-offset",
+      headerVisible ? "var(--header-height)" : "0px",
+    );
+  }, [headerVisible]);
 
   return (
     <>
       <header
-        id="top"
-        className={`site-header fixed inset-x-0 top-0 z-50 flex h-14 items-center bg-[var(--background)] px-[5%] transition-shadow duration-300 md:px-[6%] lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-4 lg:px-[8%] ${
-          scrolled ? "shadow-[0_1px_3px_rgba(0,0,0,0.1)]" : ""
-        }`}
+        className={`site-header fixed inset-x-0 top-0 z-50 flex h-14 items-center bg-[var(--background)] px-[5%] md:px-[6%] lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-4 lg:px-[8%] ${
+          headerVisible ? "" : "site-header--hidden"
+        } ${scrolled && headerVisible ? "shadow-[0_1px_3px_rgba(0,0,0,0.1)]" : ""}`}
+        {...(!headerVisible && !menuOpen ? { inert: true } : {})}
       >
         <Link
           href="/"
@@ -126,10 +169,10 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className={`focus-ring font-body whitespace-nowrap text-sm leading-5 transition-colors xl:text-base xl:leading-6 ${
+                    className={`focus-ring link-underline font-body whitespace-nowrap text-sm leading-5 xl:text-base xl:leading-6 ${
                     isActive(pathname, item.href)
                       ? "font-bold text-[var(--text-primary)]"
-                      : "font-normal text-[var(--text-primary)] hover:text-[var(--text-muted)] hover:underline"
+                      : "font-normal text-[var(--text-primary)]"
                   }`}
                 >
                   {item.label}
@@ -185,7 +228,7 @@ export function Header() {
               <div key={item.href} className="pb-[30px]">
                 <Link
                   href={item.href}
-                  className={`focus-ring font-body text-[22px] leading-8 ${
+                  className={`focus-ring link-underline font-body text-[22px] leading-8 ${
                     isActive(pathname, item.href)
                       ? "font-bold text-[var(--text-primary)]"
                       : "font-normal text-[var(--text-primary)]"

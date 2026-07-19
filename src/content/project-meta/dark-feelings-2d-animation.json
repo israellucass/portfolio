@@ -8,5 +8,6 @@
   "categories": [
     "featured",
     "motion"
-  ]
+  ],
+  "description": "A short 2D pixel art animation employing frame-by-frame technique, developed as an academic project."
 }

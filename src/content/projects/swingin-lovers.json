@@ -5,7 +5,9 @@
   "year": "2013",
   "tags": "Editorial Design, Graphic Design",
   "cover": "/images/covers/swingin-lovers.jpg",
-  "categories": [],
+  "categories": [
+    "graphic"
+  ],
   "featured": false,
   "blocks": [
     {

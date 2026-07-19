@@ -10,6 +10,10 @@ type BlockRendererProps = {
   blockIndex: string;
   title: string;
   onImageClick: (src: string, lightboxSrc: string) => void;
+  /** Rich text/images inside a tree column — no page-level padding or reading width */
+  inTree?: boolean;
+  /** Constrain image padding for image+copy feature rows */
+  compactImage?: boolean;
 };
 
 export function BlockRenderer({
@@ -17,11 +21,25 @@ export function BlockRenderer({
   blockIndex,
   title,
   onImageClick,
+  inTree = false,
+  compactImage = false,
 }: BlockRendererProps) {
   if (block.type === "tree") {
+    const hasImage = block.columns.some((column) =>
+      column.blocks.some((child) => child.type === "image"),
+    );
+    const hasText = block.columns.some((column) =>
+      column.blocks.some(
+        (child) => child.type === "richtext" || child.type === "html",
+      ),
+    );
+    const mediaCopy = hasImage && hasText;
+
     return (
       <div
-        className={`tree-wrapper tree-${blockIndex} valign-top flex w-full flex-col lg:flex-row lg:items-start`}
+        className={`tree-wrapper tree-${blockIndex} valign-top flex w-full flex-col lg:flex-row lg:items-start${
+          mediaCopy ? " tree-wrapper--media-copy" : ""
+        }`}
       >
         {block.columns.map((column, columnIndex) => (
           <div
@@ -36,6 +54,8 @@ export function BlockRenderer({
                 blockIndex={`${blockIndex}-${columnIndex}-${childIndex}`}
                 title={title}
                 onImageClick={onImageClick}
+                inTree
+                compactImage={mediaCopy}
               />
             ))}
           </div>
@@ -53,6 +73,7 @@ export function BlockRenderer({
         title={title}
         lightboxSrc={lightboxSrc}
         onImageClick={onImageClick}
+        compact={compactImage}
       />
     );
   }
@@ -64,13 +85,22 @@ export function BlockRenderer({
   }
 
   if (block.type === "richtext") {
-    return <RichText paragraphs={block.paragraphs} />;
+    return (
+      <RichText
+        paragraphs={block.paragraphs}
+        variant={inTree ? "nested" : "default"}
+      />
+    );
   }
 
   if (block.type === "html") {
     return (
       <div
-        className="project-module-text project-html mb-0 w-full px-[8%] pb-10 text-[var(--text-primary)]"
+        className={`project-module-text project-html mb-0 w-full pb-10 text-[var(--text-primary)]${
+          inTree
+            ? " project-module-text--nested"
+            : " project-module-text--reading px-[8%]"
+        }`}
         dangerouslySetInnerHTML={{ __html: block.content }}
       />
     );

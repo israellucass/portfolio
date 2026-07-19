@@ -92,9 +92,14 @@ export function createCategoryMetadata(
 
 export function createProjectMetadata(project: Project): Metadata {
   const title = `${site.title} - ${project.title}`;
+  const summary = project.description?.trim() || project.subtitle?.trim();
   const description = project.tags
-    ? `${project.title} (${project.year}). ${project.tags}.`
-    : `${project.title} (${project.year}). ${site.description}`;
+    ? summary
+      ? `${summary} ${project.tags}.`
+      : `${project.title} (${project.year}). ${project.tags}.`
+    : summary
+      ? `${summary} (${project.year}).`
+      : `${project.title} (${project.year}). ${site.description}`;
 
   return {
     title,
