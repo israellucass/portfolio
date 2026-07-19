@@ -8,11 +8,15 @@
   --text-muted: #666666;
   --text-min: 12px;
   --font-body: "Inter", sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
+  --font-display: "Merriweather", serif;
   --font-logo: var(--font-display);
   --font-sans: var(--font-body);
   --header-height: 3.5rem;
   --feature-fold-inset: 24px;
+  --site-header-offset: var(--header-height);
+  --project-phase-label-color: #9a6700;
+  --project-phase-subtitle-color: #666666;
+  --accent-gold-accessible: #9a6700;
 }
 
 @theme inline {

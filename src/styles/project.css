@@ -720,3 +720,322 @@
     line-height: 19px;
   }
 }
+
+/* ── RichText: Phase headings (PHASE I, PHASE II …) ──────────── */
+.project-html .project-phase-heading {
+  text-align: center;
+  margin: 48px 0 8px;
+}
+
+.project-html .project-phase-heading__label {
+  font-family: var(--font-display), serif;
+  font-size: clamp(14px, 2.5vw, 20px);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--project-phase-label-color);
+  line-height: 1.3;
+}
+
+.project-html .project-phase-heading__subtitle {
+  font-family: var(--font-body), sans-serif;
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 400;
+  color: var(--project-phase-subtitle-color);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+.project-html .project-phase-heading--handoff {
+  position: absolute !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+/* ── RichText: Design question (How might we …) ──────────────── */
+.project-html .project-design-question {
+  font-family: var(--font-handwriting, "Caveat"), cursive;
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--project-phase-label-color);
+  margin: 32px 0 16px;
+  padding: 16px 20px;
+  background: #fef7e0;
+  border-radius: 4px;
+  max-width: 36rem;
+}
+
+/* ── RichText: Section headings (creative showcase) ──────────── */
+.project-html .project-section-heading {
+  font-family: var(--font-display), serif;
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+  margin-top: 36px;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.project-html .project-subsection-heading {
+  font-family: var(--font-display), serif;
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-primary);
+  margin-top: 28px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.project-html .project-section-label {
+  font-family: var(--font-display), serif;
+  font-size: clamp(13px, 1.8vw, 16px);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+/* ── RichText: Module width variants ──────────────────────────── */
+.project-module-text--reading {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-module-text--nested {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ── BlockRenderer: Tree media+copy ───────────────────────────── */
+.tree-wrapper--media-copy {
+  gap: 24px;
+}
+
+.tree-wrapper--media-copy .project-module-image {
+  padding-bottom: 0;
+}
+
+.tree-wrapper--media-copy .project-module-image img {
+  max-width: 100%;
+}
+
+/* ── Header: auto-hide on scroll down ─────────────────────────── */
+.site-header {
+  transform: translateY(0);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.3s ease;
+}
+
+.site-header--hidden {
+  transform: translateY(-100%);
+}
+
+/* ── ProjectHeroFold ──────────────────────────────────────────── */
+.project-fold {
+  margin-bottom: 0;
+}
+
+.project-fold__header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 8% 0;
+}
+
+.project-fold__description {
+  font-family: var(--font-body), sans-serif;
+  font-size: clamp(15px, 2vw, 17px);
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 48rem;
+}
+
+.project-fold__hero {
+  max-width: 960px;
+  margin: 24px auto 0;
+  padding: 0 8%;
+}
+
+.project-fold__details {
+  max-width: 960px;
+  margin: 24px auto 0;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .project-fold__details {
+    flex-direction: row;
+  }
+
+  .project-fold__intro {
+    flex: 5;
+  }
+
+  .project-fold__meta {
+    flex: 3;
+  }
+}
+
+.project-fold__richtext {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.project-fold__meta-text {
+  font-family: var(--font-body), sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.project-fold__meta-text > div {
+  margin-bottom: 0.5rem;
+}
+
+/* ── ProjectReveal (scroll-reveal) ────────────────────────────── */
+.project-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.5s ease var(--reveal-delay, 0ms),
+    transform 0.5s ease var(--reveal-delay, 0ms);
+}
+
+.project-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── MetricTooltip ────────────────────────────────────────────── */
+.project-metric-tooltip {
+  position: relative;
+  display: inline;
+  cursor: help;
+}
+
+.project-metric-tooltip__term {
+  border-bottom: 1px dashed var(--project-phase-label-color);
+  color: var(--project-phase-label-color);
+  font-weight: 600;
+}
+
+.project-metric-tooltip__panel {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 260px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #1f2937;
+  color: #f9fafb;
+  font-family: var(--font-body), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  z-index: 100;
+}
+
+.project-metric-tooltip:hover .project-metric-tooltip__panel,
+.project-metric-tooltip:focus-within .project-metric-tooltip__panel {
+  opacity: 1;
+}
+
+.project-metric-tooltip__panel::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1f2937;
+}
+
+/* ── ProjectPhaseStickyNav ────────────────────────────────────── */
+.project-phase-sticky {
+  position: sticky;
+  top: var(--site-header-offset, 56px);
+  z-index: 40;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  margin-bottom: -2.5rem;
+  height: 0;
+}
+
+.project-phase-sticky__inner {
+  display: inline-flex;
+  align-items: center;
+  background: var(--background);
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 6px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  pointer-events: auto;
+  transform-origin: top center;
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.project-phase-sticky__inner--animating {
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.project-phase-sticky__line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.project-phase-sticky__label {
+  font-weight: 700;
+  color: var(--project-phase-label-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.project-phase-sticky__subtitle {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* ── main-text default ────────────────────────────────────────── */
+.project-html .main-text {
+  font-family: var(--font-body), sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+  color: var(--text-primary);
+}
+
+.project-html .main-text + .main-text {
+  margin-top: 16px;
+}
