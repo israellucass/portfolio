@@ -56,4 +56,4 @@ Keep the register conversational and tuned: plain verbs, sentence case, no fille
 
 ## This repository
 
-When working on **this** portfolio, read `portfolio-context.md` in this folder first. Visual parity with the migrated Adobe site takes precedence over redesign unless the user explicitly asks to reshape the aesthetic.
+When working on **this** portfolio, read `portfolio-context.md` in this folder first. Visual parity with isrrr.com takes precedence over redesign unless the user explicitly asks to reshape the aesthetic.

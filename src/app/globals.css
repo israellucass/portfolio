@@ -6,7 +6,7 @@
   --surface: #ffffff;
   --text-primary: #14191d;
   --text-muted: #666666;
-  --text-min: 12px;
+  --text-min: 12px; /* Floor for --type-2xs and scraped inline sizes */
   --font-body: "Inter", sans-serif;
   --font-display: "Merriweather", serif;
   --font-logo: var(--font-display);
@@ -17,6 +17,51 @@
   --project-phase-label-color: #9a6700;
   --project-phase-subtitle-color: #666666;
   --accent-gold-accessible: #9a6700;
+
+  /*
+   * Modular type scale — Major Third (×1.25), base 16px.
+   * Stepped chrome (Header, masthead, About, covers) at 768 / 1024.
+   * Fluid editorial (fold title/description, phase/section/HMW) uses clamp(token, vw, token).
+   *
+   * Roles → tokens:
+   *   logo              display  md → lg @ ≥1024, uppercase
+   *   nav               body     md (desktop)
+   *   nav-mobile        body     xl
+   *   page-title        display  2xl → 3xl @ ≥1024
+   *   fold-title        display  clamp(xl…2xl) → 3xl @ ≥1024
+   *   fold-description  body     clamp(subtitle…lg)
+   *   body              body     md (About: subtitle @ ≥768)
+   *   label / TOC       body     2xs (12px floor)
+   *   cover-title       display  md → lg (grid); larger in feature fold
+   *   cover-spotlight   display  subtitle → xl → 2xl (feature main)
+   *   cover-subtitle    body     sm → md (grid); scales per tier
+   */
+  --type-scale-ratio: 1.25;
+  --type-scale-base: 1rem;
+  --type-2xs: var(--text-min);
+  --type-xs: max(var(--text-min), calc(var(--type-scale-base) / var(--type-scale-ratio)));
+  --type-sm: 0.875rem; /* 14px — cover grid floor */
+  --type-toc: var(--type-2xs);
+  --type-md: var(--type-scale-base);
+  --type-subtitle: calc(var(--type-md) * 1.125);
+  --type-lg: calc(var(--type-md) * var(--type-scale-ratio));
+  --type-xl: calc(var(--type-lg) * var(--type-scale-ratio));
+  --type-2xl: calc(var(--type-xl) * var(--type-scale-ratio));
+  --type-3xl: calc(var(--type-2xl) * var(--type-scale-ratio));
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  /* Fluid gutters — 16px min, scales with viewport, 40px max */
+  --gutter-inline: clamp(1rem, 4vw, 2.5rem);
+  --gutter-inline-tight: clamp(0.5rem, 2vw, 1rem);
+
+  /* Case-study block rhythm */
+  --project-design-question-margin-before: 2.5rem;
+  --project-design-question-margin-after: 3rem;
+  --project-phase-heading-margin-before: 3rem;
+  --project-phase-heading-margin-after: 0.25rem;
 }
 
 @theme inline {
@@ -65,8 +110,8 @@ html {
   background: var(--background);
   color: var(--text-primary);
   font-family: var(--font-body), sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: var(--type-xs);
+  line-height: var(--leading-snug);
   border: 2px solid var(--text-primary);
   border-radius: 0.125rem;
 }
@@ -82,7 +127,7 @@ body {
   font-size: 16px;
 }
 
-/* Floor for scraped Adobe inline sizes below accessible minimum */
+/* Floor for scraped project HTML inline sizes below accessible minimum */
 .project-html [style*="font-size:8px"],
 .project-html [style*="font-size: 8px"],
 .project-html [style*="font-size:9px"],
@@ -142,9 +187,62 @@ a {
   }
 }
 
+.link-external {
+  display: inline;
+}
+
+.link-external__icon {
+  display: inline;
+  vertical-align: -0.15em;
+  width: 0;
+  height: 0.9em;
+  margin-left: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    width 0.2s ease,
+    margin-left 0.2s ease;
+}
+
+.link-external:hover .link-external__icon,
+.link-external:focus-visible .link-external__icon {
+  width: 0.9em;
+  margin-left: 0.25em;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-external__icon {
+    width: 0.9em;
+    margin-left: 0.25em;
+    opacity: 1;
+    transition: none;
+  }
+}
+
+.pf-nav-social a {
+  display: inline-flex;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.pf-nav-social a:hover,
+.pf-nav-social a:focus-visible {
+  color: var(--text-muted);
+}
+
 .site-wrap,
 .site-content {
   width: 100%;
+}
+
+.px-gutter {
+  padding-inline: var(--gutter-inline);
+}
+
+.inset-inline-end-gutter {
+  inset-inline-end: var(--gutter-inline);
 }
 
 .skeleton-shimmer {

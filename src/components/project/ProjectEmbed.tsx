@@ -25,6 +25,41 @@ function isAdobeXdEmbed(url: string): boolean {
   }
 }
 
+function ExternalLinkIcon() {
+  return (
+    <svg
+      className="project-module-embed__external-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      <path d="M15 3h6v6" />
+      <path d="M10 14 21 3" />
+    </svg>
+  );
+}
+
+function EmbedFallbackLink({ href }: { href: string }) {
+  return (
+    <p className="project-module-embed__fallback">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-module-embed__fallback-link link-underline"
+      >
+        Or open in a new tab
+        <ExternalLinkIcon />
+      </a>
+    </p>
+  );
+}
+
 export function ProjectEmbed({ src, localSrc, title }: ProjectEmbedProps) {
   if (localSrc) {
     return (
@@ -51,74 +86,40 @@ export function ProjectEmbed({ src, localSrc, title }: ProjectEmbedProps) {
   if (isXd) {
     return (
       <div className="project-module-embed">
-        <div
-          className="embed-dimensions"
-          style={{ maxWidth: 375, maxHeight: 812, margin: "0 auto" }}
-        >
-          <div
-            className="embed-aspect-ratio"
-            style={{
-              paddingBottom: "216.53%",
-              position: "relative",
-              height: 0,
-            }}
-          >
+        <div className="project-module-embed__prototype">
+          <div className="project-module-embed__frame project-module-embed__frame--xd">
             <iframe
               src={src}
               title={`${title} prototype`}
-              className="embed-content"
+              className="project-module-embed__media embed-content"
               allowFullScreen
               loading="eager"
               referrerPolicy="no-referrer-when-downgrade"
               sandbox={XD_EMBED_SANDBOX}
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                border: 0,
-              }}
             />
           </div>
+          <EmbedFallbackLink href={src} />
         </div>
-        <p className="project-module-embed__fallback">
-          <a
-            href={src}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-underline"
-          >
-            Open prototype in a new tab
-          </a>
-        </p>
       </div>
     );
   }
 
   return (
     <div className="project-module-embed">
-      <div className="project-module-embed__frame project-module-embed__frame--video">
-        <iframe
-          src={src}
-          title={`${title} embed`}
-          className="project-module-embed__media embed-content"
-          allowFullScreen
-          loading="eager"
-          referrerPolicy="no-referrer-when-downgrade"
-          sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"
-        />
+      <div className="project-module-embed__prototype">
+        <div className="project-module-embed__frame project-module-embed__frame--video">
+          <iframe
+            src={src}
+            title={`${title} embed`}
+            className="project-module-embed__media embed-content"
+            allowFullScreen
+            loading="eager"
+            referrerPolicy="no-referrer-when-downgrade"
+            sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"
+          />
+        </div>
+        <EmbedFallbackLink href={src} />
       </div>
-      <p className="project-module-embed__fallback">
-        <a
-          href={src}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link-underline"
-        >
-          Open embed in a new tab
-        </a>
-      </p>
     </div>
   );
 }

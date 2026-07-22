@@ -1,6 +1,6 @@
 # Israel Silva — Portfolio
 
-A self-hosted replica of [isrrr.com](https://isrrr.com/), migrated from Adobe Portfolio to Next.js.
+A self-hosted Next.js portfolio based on [isrrr.com](https://isrrr.com/).
 
 ## What's included
 
@@ -53,7 +53,7 @@ npm start
 
 The site works on any platform that supports Next.js (Netlify, Cloudflare Pages, etc.).
 
-## Full archival (before losing Adobe access)
+## Full archival (from the live site)
 
 Run this once to capture everything still on the live site:
 
@@ -64,8 +64,8 @@ npm run archive
 This saves:
 - Raw HTML snapshots of all pages → `archive/html/`
 - Site metadata (title, OG tags, analytics ID) → `archive/site-meta.json`
-- Favicon, OG image, apple-touch icon, Adobe theme CSS → `public/images/site/`
-- Embed page snapshots (Adobe XD, Vimeo) → `archive/embeds/`
+- Favicon, OG image, apple-touch icon, archived theme CSS → `public/images/site/`
+- Embed page snapshots (prototypes, Vimeo) → `archive/embeds/`
 - Vimeo video locally → `public/videos/`
 - Embed inventory + manual steps → `archive/embeds.json`
 
@@ -83,7 +83,7 @@ python3 scripts/scrape.py
 | About page, nav, social links | In `src/data/site.ts` | Done |
 | Favicon / OG image | In `public/images/site/` | Done |
 | Vimeo (Cowboys vs Cyborgs) | Local MP4 | Done after `npm run archive` |
-| **Adobe XD prototypes** (CUBO, Smart Financeiro) | External embeds | Export as MP4/PDF from Adobe XD before account closes |
+| **Prototype embeds** (CUBO, Smart Financeiro) | External embeds | Optionally export as MP4/PDF for offline/`localSrc` |
 | Mega.nz game downloads (Brasilero) | External links | Verify links work; re-host files if dead |
 
 ## Updating content
@@ -91,7 +91,7 @@ python3 scripts/scrape.py
 - **Card metadata / homepage layout** — prefer `/keystatic` (writes `project-meta/` + `homepage.json`)
 - **Case-study bodies** — still in `src/content/projects/{slug}.json` (`blocks`); scrape or edit carefully
 
-To refresh bodies from the live Adobe site:
+To refresh bodies from the live site:
 
 ```bash
 python3 scripts/scrape.py
@@ -107,12 +107,12 @@ npm run download-images
 
 Then rebuild and redeploy.
 
-## Custom domain migration from Adobe
+## Custom domain
 
 1. Deploy this site to your new host
 2. Point your new domain DNS to the host
 3. When ready, update DNS for `isrrr.com` or keep both domains pointing to the new site
-4. Optionally add redirects from old Adobe URLs to new ones in `next.config.ts`
+4. Optionally add redirects from legacy URLs to new ones in `next.config.ts`
 
 ## Project structure
 
@@ -133,7 +133,7 @@ scripts/
   scrape.py                 # Content migration
   extract-project-meta.ts   # Seed/refresh Keystatic meta from project JSON
   download_images.py        # Localize CDN images
-  archive_site.py           # Full site backup before Adobe access ends
+  archive_site.py           # Full site backup from the live origin
   prune_dead_embeds.py      # Remove dead embed blocks from JSON
 keystatic.config.ts         # Admin schema (Homepage + Projects)
 ```
@@ -141,4 +141,4 @@ keystatic.config.ts         # Admin schema (Homepage + Projects)
 ## Notes
 
 - Project images are stored locally under `public/images/` (covers in `covers/`, page assets in `assets/`).
-- Adobe XD embeds require an internet connection to display prototypes.
+- Prototype embeds require an internet connection to display when using remote URLs.

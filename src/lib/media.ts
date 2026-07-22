@@ -9,5 +9,9 @@ export function getCoverVideoPath(cover: string): string | undefined {
 
 /** Companion MP4 for a WebP project image src. */
 export function getImageVideoPath(src: string): string | undefined {
+  if (src.includes("/cowboys-brief/")) {
+    return undefined;
+  }
+
   return getCoverVideoPath(src);
 }

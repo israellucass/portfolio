@@ -10,14 +10,14 @@ type ProjectHeroFoldProps = {
 
 export function ProjectHeroFold({ title, fold }: ProjectHeroFoldProps) {
   return (
-    <section className="project-fold" aria-label="Project overview">
+    <section className="project-fold" id="about-the-project" aria-label="Project overview">
       <ProjectReveal>
         <header className="project-fold__header">
-          <h1 className="font-display text-[28px] font-bold leading-9 text-[var(--text-primary)] md:text-[32px] md:leading-10 lg:text-[40px] lg:leading-[48px]">
+          <h1 className="project-fold__title">
             {title}
           </h1>
           {fold.description ? (
-            <p className="project-fold__description mt-3 max-w-3xl text-base leading-7 text-[var(--text-muted)] md:text-[17px]">
+            <p className="project-fold__description mt-3 max-w-3xl">
               {fold.description}
             </p>
           ) : null}
@@ -40,17 +40,17 @@ export function ProjectHeroFold({ title, fold }: ProjectHeroFoldProps) {
         </ProjectReveal>
       ) : null}
 
-      <div className="project-fold__details tree-wrapper valign-top w-full">
+      <div className="project-fold__details w-full">
         {fold.intro ? (
           <ProjectReveal
-            className="project-fold__intro tree-child-wrapper min-w-0"
+            className="project-fold__intro min-w-0"
             delay={120}
           >
             <RichText paragraphs={fold.intro.paragraphs} variant="fold" />
           </ProjectReveal>
         ) : null}
         <ProjectReveal
-          className="project-fold__meta tree-child-wrapper min-w-0"
+          className="project-fold__meta min-w-0"
           delay={fold.intro ? 180 : 120}
         >
           <aside aria-label="Project details">

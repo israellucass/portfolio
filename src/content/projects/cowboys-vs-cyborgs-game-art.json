@@ -15,13 +15,14 @@
       "type": "tree",
       "columns": [
         {
-          "flex": 1,
+          "flex": 5,
           "blocks": [
             {
               "type": "richtext",
               "paragraphs": [
                 {
                   "kind": "paragraph",
+                  "align": "left",
                   "inlines": [
                     {
                       "text": "Cowboys VS Cyborgs",
@@ -29,32 +30,26 @@
                         "bold",
                         "display"
                       ],
-                      "color": "#14191d"
+                      "color": "#8b5a2b"
                     },
                     {
-                      "text": " is a web-based game developed as part of an academic project, inspired by the movie ",
-                      "color": "#14191d"
+                      "text": " is a web-based game developed as part of an academic project, inspired by the movie "
                     },
                     {
                       "text": "Cowboys & Aliens",
-                      "color": "#14191d",
                       "href": "http://www.imdb.com/title/tt0409847/"
                     },
                     {
-                      "text": ", and designed to combine classic tower defense mechanics with thematic elements from the film.\n",
-                      "color": "#14191d"
+                      "text": ", and designed to combine classic tower defense mechanics with thematic elements from the film.\n"
                     }
                   ]
                 },
                 {
                   "kind": "paragraph",
+                  "align": "left",
                   "inlines": [
                     {
-                      "text": "This project was developed by a multidisciplinary team of students from Art and Animation, Game Design, and Software Development, aiming to create an engaging gameplay experience that blends sci-fi and Western aesthetics.",
-                      "color": "#14191d"
-                    },
-                    {
-                      "text": "\n"
+                      "text": "This project was developed by a multidisciplinary team of students from Art and Animation, Game Design, and Software Development, aiming to create an engaging gameplay experience that blends sci-fi and Western aesthetics."
                     }
                   ]
                 }
@@ -63,7 +58,7 @@
           ]
         },
         {
-          "flex": 1,
+          "flex": 3,
           "blocks": [
             {
               "type": "richtext",
@@ -76,15 +71,7 @@
                       "color": "#888888"
                     },
                     {
-                      "text": "\n",
-                      "color": "#17252b"
-                    },
-                    {
-                      "text": "10 weeks",
-                      "color": "#14191d"
-                    },
-                    {
-                      "text": "\n"
+                      "text": "\n10 weeks"
                     }
                   ]
                 },
@@ -96,29 +83,19 @@
                       "color": "#888888"
                     },
                     {
-                      "text": "\n",
-                      "color": "#17252b"
-                    },
-                    {
-                      "text": "Unit Artist",
-                      "color": "#14191d"
-                    },
-                    {
-                      "text": "\n"
+                      "text": "\nUnit Artist"
                     }
                   ]
                 },
                 {
                   "kind": "paragraph",
-                  "align": "left",
                   "inlines": [
                     {
                       "text": "Team",
                       "color": "#888888"
                     },
                     {
-                      "text": "\n",
-                      "color": "#17252b"
+                      "text": "\n"
                     },
                     {
                       "text": "Juha Salmijärvi / ",
@@ -132,15 +109,8 @@
                       "color": "#14191d"
                     },
                     {
-                      "text": "\n",
-                      "color": "#14191d"
-                    }
-                  ]
-                },
-                {
-                  "kind": "paragraph",
-                  "align": "left",
-                  "inlines": [
+                      "text": "\n"
+                    },
                     {
                       "text": "Louise Still / ",
                       "color": "#14191d"
@@ -151,13 +121,10 @@
                         "italic"
                       ],
                       "color": "#14191d"
-                    }
-                  ]
-                },
-                {
-                  "kind": "paragraph",
-                  "align": "left",
-                  "inlines": [
+                    },
+                    {
+                      "text": "\n"
+                    },
                     {
                       "text": "Mark Restrick / ",
                       "color": "#14191d"
@@ -168,13 +135,10 @@
                         "italic"
                       ],
                       "color": "#14191d"
-                    }
-                  ]
-                },
-                {
-                  "kind": "paragraph",
-                  "align": "left",
-                  "inlines": [
+                    },
+                    {
+                      "text": "\n"
+                    },
                     {
                       "text": "Oliver Morrison / ",
                       "color": "#14191d"
@@ -185,13 +149,10 @@
                         "italic"
                       ],
                       "color": "#14191d"
-                    }
-                  ]
-                },
-                {
-                  "kind": "paragraph",
-                  "align": "left",
-                  "inlines": [
+                    },
+                    {
+                      "text": "\n"
+                    },
                     {
                       "text": "Stephen McCallion / ",
                       "color": "#14191d"
@@ -202,6 +163,9 @@
                         "italic"
                       ],
                       "color": "#14191d"
+                    },
+                    {
+                      "text": "\n"
                     }
                   ]
                 }
@@ -213,12 +177,117 @@
     },
     {
       "type": "image",
-      "src": "/images/assets/bdbb56f532439c7d4770abd9_rw_1920.png",
-      "lightboxSrc": "/images/assets/bdbb56f532439c7d4770abd9.png"
+      "src": "/images/assets/cowboys-brief/logo_rw_1920.webp",
+      "lightboxSrc": "/images/assets/cowboys-brief/logo.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "BRIEFING",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#8b5a2b"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Develop a tower defense game for a cinema chain in a web-browser platform. Should take into account the target audience age range. Must contain references to the cinema. Work as a team with students from Game Design and Software Development courses.\n"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "image",
-      "src": "/images/assets/9c6c3accc6de63875a95186f_rw_1920.png",
+      "src": "/images/assets/cowboys-brief/cactus_rw_1200.webp",
+      "lightboxSrc": "/images/assets/cowboys-brief/cactus.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "WHAT IS A TOWER DEFENSE GAME?",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#8b5a2b"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The goal of a tower defense game is to stop enemies from crossing the play area by building towers that attack enemies as they pass. Enemies and towers usually have varied abilities and costs. When an enemy is defeated, the player earns points, which are used to buy/upgrade towers.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/cowboys-brief/towers_rw_1920.webp",
+      "lightboxSrc": "/images/assets/cowboys-brief/towers.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "GAME DEVELOPMENT",
+              "marks": [
+                "bold",
+                "display"
+              ],
+              "color": "#8b5a2b"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "My role in the project was to create the enemy creeps. From the concept art to game assets, I created sprite sheets for each one of the cyborgs. There were 4 different types: regular, fast, tanky and boss.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/cowboys-brief/wagon_rw_1920.webp",
+      "lightboxSrc": "/images/assets/cowboys-brief/wagon.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/9c6c3accc6de63875a95186f_rw_1920.webp",
       "lightboxSrc": "/images/assets/9c6c3accc6de63875a95186f.png"
     },
     {
@@ -228,7 +297,7 @@
     },
     {
       "type": "image",
-      "src": "/images/assets/8c7ca14329afd284ed0dae04_rw_1920.png",
+      "src": "/images/assets/8c7ca14329afd284ed0dae04_rw_1920.webp",
       "lightboxSrc": "/images/assets/8c7ca14329afd284ed0dae04.png"
     },
     {
@@ -253,7 +322,7 @@
     },
     {
       "type": "image",
-      "src": "/images/assets/4f081ea4c9a9146b89c74592_rw_1920.png",
+      "src": "/images/assets/4f081ea4c9a9146b89c74592_rw_1920.webp",
       "lightboxSrc": "/images/assets/4f081ea4c9a9146b89c74592.png"
     },
     {
@@ -263,7 +332,7 @@
     },
     {
       "type": "image",
-      "src": "/images/assets/9e7d1091bbc58ed5ec1900d0_rw_1920.png",
+      "src": "/images/assets/9e7d1091bbc58ed5ec1900d0_rw_1920.webp",
       "lightboxSrc": "/images/assets/9e7d1091bbc58ed5ec1900d0.png"
     }
   ]

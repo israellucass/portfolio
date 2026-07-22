@@ -13,7 +13,7 @@
   "blocks": [
     {
       "type": "image",
-      "src": "/images/assets/38cf91c9-31b1-4e76-9fc5-0c3464a141e3_rw_1920.jpg",
+      "src": "/images/assets/38cf91c9-31b1-4e76-9fc5-0c3464a141e3_rw_1920.webp",
       "lightboxSrc": "/images/assets/38cf91c9-31b1-4e76-9fc5-0c3464a141e3.jpg"
     },
     {
@@ -349,7 +349,7 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/63159581-4d3a-47b6-a113-093ea4bda332_rw_1200.png",
+              "src": "/images/assets/63159581-4d3a-47b6-a113-093ea4bda332_rw_1200.webp",
               "lightboxSrc": "/images/assets/63159581-4d3a-47b6-a113-093ea4bda332.png"
             }
           ]
@@ -408,7 +408,7 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/8f69a297-1152-49bf-9c6f-2506f705fb5c_rw_1200.png",
+              "src": "/images/assets/8f69a297-1152-49bf-9c6f-2506f705fb5c_rw_1200.webp",
               "lightboxSrc": "/images/assets/8f69a297-1152-49bf-9c6f-2506f705fb5c.png"
             }
           ]
@@ -472,7 +472,7 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/4c5163ab-d5de-4e1a-be53-39c5e1b4002e_rw_1200.png",
+              "src": "/images/assets/4c5163ab-d5de-4e1a-be53-39c5e1b4002e_rw_1200.webp",
               "lightboxSrc": "/images/assets/4c5163ab-d5de-4e1a-be53-39c5e1b4002e.png"
             }
           ]

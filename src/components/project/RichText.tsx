@@ -1,16 +1,19 @@
 import { MetricTooltip } from "@/components/project/MetricTooltip";
 import { getMetricTooltip } from "@/lib/project-metric-tooltips";
+import { isFoldDetailLabel } from "@/lib/project-fold";
 import {
   isPhaseHeadingParagraph,
   parsePhaseHeading,
 } from "@/lib/project-phases";
+import { isDesignQuestion } from "@/lib/design-question";
+import { getHeadingId } from "@/lib/project-headings";
 import type { RichTextInline, RichTextParagraph } from "@/types/richtext";
 
 const SIZE_CLASS: Record<16 | 20 | 24 | 32, string> = {
-  16: "text-base leading-6",
-  20: "text-xl leading-8",
-  24: "text-2xl leading-9",
-  32: "text-[32px] leading-10",
+  16: "project-type-md",
+  20: "project-type-lg",
+  24: "project-type-xl",
+  32: "project-type-2xl",
 };
 
 function resolveRichTextColor(color?: string): string | undefined {
@@ -32,12 +35,17 @@ function resolveRichTextColor(color?: string): string | undefined {
   }
 }
 
-function renderInline(inline: RichTextInline, key: string) {
+function renderInline(
+  inline: RichTextInline,
+  key: string,
+  extraClassName?: string,
+) {
   const marks = inline.marks ?? [];
   const className = [
     marks.includes("bold") ? "font-bold" : "",
     marks.includes("italic") ? "italic" : "",
     marks.includes("display") ? "font-display" : "",
+    extraClassName ?? "",
   ]
     .filter(Boolean)
     .join(" ");
@@ -88,14 +96,6 @@ function renderInline(inline: RichTextInline, key: string) {
   );
 }
 
-function isDesignQuestion(paragraph: RichTextParagraph): boolean {
-  const inlineText = paragraph.inlines.map((inline) => inline.text).join("");
-  return (
-    (paragraph.kind === "paragraph" || paragraph.kind === "heading") &&
-    /how might we/i.test(inlineText)
-  );
-}
-
 function isPhaseHeading(paragraph: RichTextParagraph): boolean {
   return isPhaseHeadingParagraph(paragraph);
 }
@@ -136,6 +136,86 @@ function isCreativeSectionHeading(paragraph: RichTextParagraph): boolean {
   return /^[A-Z0-9\s&.–\-/]+$/.test(inlineText);
 }
 
+type TeamMember = {
+  name: RichTextInline;
+  role?: RichTextInline;
+};
+
+function splitInlinesByNewline(inlines: RichTextInline[]): RichTextInline[][] {
+  const rows: RichTextInline[][] = [[]];
+
+  for (const inline of inlines) {
+    const parts = inline.text.split("\n");
+    parts.forEach((part, partIndex) => {
+      if (partIndex > 0) {
+        rows.push([]);
+      }
+      if (!part) {
+        return;
+      }
+      rows[rows.length - 1]!.push({ ...inline, text: part });
+    });
+  }
+
+  return rows.filter((row) =>
+    row.some((inline) => inline.text.replace(/\s|\/+/g, "").length > 0),
+  );
+}
+
+function parseTeamMemberRow(row: RichTextInline[]): TeamMember | null {
+  const cleaned = row
+    .map((inline) => ({
+      ...inline,
+      text: inline.text.replace(/^\s*\/\s*|\s*\/\s*$/g, "").trim(),
+    }))
+    .filter((inline) => inline.text.length > 0);
+
+  if (cleaned.length === 0) {
+    return null;
+  }
+
+  const roleIndex = cleaned.findIndex((inline) =>
+    (inline.marks ?? []).includes("italic"),
+  );
+
+  if (roleIndex > 0) {
+    const nameParts = cleaned.slice(0, roleIndex);
+    const roleParts = cleaned.slice(roleIndex);
+    return {
+      name: {
+        ...nameParts[0]!,
+        text: nameParts.map((part) => part.text).join(" ").trim(),
+      },
+      role: {
+        ...roleParts[0]!,
+        text: roleParts.map((part) => part.text).join(" ").trim(),
+        marks: ["italic"],
+      },
+    };
+  }
+
+  const joined = cleaned.map((part) => part.text).join(" ");
+  const slashMatch = joined.match(/^(.+?)\s*\/\s*(.+)$/);
+  if (slashMatch) {
+    return {
+      name: { ...cleaned[0]!, text: slashMatch[1]!.trim() },
+      role: {
+        text: slashMatch[2]!.trim(),
+        marks: ["italic"],
+        color: cleaned[cleaned.length - 1]?.color,
+      },
+    };
+  }
+
+  return { name: { ...cleaned[0]!, text: joined.trim() } };
+}
+
+function parseTeamMembers(valueInlines: RichTextInline[]): TeamMember[] {
+  return splitInlinesByNewline(valueInlines)
+    .map(parseTeamMemberRow)
+    .filter((member): member is TeamMember => member !== null);
+}
+
 function paragraphClassName(paragraph: RichTextParagraph): string {
   const align =
     paragraph.align === "center"
@@ -153,7 +233,7 @@ function paragraphClassName(paragraph: RichTextParagraph): string {
       return `sub-title project-section-label ${align}`.trim();
     case "heading": {
       const classes = [
-        `font-display font-bold ${size || "text-[32px] leading-10"}`,
+        `font-display font-bold ${size || "project-type-2xl"}`,
         textAlign,
       ];
       if (designQuestion) {
@@ -164,7 +244,7 @@ function paragraphClassName(paragraph: RichTextParagraph): string {
       return classes.filter(Boolean).join(" ");
     }
     case "quote":
-      return `title font-display italic font-normal text-[var(--text-muted)] ${size || "text-[32px] leading-10"} ${align}`.trim();
+      return `title font-display italic font-normal text-[var(--text-muted)] ${size || "project-type-2xl"} ${align}`.trim();
     case "paragraph": {
       const classes = [`main-text`, size, textAlign];
 
@@ -195,9 +275,16 @@ function paragraphClassName(paragraph: RichTextParagraph): string {
 type RichTextParagraphViewProps = {
   paragraph: RichTextParagraph;
   index: number;
+  blockIndex?: number;
+  variant?: RichTextProps["variant"];
 };
 
-function RichTextParagraphView({ paragraph, index }: RichTextParagraphViewProps) {
+function RichTextParagraphView({
+  paragraph,
+  index,
+  blockIndex,
+  variant,
+}: RichTextParagraphViewProps) {
   if (paragraph.kind === "spacer") {
     return <div className="h-4" aria-hidden />;
   }
@@ -208,10 +295,16 @@ function RichTextParagraphView({ paragraph, index }: RichTextParagraphViewProps)
   const designQuestion = isDesignQuestion(paragraph);
   const phaseHeading = isPhaseHeading(paragraph);
 
+  const headingId = getHeadingId(paragraph, blockIndex);
+
   if (phaseHeading) {
     const { labelInlines, subtitleInlines } = splitPhaseHeadingParts(paragraph);
     return (
-      <div className={className} style={style}>
+      <div
+        className={`${className}${headingId ? " project-toc-target" : ""}`.trim()}
+        style={style}
+        id={headingId ?? undefined}
+      >
         <div
           className="project-phase-heading__label"
           style={{ color: "var(--project-phase-label-color)" }}
@@ -243,6 +336,71 @@ function RichTextParagraphView({ paragraph, index }: RichTextParagraphViewProps)
     );
   }
 
+  if (
+    variant === "fold-meta" &&
+    paragraph.kind === "paragraph" &&
+    paragraph.inlines.length > 0 &&
+    isFoldDetailLabel(paragraph.inlines[0].text)
+  ) {
+    const [labelInline, ...valueInlines] = paragraph.inlines;
+    const normalizedValueInlines = valueInlines.map((inline, inlineIndex) => ({
+      ...inline,
+      text:
+        inlineIndex === 0 ? inline.text.replace(/^\n+/, "") : inline.text,
+    }));
+    const labelText = labelInline.text.trim().replace(/:$/, "");
+    const teamMembers =
+      labelText === "Team" || labelText === "Members" || labelText === "Member"
+        ? parseTeamMembers(normalizedValueInlines)
+        : [];
+
+    return (
+      <div className="project-fold__meta-item">
+        {renderInline(labelInline, `${index}-label`, "project-fold__meta-label")}
+        {teamMembers.length > 0 ? (
+          <ul className="project-fold__team">
+            {teamMembers.map((member, memberIndex) => (
+              <li
+                key={`${index}-team-${memberIndex}`}
+                className="project-fold__team-member"
+              >
+                {renderInline(
+                  member.name,
+                  `${index}-team-name-${memberIndex}`,
+                  "project-fold__team-name",
+                )}
+                {member.role ? (
+                  <>
+                    <span className="project-fold__team-sep" aria-hidden>
+                      /
+                    </span>
+                    {renderInline(
+                      {
+                        ...member.role,
+                        marks: (member.role.marks ?? []).filter(
+                          (mark) => mark !== "italic",
+                        ),
+                        color: undefined,
+                      },
+                      `${index}-team-role-${memberIndex}`,
+                      "project-fold__team-role",
+                    )}
+                  </>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div className="project-fold__meta-value">
+            {normalizedValueInlines.map((inline, inlineIndex) =>
+              renderInline(inline, `${index}-value-${inlineIndex}`),
+            )}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   const content = paragraph.inlines.map((inline, inlineIndex) => {
     const sanitized = designQuestion
       ? {
@@ -264,7 +422,11 @@ function RichTextParagraphView({ paragraph, index }: RichTextParagraphViewProps)
   }
 
   return (
-    <div className={className} style={style}>
+    <div
+      className={`${className}${headingId ? " project-toc-target" : ""}`.trim()}
+      style={style}
+      id={headingId ?? undefined}
+    >
       {content}
     </div>
   );
@@ -273,11 +435,12 @@ function RichTextParagraphView({ paragraph, index }: RichTextParagraphViewProps)
 type RichTextProps = {
   paragraphs: RichTextParagraph[];
   variant?: "default" | "fold" | "fold-meta" | "nested";
+  blockIndex?: number;
 };
 
 const VARIANT_CLASS: Record<NonNullable<RichTextProps["variant"]>, string> = {
   default:
-    "project-module-text project-html project-module-text--reading mb-0 w-full px-[8%] pb-10 text-[var(--text-primary)]",
+    "project-module-text project-html project-module-text--reading mb-0 w-full pb-10 text-[var(--text-primary)]",
   fold: "project-module-text project-html project-fold__richtext mb-0 w-full pb-0 text-[var(--text-primary)]",
   "fold-meta":
     "project-module-text project-html project-fold__meta-text mb-0 w-full pb-0 text-[var(--text-primary)]",
@@ -285,11 +448,21 @@ const VARIANT_CLASS: Record<NonNullable<RichTextProps["variant"]>, string> = {
     "project-module-text project-html project-module-text--nested mb-0 w-full pb-10 text-[var(--text-primary)]",
 };
 
-export function RichText({ paragraphs, variant = "default" }: RichTextProps) {
+export function RichText({
+  paragraphs,
+  variant = "default",
+  blockIndex,
+}: RichTextProps) {
   return (
     <div className={VARIANT_CLASS[variant]}>
       {paragraphs.map((paragraph, index) => (
-        <RichTextParagraphView key={index} paragraph={paragraph} index={index} />
+        <RichTextParagraphView
+          key={index}
+          paragraph={paragraph}
+          index={index}
+          blockIndex={blockIndex}
+          variant={variant}
+        />
       ))}
     </div>
   );

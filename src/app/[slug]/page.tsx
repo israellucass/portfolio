@@ -4,8 +4,10 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { ProjectBlocks } from "@/components/project/ProjectBlocks";
 import { ProjectHeroFold } from "@/components/project/ProjectHeroFold";
+import { ProjectCaseStudyLayout } from "@/components/project/ProjectCaseStudyLayout";
 import { createProjectMetadata } from "@/lib/metadata";
 import { splitProjectFold } from "@/lib/project-fold";
+import { buildProjectTocGroups } from "@/lib/project-headings";
 import {
   getAllProjectSlugs,
   getProjectBySlug,
@@ -38,13 +40,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const { fold, remainingBlocks } = splitProjectFold(project);
   const blocks = remainingBlocks;
+  const tocGroups = buildProjectTocGroups(blocks, { includeFold: true });
 
   return (
     <PageLayout as="article" showBackToTop>
-      <ProjectHeroFold title={project.title} fold={fold} />
-      <ErrorBoundary>
-        <ProjectBlocks blocks={blocks} title={project.title} />
-      </ErrorBoundary>
+      <ProjectCaseStudyLayout grouped={tocGroups}>
+        <ProjectHeroFold title={project.title} fold={fold} />
+        <ErrorBoundary>
+          <ProjectBlocks blocks={blocks} title={project.title} />
+        </ErrorBoundary>
+      </ProjectCaseStudyLayout>
     </PageLayout>
   );
 }

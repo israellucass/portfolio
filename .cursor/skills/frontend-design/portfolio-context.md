@@ -9,9 +9,9 @@ Use this alongside the main frontend-design skill when reviewing or editing this
 | **Subject** | Israel Silva — Brazilian product designer (UX, motion, games, graphic) |
 | **Audience** | Recruiters, clients, collaborators browsing case studies |
 | **Job** | Showcase featured work; category filters; about + publications |
-| **Reference** | Migrated from [isrrr.com](https://isrrr.com/) (Adobe Portfolio) |
+| **Reference** | [isrrr.com](https://isrrr.com/) — self-hosted Next.js portfolio |
 
-Parity with the live Adobe site is the default goal. Do not swap to generic AI portfolio templates (cream/terracotta, acid-green-on-black hero, broadsheet 01/02/03) unless the user requests a redesign.
+Visual parity with isrrr.com is the default goal. Do not swap to generic AI portfolio templates (cream/terracotta, acid-green-on-black hero, broadsheet 01/02/03) unless the user requests a redesign.
 
 ## Token system (current)
 
@@ -47,12 +47,12 @@ Cover label stripe under the thumbnail — title/subtitle left, muted chevron ri
 
 - Scraped HTML in JSON uses inline styles — override via `src/styles/project.css`, not Tailwind rewrites
 - Images are local under `public/images/`
-- Adobe XD embeds may disappear; `ProjectEmbed` hides dead embeds
+- Prototype embeds may go offline; prune dead ones with `python3 scripts/prune_dead_embeds.py`
 - Prefer minimal diffs; match `src/components/layout/` and `src/components/project/` structure
 
 ## Case study layout (CUBO reference)
 
-Use CUBO (`/cubo`) as the template for UX case studies migrated from Adobe Portfolio.
+Use CUBO (`/cubo`) as the template for UX case studies.
 
 ### Block rhythm
 
@@ -76,7 +76,7 @@ Use CUBO (`/cubo`) as the template for UX case studies migrated from Adobe Portf
 
 ### Typography hierarchy (light theme)
 
-Map Adobe dark-theme colors to current tokens in `RichText.tsx` — do not restore a dark panel.
+Map legacy dark-theme colors to current tokens in `RichText.tsx` — do not restore a dark panel.
 
 | Pattern | Detection | Style |
 |---------|-----------|-------|

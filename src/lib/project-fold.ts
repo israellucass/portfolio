@@ -32,6 +32,10 @@ function normalizeDetailLabel(text: string): string {
   return text.trim().replace(/:$/, "");
 }
 
+export function isFoldDetailLabel(text: string): boolean {
+  return DETAIL_LABELS.has(normalizeDetailLabel(text));
+}
+
 function richtextHasDetailLabel(block: RichTextBlock): boolean {
   return block.paragraphs.some((paragraph) =>
     paragraph.inlines.some((inline) =>

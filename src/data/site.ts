@@ -8,9 +8,10 @@ export const fonts = {
 
 export const site = {
   name: "Israel Silva",
-  title: "Israel Silva - Product Designer",
+  title: "Israel Silva - Visual Designer",
   tagline: "Israel Silva",
-  description: "Brazilian Product Designer based in São Luís, Brazil",
+  description:
+    "Visual Designer based in São Luís, Brazil — UI, design systems, and accessibility-focused product work.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_URL
@@ -85,9 +86,17 @@ export const publications = [
   },
 ] as const;
 
+export const aboutIntro =
+  "Visual Designer with 6+ years of experience crafting scalable digital interfaces across enterprise software, fintech, and complex digital ecosystems. Proven track record in bridging brand expression with systematic UI foundations, conducting deep visual audits, and designing high-fidelity interactive concepts to solve complex, information-dense workflow challenges. Backed by an M.Sc. in Design and practical expertise in design systems management, visual tokens, and WCAG accessibility standards.";
+
+export const aboutContact = {
+  label: "Get in touch on LinkedIn",
+  href: "https://www.linkedin.com/in/israellucas",
+} as const;
+
 export const aboutBio = [
-  `I hold a bachelor's degree in Design from UFMA and a master's degree in Design from UFPE. I also studied Computer Games (Art and Animation) for a year at Glasgow Caledonian University (UK), strengthening my skills in art and animation.`,
-  `Since 2014, I have gained experience across advertising agencies, the public sector, retail companies, and the electric and financial sectors. As a freelancer, I have developed projects focused mainly on digital products for e-commerce and project management, applying my design background to them.`,
+  `I hold a bachelor's degree in Design from UFMA. I also studied Computer Games (Art and Animation) for a year at Glasgow Caledonian University (UK), strengthening my skills in art and animation.`,
+  `I've worked across advertising agencies, the public sector, retail, and financial companies. As a freelancer, I've developed digital products for e-commerce and project management, applying that background to interface and product design.`,
 ] as const;
 
 export const aboutLinks = {

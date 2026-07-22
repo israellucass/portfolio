@@ -13,12 +13,12 @@
   "blocks": [
     {
       "type": "image",
-      "src": "/images/assets/4360cac8a4a145456660b502_rw_1920.png",
+      "src": "/images/assets/4360cac8a4a145456660b502_rw_1920.webp",
       "lightboxSrc": "/images/assets/4360cac8a4a145456660b502.png"
     },
     {
       "type": "image",
-      "src": "/images/assets/2c3d6ccf836bedb7342b54b7_rw_1920.png",
+      "src": "/images/assets/2c3d6ccf836bedb7342b54b7_rw_1920.webp",
       "lightboxSrc": "/images/assets/2c3d6ccf836bedb7342b54b7.png"
     }
   ]

@@ -28,7 +28,7 @@ Open [http://localhost:3000/keystatic](http://localhost:3000/keystatic).
 
 Do not point Keystatic at `projects/*.json` directly — saving would rewrite files and risk wiping `blocks`.
 
-## Refresh bodies from the live Adobe site
+## Refresh bodies from the live site
 
 ```bash
 python3 scripts/scrape.py

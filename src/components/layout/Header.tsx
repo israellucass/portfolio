@@ -148,14 +148,14 @@ export function Header() {
   return (
     <>
       <header
-        className={`site-header fixed inset-x-0 top-0 z-50 flex h-14 items-center bg-[var(--background)] px-[5%] md:px-[6%] lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-4 lg:px-[8%] ${
+        className={`site-header fixed inset-x-0 top-0 z-50 flex h-14 items-center bg-[var(--background)] px-gutter lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-4 ${
           headerVisible ? "" : "site-header--hidden"
         } ${scrolled && headerVisible ? "shadow-[0_1px_3px_rgba(0,0,0,0.1)]" : ""}`}
         {...(!headerVisible && !menuOpen ? { inert: true } : {})}
       >
         <Link
           href="/"
-          className="focus-ring font-logo min-w-0 truncate justify-self-start pr-10 text-[22px] font-bold leading-7 text-[var(--text-primary)] transition-colors hover:text-[var(--text-muted)] sm:text-[26px] sm:leading-8 lg:pr-0 lg:text-[28px] xl:text-[30px]"
+          className="focus-ring font-logo min-w-0 truncate justify-self-start pr-10 text-[length:var(--type-md)] font-bold uppercase tracking-[0.06em] leading-[var(--leading-tight)] text-[var(--text-primary)] transition-colors hover:text-[var(--text-muted)] lg:pr-0 lg:text-[length:var(--type-lg)]"
         >
           {site.tagline}
         </Link>
@@ -169,7 +169,7 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                    className={`focus-ring link-underline font-body whitespace-nowrap text-sm leading-5 xl:text-base xl:leading-6 ${
+                    className={`focus-ring link-underline font-body whitespace-nowrap text-[length:var(--type-md)] leading-[var(--leading-snug)] ${
                     isActive(pathname, item.href)
                       ? "font-bold text-[var(--text-primary)]"
                       : "font-normal text-[var(--text-primary)]"
@@ -183,14 +183,14 @@ export function Header() {
         </nav>
 
         <div className="hidden justify-self-end lg:block">
-          <SocialLinks iconClassName="[&_svg]:h-7 [&_svg]:w-7 xl:[&_svg]:h-8 xl:[&_svg]:w-8" />
+          <SocialLinks iconClassName="[&_svg]:h-7 [&_svg]:w-7" />
         </div>
 
         <button
           type="button"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
-          className="focus-ring absolute right-[5%] top-1/2 flex h-10 w-6 -translate-y-1/2 flex-col justify-center gap-1 lg:hidden"
+          className="focus-ring absolute inset-inline-end-gutter top-1/2 flex h-10 w-6 -translate-y-1/2 flex-col justify-center gap-1 lg:hidden"
           onClick={() => setMenuOpen((open) => !open)}
         >
           <span
@@ -208,7 +208,7 @@ export function Header() {
       {menuOpen && (
         <div
           ref={menuRef}
-          className="fixed inset-0 z-[99999] flex flex-col overflow-auto overscroll-contain bg-[var(--background)] px-[5%] pt-[50px] text-center lg:hidden"
+          className="fixed inset-0 z-[99999] flex flex-col overflow-auto overscroll-contain bg-[var(--background)] px-gutter pt-[50px] text-center lg:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"
@@ -217,7 +217,7 @@ export function Header() {
             ref={closeMenuRef}
             type="button"
             aria-label="Close menu"
-            className="focus-ring absolute right-[5%] top-7 flex h-10 w-10 -translate-y-1/2 items-center justify-center"
+            className="focus-ring absolute inset-inline-end-gutter top-7 flex h-10 w-10 -translate-y-1/2 items-center justify-center"
             onClick={() => setMenuOpen(false)}
           >
             <CloseMenuIcon />
@@ -228,7 +228,7 @@ export function Header() {
               <div key={item.href} className="pb-[30px]">
                 <Link
                   href={item.href}
-                  className={`focus-ring link-underline font-body text-[22px] leading-8 ${
+                  className={`focus-ring link-underline font-body text-[length:var(--type-xl)] leading-[var(--leading-normal)] ${
                     isActive(pathname, item.href)
                       ? "font-bold text-[var(--text-primary)]"
                       : "font-normal text-[var(--text-primary)]"
@@ -240,7 +240,7 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="fixed inset-x-0 bottom-0 border-t border-black/10 bg-[var(--background)] px-[5%] py-4">
+          <div className="fixed inset-x-0 bottom-0 border-t border-black/10 bg-[var(--background)] px-gutter py-4">
             <SocialLinks className="justify-center" />
           </div>
         </div>

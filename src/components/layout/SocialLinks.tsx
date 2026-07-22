@@ -8,9 +8,13 @@ function BehanceIcon() {
   );
 }
 
-function LinkedInIcon() {
+export function LinkedInIcon({
+  className = "h-8 w-8 fill-current",
+}: {
+  className?: string;
+}) {
   return (
-    <svg viewBox="0 0 30 24" className="h-8 w-8 fill-current" aria-hidden>
+    <svg viewBox="0 0 30 24" className={className} aria-hidden>
       <path d="M19.6,19v-5.8c0-1.4-0.5-2.4-1.7-2.4c-1,0-1.5,0.7-1.8,1.3C16,12.3,16,12.6,16,13v6h-3.4c0,0,0.1-9.8,0-10.8H16v1.5h0C16.4,9,17.2,7.9,19,7.9c2.3,0,4,1.5,4,4.9V19H19.6z M8.9,6.7C7.7,6.7,7,5.9,7,4.9C7,3.8,7.8,3,8.9,3s1.9,0.8,1.9,1.9C10.9,5.9,10.1,6.7,8.9,6.7z M10.6,19H7.2V8.2h3.4V19z" />
     </svg>
   );
@@ -67,7 +71,7 @@ export function SocialLinks({
             target="_blank"
             rel="noopener noreferrer"
             aria-label={link.label}
-            className={`focus-ring rounded-sm text-[var(--text-primary)] transition-colors hover:text-[var(--text-muted)] ${iconClassName}`}
+            className={`focus-ring rounded-sm ${iconClassName}`}
           >
             {icons[link.label]}
           </a>

@@ -7,13 +7,13 @@ export function ProjectPageSkeleton() {
       aria-busy="true"
       aria-label="Loading project"
     >
-      <div className="px-[8%] py-8 md:py-10">
+      <div className="px-gutter py-8 md:py-10">
         <Skeleton className="h-8 w-full max-w-[420px] rounded md:h-10" />
         <Skeleton className="mt-3 h-4 w-full max-w-[640px] rounded" />
         <Skeleton className="mt-2 h-4 w-[82%] max-w-[560px] rounded" />
       </div>
       <Skeleton className="aspect-[16/10] w-full rounded-none" />
-      <div className="flex flex-col gap-8 px-[8%] py-10 lg:flex-row">
+      <div className="flex flex-col gap-8 px-gutter py-10 lg:flex-row">
         <div className="flex flex-1 flex-col gap-3">
           <Skeleton className="h-4 w-full rounded" />
           <Skeleton className="h-4 w-[92%] rounded" />
@@ -26,7 +26,7 @@ export function ProjectPageSkeleton() {
           <Skeleton className="h-4 w-40 rounded" />
         </div>
       </div>
-      <div className="px-[8%] pb-16">
+      <div className="px-gutter pb-16">
         <Skeleton className="aspect-video w-full rounded-2xl" />
       </div>
     </section>

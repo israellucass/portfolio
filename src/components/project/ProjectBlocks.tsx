@@ -4,9 +4,7 @@ import { useCallback, useMemo, useState } from "react";
 import { ProjectReveal } from "@/components/project/ProjectReveal";
 import { BlockRenderer } from "@/components/project/BlockRenderer";
 import { Lightbox } from "@/components/project/Lightbox";
-import { ProjectPhaseStickyNav } from "@/components/project/ProjectPhaseStickyNav";
 import { collectLightboxImages } from "@/lib/blocks";
-import { extractProjectPhaseStickyConfig, type ProjectPhase } from "@/lib/project-phases";
 import type { ProjectBlock } from "@/types/project";
 
 type ProjectBlocksProps = {
@@ -64,46 +62,12 @@ function groupBlocks(blocks: ProjectBlock[]): BlockGroup[] {
   return groups;
 }
 
-function getPhaseMarkerProps(
-  blockIndex: number,
-  phaseByBlockIndex: Map<number, ProjectPhase>,
-): { id?: string; phaseId?: string } {
-  const phase = phaseByBlockIndex.get(blockIndex);
-  if (!phase) {
-    return {};
-  }
-
-  return {
-    id: `project-phase-${phase.id}`,
-    phaseId: phase.id,
-  };
-}
-
-function getStickyEndMarkerProps(
-  blockIndex: number,
-  endBeforeBlockIndex: number | null,
-): { id?: string } {
-  if (endBeforeBlockIndex === blockIndex) {
-    return { id: "project-phase-sticky-end" };
-  }
-
-  return {};
-}
-
-export function ProjectBlocks({ blocks, title }: ProjectBlocksProps) {
+export function ProjectBlocks({
+  blocks,
+  title,
+}: ProjectBlocksProps) {
   const images = useMemo(() => collectLightboxImages(blocks), [blocks]);
   const groups = useMemo(() => groupBlocks(blocks), [blocks]);
-  const { phases, endBeforeBlockIndex } = useMemo(
-    () => extractProjectPhaseStickyConfig(blocks),
-    [blocks],
-  );
-  const phaseByBlockIndex = useMemo(() => {
-    const map = new Map<number, ProjectPhase>();
-    for (const phase of phases) {
-      map.set(phase.blockIndex, phase);
-    }
-    return map;
-  }, [phases]);
   const [lightbox, setLightbox] = useState<LightboxState>(null);
 
   const openLightbox = useCallback(
@@ -129,13 +93,6 @@ export function ProjectBlocks({ blocks, title }: ProjectBlocksProps) {
 
   return (
     <>
-      {phases.length >= 2 ? (
-        <ProjectPhaseStickyNav
-          phases={phases}
-          endBeforeBlockIndex={endBeforeBlockIndex}
-        />
-      ) : null}
-
       <div className="page-content modules content w-full">
         {groups.map((group, groupIndex) => {
           if (group.kind === "media-copy" && group.blocks.length > 1) {
@@ -149,13 +106,14 @@ export function ProjectBlocks({ blocks, title }: ProjectBlocksProps) {
                     key={`block-${index}`}
                     delay={Math.min(itemIndex * 90, 270)}
                     className="project-feature-gallery__item"
-                    {...getPhaseMarkerProps(index, phaseByBlockIndex)}
                   >
                     <BlockRenderer
                       block={block}
                       blockIndex={String(index)}
+                      numericBlockIndex={index}
                       title={title}
                       onImageClick={openLightbox}
+                      inFeatureGallery
                     />
                   </ProjectReveal>
                 ))}
@@ -169,11 +127,11 @@ export function ProjectBlocks({ blocks, title }: ProjectBlocksProps) {
               <ProjectReveal
                 key={`block-${index}`}
                 delay={Math.min(groupIndex * 70, 350)}
-                {...getPhaseMarkerProps(index, phaseByBlockIndex)}
               >
                 <BlockRenderer
                   block={block}
                   blockIndex={String(index)}
+                  numericBlockIndex={index}
                   title={title}
                   onImageClick={openLightbox}
                 />
@@ -187,6 +145,7 @@ export function ProjectBlocks({ blocks, title }: ProjectBlocksProps) {
                 key={`block-${group.index}`}
                 block={group.block}
                 blockIndex={String(group.index)}
+                numericBlockIndex={group.index}
                 title={title}
                 onImageClick={openLightbox}
               />
@@ -197,12 +156,11 @@ export function ProjectBlocks({ blocks, title }: ProjectBlocksProps) {
             <ProjectReveal
               key={`block-${group.index}`}
               delay={Math.min(groupIndex * 70, 350)}
-              {...getPhaseMarkerProps(group.index, phaseByBlockIndex)}
-              {...getStickyEndMarkerProps(group.index, endBeforeBlockIndex)}
             >
               <BlockRenderer
                 block={group.block}
                 blockIndex={String(group.index)}
+                numericBlockIndex={group.index}
                 title={title}
                 onImageClick={openLightbox}
               />

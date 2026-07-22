@@ -8,7 +8,7 @@ metadata:
 
 # Web Interface Guidelines (portfolio)
 
-Review **new UI** (Tailwind components, layout, grid) for guideline compliance. Read [../frontend-design/portfolio-context.md](../frontend-design/portfolio-context.md) first — Adobe parity and token choices override generic “redesign” suggestions.
+Review **new UI** (Tailwind components, layout, grid) for guideline compliance. Read [../frontend-design/portfolio-context.md](../frontend-design/portfolio-context.md) first — isrrr.com parity and token choices override generic “redesign” suggestions.
 
 Do not rewrite `.project-html` scraped blocks to Tailwind.
 

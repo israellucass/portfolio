@@ -8,21 +8,26 @@ import type { ProjectBlock } from "@/types/project";
 type BlockRendererProps = {
   block: ProjectBlock;
   blockIndex: string;
+  numericBlockIndex: number;
   title: string;
   onImageClick: (src: string, lightboxSrc: string) => void;
   /** Rich text/images inside a tree column — no page-level padding or reading width */
   inTree?: boolean;
   /** Constrain image padding for image+copy feature rows */
   compactImage?: boolean;
+  /** Stacked image+copy inside the feature gallery grid */
+  inFeatureGallery?: boolean;
 };
 
 export function BlockRenderer({
   block,
   blockIndex,
+  numericBlockIndex,
   title,
   onImageClick,
   inTree = false,
   compactImage = false,
+  inFeatureGallery = false,
 }: BlockRendererProps) {
   if (block.type === "tree") {
     const hasImage = block.columns.some((column) =>
@@ -37,9 +42,9 @@ export function BlockRenderer({
 
     return (
       <div
-        className={`tree-wrapper tree-${blockIndex} valign-top flex w-full flex-col lg:flex-row lg:items-start${
-          mediaCopy ? " tree-wrapper--media-copy" : ""
-        }`}
+        className={`tree-wrapper tree-${blockIndex} valign-top flex w-full flex-col${
+          inFeatureGallery ? " items-center" : " lg:flex-row lg:items-start"
+        }${mediaCopy ? " tree-wrapper--media-copy" : ""}`}
       >
         {block.columns.map((column, columnIndex) => (
           <div
@@ -52,10 +57,12 @@ export function BlockRenderer({
                 key={`${blockIndex}-${columnIndex}-${childIndex}`}
                 block={child}
                 blockIndex={`${blockIndex}-${columnIndex}-${childIndex}`}
+                numericBlockIndex={numericBlockIndex + childIndex}
                 title={title}
                 onImageClick={onImageClick}
                 inTree
                 compactImage={mediaCopy}
+                inFeatureGallery={inFeatureGallery}
               />
             ))}
           </div>
@@ -89,6 +96,7 @@ export function BlockRenderer({
       <RichText
         paragraphs={block.paragraphs}
         variant={inTree ? "nested" : "default"}
+        blockIndex={numericBlockIndex}
       />
     );
   }
@@ -99,7 +107,7 @@ export function BlockRenderer({
         className={`project-module-text project-html mb-0 w-full pb-10 text-[var(--text-primary)]${
           inTree
             ? " project-module-text--nested"
-            : " project-module-text--reading px-[8%]"
+            : " project-module-text--reading"
         }`}
         dangerouslySetInnerHTML={{ __html: block.content }}
       />

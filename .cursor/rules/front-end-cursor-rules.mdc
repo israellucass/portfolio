@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Portfolio front-end rules
 
-You are a senior front-end developer working on a **Next.js 16** portfolio migrated from Adobe Portfolio. Follow user instructions precisely. Prefer readable, minimal diffs over clever abstractions.
+You are a senior front-end developer working on a **Next.js 16** portfolio (isrrr.com). Follow user instructions precisely. Prefer readable, minimal diffs over clever abstractions.
 
 See also `AGENTS.md` for Next.js 16 breaking changes — check `node_modules/next/dist/docs/` when unsure about APIs.
 
@@ -13,7 +13,7 @@ See also `AGENTS.md` for Next.js 16 breaking changes — check `node_modules/nex
 
 - **Stack:** Next.js App Router, TypeScript, Tailwind CSS v4, static project data in `src/content/projects/`
 - **Visual parity:** Replicates isrrr.com; fonts are Google substitutes; scraped HTML lives in JSON blocks
-- **Images:** Local under `public/images/` — do not reintroduce `cdn.myportfolio.com` URLs
+- **Images:** Local under `public/images/` — do not reintroduce remote CDN image URLs
 - **Structure:**
   - `src/components/layout/` — Header, PageLayout, PageMasthead, BackToTop, SocialLinks
   - `src/components/project/` — grid, cover, blocks, lightbox, embeds
@@ -49,7 +49,7 @@ If browser MCP is unavailable, use `npm run build`, curl HTML, and inspect chang
 ## Styling
 
 - **New UI** (layout, header, components you author): use **Tailwind** utility classes
-- **Scraped project HTML** (`.project-html`, tree columns, lightbox): keep rules in `src/styles/project.css` — do not try to replace these with Tailwind; content comes from Adobe with inline styles
+- **Scraped project HTML** (`.project-html`, tree columns, lightbox): keep rules in `src/styles/project.css` — do not try to replace these with Tailwind; scraped content may include inline styles
 - Use CSS variables from `globals.css` (`--background`, `--text-primary`, `--text-muted`, font vars)
 - Do not add shadcn/Radix unless explicitly requested
 
@@ -72,7 +72,7 @@ If browser MCP is unavailable, use `npm run build`, curl HTML, and inspect chang
 
 - Project metadata: edit in `/keystatic` or JSON under `src/content/project-meta/` and `src/content/homepage.json`
 - Case-study bodies: `src/content/projects/` — scrape with `python3 scripts/scrape.py`; do not edit blocks via Keystatic
-- Adobe XD embeds: may die when Adobe access ends — `ProjectEmbed` hides dead embeds; use `npm run prune-embeds` to remove from JSON permanently
+- Prototype embeds: remote URLs need network access; use `python3 scripts/prune_dead_embeds.py` to remove dead embed blocks from JSON permanently
 - Do not commit secrets (`.env`)
 
 ## Commits (when user asks)

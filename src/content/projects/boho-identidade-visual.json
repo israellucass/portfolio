@@ -75,7 +75,7 @@
     },
     {
       "type": "image",
-      "src": "/images/assets/00175908-0ce9-4355-9c50-b05c2b7705eb_rw_1200.png",
+      "src": "/images/assets/00175908-0ce9-4355-9c50-b05c2b7705eb_rw_1200.webp",
       "lightboxSrc": "/images/assets/00175908-0ce9-4355-9c50-b05c2b7705eb.png"
     },
     {
@@ -137,7 +137,7 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/48642369-be5a-49b7-9113-a5e5491e1187_rw_1200.png",
+              "src": "/images/assets/48642369-be5a-49b7-9113-a5e5491e1187_rw_1200.webp",
               "lightboxSrc": "/images/assets/48642369-be5a-49b7-9113-a5e5491e1187.png"
             }
           ]
@@ -147,7 +147,7 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/8a46b849-60de-4a3d-8edf-86eea54fcbe8_rw_1200.png",
+              "src": "/images/assets/8a46b849-60de-4a3d-8edf-86eea54fcbe8_rw_1200.webp",
               "lightboxSrc": "/images/assets/8a46b849-60de-4a3d-8edf-86eea54fcbe8.png"
             }
           ]
@@ -170,22 +170,22 @@
     },
     {
       "type": "image",
-      "src": "/images/assets/9471aa3731ace71f131a06dc_rw_1920.jpg",
+      "src": "/images/assets/9471aa3731ace71f131a06dc_rw_1920.webp",
       "lightboxSrc": "/images/assets/9471aa3731ace71f131a06dc.jpg"
     },
     {
       "type": "image",
-      "src": "/images/assets/4ebba7a83716371499c73601_rw_1920.jpg",
+      "src": "/images/assets/4ebba7a83716371499c73601_rw_1920.webp",
       "lightboxSrc": "/images/assets/4ebba7a83716371499c73601.jpg"
     },
     {
       "type": "image",
-      "src": "/images/assets/17df9398cce1cdce709dd483_rw_1920.jpg",
+      "src": "/images/assets/17df9398cce1cdce709dd483_rw_1920.webp",
       "lightboxSrc": "/images/assets/17df9398cce1cdce709dd483.jpg"
     },
     {
       "type": "image",
-      "src": "/images/assets/31470bbb65ffec8d63e7baf8_rw_3840.png",
+      "src": "/images/assets/31470bbb65ffec8d63e7baf8_rw_1920.webp",
       "lightboxSrc": "/images/assets/31470bbb65ffec8d63e7baf8.png"
     },
     {
@@ -196,7 +196,7 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/777e8fec-39bc-43ef-b2e8-c11c48f14b02_rw_1200.jpg",
+              "src": "/images/assets/777e8fec-39bc-43ef-b2e8-c11c48f14b02_rw_1200.webp",
               "lightboxSrc": "/images/assets/777e8fec-39bc-43ef-b2e8-c11c48f14b02.jpg"
             }
           ]
@@ -206,7 +206,7 @@
           "blocks": [
             {
               "type": "image",
-              "src": "/images/assets/ee9bd590-68eb-4c51-89ec-23213903f888_rw_1920.jpg",
+              "src": "/images/assets/ee9bd590-68eb-4c51-89ec-23213903f888_rw_1920.webp",
               "lightboxSrc": "/images/assets/ee9bd590-68eb-4c51-89ec-23213903f888.jpg"
             }
           ]
