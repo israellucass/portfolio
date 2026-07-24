@@ -1,0 +1,10 @@
+{
+  "title": "{{title}}",
+  "subtitle": "{{subtitle}}",
+  "description": "{{description}}",
+  "year": "{{year}}",
+  "tags": "Redesign, User Interface Design, Visual Design",
+  "cover": "/images/covers/{{slug}}.webp",
+  "featured": true,
+  "categories": ["featured", "ux"]
+}

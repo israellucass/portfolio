@@ -1,0 +1,491 @@
+{
+  "slug": "{{slug}}",
+  "title": "{{title}}",
+  "subtitle": "{{subtitle}}",
+  "year": "{{year}}",
+  "tags": "Redesign, User Interface Design, Visual Design",
+  "cover": "/images/covers/{{slug}}.webp",
+  "categories": ["featured", "ux"],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-hero.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-hero.webp"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 5,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "{{title}}",
+                      "marks": ["bold", "display"]
+                    },
+                    {
+                      "text": " is a redesign of {{original_product_name}}, a {{product_type}} for {{client}}, {{one_sentence_context}}."
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "{{intro_scope}}"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "{{nda_or_scope_note}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 3,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Timeframe", "color": "#888888" },
+                    { "text": "\n{{timeframe}}" }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Role", "color": "#888888" },
+                    { "text": "\n{{role}}" }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Team", "color": "#888888" },
+                    { "text": "\n{{team}}" }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Tools", "color": "#888888" },
+                    { "text": "\n{{tools}}" }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Client", "color": "#888888" },
+                    { "text": "\n{{client}}" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "THE CHALLENGE" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{challenge_context}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 50,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/{{slug}}-before.webp",
+              "lightboxSrc": "/images/assets/{{slug}}-before.webp"
+            }
+          ]
+        },
+        {
+          "flex": 50,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/{{slug}}-after.webp",
+              "lightboxSrc": "/images/assets/{{slug}}-after.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "Before", "marks": ["bold"] }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "{{before_description}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "After", "marks": ["bold"] }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "{{after_description}}" }]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "AUDIT & DISCOVERY" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{audit_overview}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{audit_finding_1}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{audit_finding_2}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{audit_finding_3}}" }]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-audit.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-audit.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "DESIGN GOALS" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{goal_1}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{goal_2}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{goal_3}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{goals_context}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "VISUAL LANGUAGE" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{visual_language_intro}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-design-system.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-design-system.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "Typography", "marks": ["bold", "italic", "display"] }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [{ "text": "{{typography_detail}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "Color palette", "marks": ["bold", "italic", "display"] }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [{ "text": "{{color_palette_detail}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "Components & patterns", "marks": ["bold", "italic", "display"] }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [{ "text": "{{components_detail}}" }]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "KEY SCREENS" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{key_screens_intro}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/{{slug}}-screen-1.webp",
+              "lightboxSrc": "/images/assets/{{slug}}-screen-1.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "1. {{screen_1_title}}",
+                      "marks": ["bold", "italic", "display"]
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [{ "text": "{{screen_1_body}}" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/{{slug}}-screen-2.webp",
+              "lightboxSrc": "/images/assets/{{slug}}-screen-2.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "2. {{screen_2_title}}",
+                      "marks": ["bold", "italic", "display"]
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [{ "text": "{{screen_2_body}}" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/{{slug}}-screen-3.webp",
+              "lightboxSrc": "/images/assets/{{slug}}-screen-3.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "3. {{screen_3_title}}",
+                      "marks": ["bold", "italic", "display"]
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [{ "text": "{{screen_3_body}}" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "OUTCOME" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{outcome_intro}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{metric_1}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{metric_2}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{outcome_reflection}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Explore the interactive prototype below, or open it "
+            },
+            {
+              "text": "in a new tab",
+              "href": "{{prototype_url}}"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "embed",
+      "src": "{{prototype_url}}"
+    }
+  ]
+}
