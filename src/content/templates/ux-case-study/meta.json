@@ -1,0 +1,10 @@
+{
+  "title": "{{title}}",
+  "subtitle": "{{subtitle}}",
+  "description": "{{description}}",
+  "year": "{{year}}",
+  "tags": "User Interface Design, User Research",
+  "cover": "/images/covers/{{slug}}.webp",
+  "featured": true,
+  "categories": ["featured", "ux"]
+}

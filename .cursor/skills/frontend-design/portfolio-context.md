@@ -52,7 +52,8 @@ Cover label stripe under the thumbnail — title/subtitle left, muted chevron ri
 
 ## Case study layout (CUBO reference)
 
-Use CUBO (`/cubo`) as the template for UX case studies.
+Use CUBO (`/cubo`) as the reference for UX case studies.  
+**New projects:** scaffold with `npm run new:ux -- --slug … --title "…"` from [`src/content/templates/ux-case-study/`](../../../src/content/templates/ux-case-study/GUIDE.md) (see skill `ux-case-study`).
 
 ### Block rhythm
 

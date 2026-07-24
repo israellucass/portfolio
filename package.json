@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "optimize-media": "python3 scripts/optimize-media.py",
-    "audit:projects": "npx tsx scripts/audit-project-structure.ts"
+    "audit:projects": "npx tsx scripts/audit-project-structure.ts",
+    "new:ux": "npx tsx scripts/new-ux-case-study.ts"
   },
   "dependencies": {
     "@keystatic/core": "^0.5.51",

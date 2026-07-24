@@ -86,6 +86,17 @@ python3 scripts/scrape.py
 | **Prototype embeds** (CUBO, Smart Financeiro) | External embeds | Optionally export as MP4/PDF for offline/`localSrc` |
 | Mega.nz game downloads (Brasilero) | External links | Verify links work; re-host files if dead |
 
+## New UX case study
+
+Scaffold from the reusable template (fold, HMW, process sections, feature gallery, RESULTS):
+
+```bash
+npm run new:ux -- --slug my-project --title "My Project" --year 2026
+```
+
+Then fill remaining `{{placeholders}}`, add images under `public/images/`, and run `npm run audit:projects`.  
+Guide: [`src/content/templates/ux-case-study/GUIDE.md`](src/content/templates/ux-case-study/GUIDE.md).
+
 ## Updating content
 
 - **Card metadata / homepage layout** — prefer `/keystatic` (writes `project-meta/` + `homepage.json`)

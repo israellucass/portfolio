@@ -78,6 +78,23 @@ That overwrites meta + homepage from the current project JSON / index (use when 
 
 Blocks preserve the original page order (images and text interleaved).
 
+## New UX case study (template)
+
+Use the reusable UX template instead of copying an old project by hand:
+
+```bash
+npm run new:ux -- --slug my-project --title "My Project" --year 2026
+```
+
+That writes:
+
+- `projects/{slug}.json` — body scaffold (fold → HMW → process → features → RESULTS → embed)
+- `project-meta/{slug}.json` — Keystatic card/fold fields
+- Registers the slug in `index.json`
+
+Authoring guide + placeholder list: [`../templates/ux-case-study/GUIDE.md`](../templates/ux-case-study/GUIDE.md)  
+Agent skill: [`.cursor/skills/ux-case-study/SKILL.md`](../../../.cursor/skills/ux-case-study/SKILL.md)
+
 ## Before publishing a project
 
 Run the structure audit (tier detection + checklist):

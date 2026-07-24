@@ -1,0 +1,471 @@
+{
+  "slug": "{{slug}}",
+  "title": "{{title}}",
+  "subtitle": "{{subtitle}}",
+  "year": "{{year}}",
+  "tags": "User Interface Design, User Research",
+  "cover": "/images/covers/{{slug}}.webp",
+  "categories": ["featured", "ux"],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-hero.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-hero.webp"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 5,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "{{title}}",
+                      "marks": ["bold", "display"]
+                    },
+                    {
+                      "text": " is a {{product_type}} developed for "
+                    },
+                    {
+                      "text": "{{client}}",
+                      "href": "{{client_url}}"
+                    },
+                    {
+                      "text": ", {{one_sentence_context}}."
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "{{intro_paragraph_2}}"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "{{nda_or_scope_note}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 3,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Timeframe", "color": "#888888" },
+                    { "text": "\n{{timeframe}}" }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Role", "color": "#888888" },
+                    { "text": "\n{{role}}" }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Team", "color": "#888888" },
+                    { "text": "\n{{team}}" }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Tools", "color": "#888888" },
+                    { "text": "\n{{tools}}" }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    { "text": "Client", "color": "#888888" },
+                    { "text": "\n{{client}}" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "How might we {{hmw_question}}?"
+            }
+          ]
+        },
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "PROBLEM FRAMING" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{problem_framing}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "RESEARCH" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Method overview",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{research_overview}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Interviews",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{research_interviews}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Direct observation",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{research_observation}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-research.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-research.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "IDEATION" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{ideation_intro}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{insight_1}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{insight_2}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{insight_3}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{ideation_outcome}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-ideation.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-ideation.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "SOLUTION" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{solution_intro}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/{{slug}}-feature-1.webp",
+              "lightboxSrc": "/images/assets/{{slug}}-feature-1.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "1. {{feature_1_title}}",
+                      "marks": ["bold", "italic", "display"]
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [{ "text": "{{feature_1_body}}" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/{{slug}}-feature-2.webp",
+              "lightboxSrc": "/images/assets/{{slug}}-feature-2.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "2. {{feature_2_title}}",
+                      "marks": ["bold", "italic", "display"]
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [{ "text": "{{feature_2_body}}" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/{{slug}}-feature-3.webp",
+              "lightboxSrc": "/images/assets/{{slug}}-feature-3.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "3. {{feature_3_title}}",
+                      "marks": ["bold", "italic", "display"]
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [{ "text": "{{feature_3_body}}" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "VALIDATION" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{validation}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-validation.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-validation.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "RESULTS" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{results_intro}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{metric_1}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{metric_2}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{metric_3}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{results_closing}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Explore the interactive prototype below, or open it "
+            },
+            {
+              "text": "in a new tab",
+              "href": "{{prototype_url}}"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "embed",
+      "src": "{{prototype_url}}"
+    }
+  ]
+}
