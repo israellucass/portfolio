@@ -421,10 +421,6 @@
   font-weight: 400;
   line-height: var(--leading-snug);
   color: var(--text-muted);
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
 }
 
 .project-cover .cover-chevron {
@@ -843,7 +839,7 @@
   border-radius: 6px;
   max-width: 36rem;
   border: none;
-  text-align: left;
+  text-align: center;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
@@ -974,6 +970,7 @@
   flex-direction: column;
   gap: 24px;
   min-width: 0;
+  overflow: visible;
 }
 
 @media (min-width: 768px) {
@@ -984,6 +981,7 @@
   .project-fold__intro {
     flex: 5;
     min-width: 0;
+    overflow: visible;
   }
 
   .project-fold__meta {
@@ -1091,7 +1089,8 @@
 
 .project-reveal--visible {
   opacity: 1;
-  transform: translateY(0);
+  /* `none` releases the stacking context; `translateY(0)` would keep trapping overflow UI */
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1117,12 +1116,8 @@
 }
 
 .project-metric-tooltip__panel {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
   width: max-content;
-  max-width: min(260px, 70vw);
+  max-width: min(260px, calc(100vw - 24px));
   padding: 8px 12px;
   border-radius: 6px;
   background: #1f2937;
@@ -1134,27 +1129,38 @@
   text-align: left;
   white-space: normal;
   pointer-events: none;
+  box-sizing: border-box;
+}
+
+.project-metric-tooltip__panel--portal {
+  position: fixed;
+  z-index: 10000;
   opacity: 0;
   visibility: hidden;
   transition:
     opacity 0.18s ease,
     visibility 0.18s ease;
-  z-index: 40;
 }
 
-.project-metric-tooltip:hover .project-metric-tooltip__panel,
-.project-metric-tooltip:focus-within .project-metric-tooltip__panel {
+.project-metric-tooltip__panel--visible {
   opacity: 1;
   visibility: visible;
 }
 
-.project-metric-tooltip__panel::after {
+.project-metric-tooltip__panel--portal::after {
   content: "";
   position: absolute;
-  bottom: 100%;
-  left: 50%;
+  top: 100%;
+  left: var(--tooltip-arrow-left, 50%);
   transform: translateX(-50%);
   border: 5px solid transparent;
+  border-top-color: #1f2937;
+}
+
+.project-metric-tooltip__panel--below::after {
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
   border-bottom-color: #1f2937;
 }
 

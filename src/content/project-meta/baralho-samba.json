@@ -1,10 +1,12 @@
 {
   "title": "Baralho \"Samba\"",
-  "subtitle": "Illustrated Samba-themed playing card deck product design.",
+  "subtitle": "Illustrated a Samba playing-card deck for a product release.",
   "year": "2014",
   "tags": "Product Design, Graphic Design, Illustration",
   "cover": "/images/covers/baralho-samba.jpg",
   "featured": false,
-  "categories": ["graphic"],
+  "categories": [
+    "graphic"
+  ],
   "description": "Projeto gráfico realizado a partir de um trabalho acadêmico do terceiro período do curso de Design, na disciplina Metodologia Visual. Realizado com: André Dias, Débora Nunes, Marina Doudement e Yan Gomes. Proposta: criação de um baralho de cartas com o tema &quot;Música&quot;."
 }

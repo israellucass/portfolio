@@ -1,10 +1,12 @@
 {
   "title": "Swingin' Lovers /art direction",
-  "subtitle": "Art direction and editorial layouts for Swingin' Lovers jazz promotion.",
+  "subtitle": "Directed art and editorial layouts for Swingin' Lovers jazz promotion.",
   "year": "2013",
   "tags": "Editorial Design, Graphic Design",
   "cover": "/images/covers/swingin-lovers.jpg",
   "featured": false,
-  "categories": ["graphic"],
+  "categories": [
+    "graphic"
+  ],
   "description": "Projeto gráfico realizado para a Satchmo Produções. Proposta: elaboração de folder referente à apresentação de grupo de jazz em casa noturna de São Luís."
 }

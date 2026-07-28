@@ -224,7 +224,7 @@ function paragraphClassName(paragraph: RichTextParagraph): string {
         ? "text-right"
         : "text-left";
   const designQuestion = isDesignQuestion(paragraph);
-  const textAlign = designQuestion ? "text-left" : align;
+  const textAlign = designQuestion ? "text-center" : align;
 
   const size = paragraph.size ? SIZE_CLASS[paragraph.size] : "";
 

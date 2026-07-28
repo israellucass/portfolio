@@ -1,10 +1,12 @@
 {
   "title": "Atendimento Mateus app",
-  "subtitle": "Android app helping Grupo Mateus managers with daily store operations.",
+  "subtitle": "Designed an Android store app for Grupo Mateus managers.",
   "year": "2020",
   "tags": "User Interface Design, User Research",
   "cover": "/images/covers/atendimento-mateus.webp",
   "featured": false,
-  "categories": ["ux"],
+  "categories": [
+    "ux"
+  ],
   "description": "Designed a VUI solution for retail operations, improving data query efficiency by 72% and reducing training time by 62.5%."
 }
