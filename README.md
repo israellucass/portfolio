@@ -97,6 +97,16 @@ npm run new:ux -- --slug my-project --title "My Project" --year 2026
 Then fill remaining `{{placeholders}}`, add images under `public/images/`, and run `npm run audit:projects`.  
 Guide: [`src/content/templates/ux-case-study/GUIDE.md`](src/content/templates/ux-case-study/GUIDE.md).
 
+## New redesign case study
+
+Same spine as UX, with before/after and visual language aimed at recruiters + IC designers:
+
+```bash
+npm run new:redesign -- --slug my-redesign --title "My Redesign" --year 2026
+```
+
+Guide: [`src/content/templates/redesign/GUIDE.md`](src/content/templates/redesign/GUIDE.md).
+
 ## Updating content
 
 - **Card metadata / homepage layout** — prefer `/keystatic` (writes `project-meta/` + `homepage.json`)
@@ -151,5 +161,5 @@ keystatic.config.ts         # Admin schema (Homepage + Projects)
 
 ## Notes
 
-- Project images are stored locally under `public/images/` (covers in `covers/`, page assets in `assets/`).
+- Project images are stored locally under `public/images/` (covers in `covers/`; page assets in `assets/`, grouped per project in `assets/{slug}/` when there are many files).
 - Prototype embeds require an internet connection to display when using remote URLs.

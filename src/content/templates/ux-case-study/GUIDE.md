@@ -67,6 +67,26 @@ Insert **before** each problem stream:
 
 Do **not** put `align: "center"` on non-phase headings — only phase labels and HMW.
 
+### Writing “How might we” (HMW)
+
+HMWs reframe an insight as an opportunity for ideation ([NN/g](https://www.nngroup.com/articles/how-might-we-questions/), IDEO). In this portfolio they are a **one-line** Caveat post-it, so keep them short.
+
+**Formula:** `How might we [outcome] for [user]?`
+
+| Do | Don’t |
+| --- | --- |
+| One desired outcome | Stack multiple problems with “while / and” |
+| Positive framing | Negative framing (“stop…”, “reduce…”) |
+| Broad enough for many solutions | Embed a solution in the question |
+| ~12–20 words after “How might we” | Paragraph-length challenge statements |
+
+Details (constraints, audience, metrics) belong in **PROBLEM FRAMING**, not the HMW.
+
+**Good:** `How might we enable the remote and safe monitoring of the financial data?`  
+**Too long:** anything that needs a second breath or lists several goals.
+
+`hmw_question` placeholder = text **without** leading “How might we” or trailing `?`.
+
 ---
 
 ## Block patterns the app detects
@@ -99,7 +119,7 @@ Do **not** put `align: "center"` on non-phase headings — only phase labels and
 | `intro_paragraph_2` | Scope / users / constraints |
 | `nda_or_scope_note` | NDA redaction note or delete the paragraph |
 | `timeframe` / `role` / `team` / `tools` | Fold meta |
-| `hmw_question` | Text **without** leading “How might we” or trailing `?` |
+| `hmw_question` | Text **without** leading “How might we” or trailing `?`. One outcome, short; see “Writing How might we” above |
 | `problem_framing` | Context before research |
 | `research_*` | Method copy |
 | `ideation_*` / `insight_*` | Synthesis |

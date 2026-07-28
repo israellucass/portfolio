@@ -31,6 +31,8 @@ Visual parity with isrrr.com is the default goal. Do not swap to generic AI port
 | Body / tags | Inter | Nav, body, UI, cover tags, subtitles |
 | Design questions | Caveat | “How might we…” post-it callouts — casual handwriting, still readable |
 
+Display titles use `--type-4xl` (~49px) at desktop, `--leading-display` (1.1), `--tracking-display` (-0.035em), and `text-wrap: balance`. Section labels stay small (`xs`–`sm` uppercase) so hierarchy jumps harder under those titles.
+
 **Layout**
 
 - Max width 1440px, 8% horizontal padding on text/mastheads and project grids
@@ -53,7 +55,8 @@ Cover label stripe under the thumbnail — title/subtitle left, muted chevron ri
 ## Case study layout (CUBO reference)
 
 Use CUBO (`/cubo`) as the reference for UX case studies.  
-**New projects:** scaffold with `npm run new:ux -- --slug … --title "…"` from [`src/content/templates/ux-case-study/`](../../../src/content/templates/ux-case-study/GUIDE.md) (see skill `ux-case-study`).
+**New UX projects:** scaffold with `npm run new:ux -- --slug … --title "…"` from [`src/content/templates/ux-case-study/`](../../../src/content/templates/ux-case-study/GUIDE.md) (see skill `ux-case-study`).  
+**New redesign projects:** scaffold with `npm run new:redesign -- --slug … --title "…"` from [`src/content/templates/redesign/`](../../../src/content/templates/redesign/GUIDE.md) (see skill `redesign-case-study`) — same fold/HMW/RESULTS spine with before/after and visual language for recruiter + IC readers.
 
 ### Block rhythm
 

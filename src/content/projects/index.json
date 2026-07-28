@@ -1,6 +1,6 @@
 {
   "source": "https://isrrr.com",
-  "count": 17,
+  "count": 18,
   "spotlightSlug": "cubo",
   "homepageOrder": [
     "cubo",
@@ -15,21 +15,22 @@
   ],
   "slugs": [
     "atendimento-mateus",
-    "cubo",
-    "copia-de-smart-financeiro",
-    "smart-financeiro",
-    "olhe-e-aprenda",
-    "unused-2d-animation",
-    "tutti-frutti-visual-identity",
-    "boho-identidade-visual",
-    "dark-feelings-2d-animation",
-    "redes-sociais",
-    "cowboys-vs-cyborgs-game-art",
-    "the-life-of-ratildo-flash-animation",
-    "ilustracoes",
-    "brasilero-game",
     "baralho-samba",
+    "boho-identidade-visual",
+    "brasilero-game",
     "cartazes-mitologicos",
-    "swingin-lovers"
+    "copia-de-smart-financeiro",
+    "cowboys-vs-cyborgs-game-art",
+    "cubo",
+    "dark-feelings-2d-animation",
+    "ferpa-lima",
+    "ilustracoes",
+    "olhe-e-aprenda",
+    "redes-sociais",
+    "smart-financeiro",
+    "swingin-lovers",
+    "the-life-of-ratildo-flash-animation",
+    "tutti-frutti-visual-identity",
+    "unused-2d-animation"
   ]
 }

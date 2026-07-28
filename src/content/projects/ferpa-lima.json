@@ -1,0 +1,966 @@
+{
+  "slug": "ferpa-lima",
+  "title": "Ferpa Lima",
+  "subtitle": "Website redesign for a Brazilian exercise-science consultancy, framed for credibility, individualized plans, and clearer conversion paths on Wix.",
+  "year": "2026",
+  "tags": "Redesign, User Interface Design, Visual Design",
+  "cover": "/images/covers/ferpa-lima.webp",
+  "categories": [
+    "featured",
+    "ux"
+  ],
+  "featured": true,
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/images/assets/ferpa-lima/hero.webp",
+      "lightboxSrc": "/images/assets/ferpa-lima/home-new.webp"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 5,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "Ferpa Lima",
+                      "marks": [
+                        "bold",
+                        "display"
+                      ]
+                    },
+                    {
+                      "text": " is a redesign of "
+                    },
+                    {
+                      "text": "ferpalima.com.br"
+                    },
+                    {
+                      "text": ", a "
+                    },
+                    {
+                      "text": "website"
+                    },
+                    {
+                      "text": " for "
+                    },
+                    {
+                      "text": "Ferpa Lima Consultoria Fitness",
+                      "href": "https://www.ferpalima.com.br"
+                    },
+                    {
+                      "text": ", an exercise-science consultancy offering online training and education."
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "The redesign focused on four core pages (homepage, pricing, about, and contact) to lead with individualized, science-prescribed routines, keep credibility scannable, and make pricing and contact paths easier to act on."
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "I led end-to-end UI redesign in Figma: information architecture, visual language, and the four primary desktop compositions, designed to ship on "
+                    },
+                    {
+                      "text": "Wix"
+                    },
+                    {
+                      "text": " without breaking existing payment and finance workflows."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flex": 3,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Timeframe",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\n2026"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Role",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nUI Designer"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Team",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nSolo"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Tools",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nFigma"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Client",
+                      "color": "#888888"
+                    },
+                    {
+                      "text": "\nFerpa Lima Consultoria Fitness"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "How might we make Ferpa Lima’s expertise feel as credible and approachable online as it is in practice?"
+            }
+          ],
+          "align": "center"
+        },
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "PROBLEM FRAMING"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The live site carried strong credentials (PhD, publications, CREF) but buried them under dense copy and uneven visual hierarchy. Prospective clients struggled to understand the consultancy offer, pricing paths, and why Ferpa’s main differentiator (individualized, science-prescribed routines) was different from generic fitness coaching. SEO on the live Wix site was also messy, which hurt discoverability for health, weight-loss, and special-group search intent."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Audience",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Current core: mainly women and gay men roughly 20-45, with strong LGBT community overlap; motivations around health and weight loss, plus a need for a supportive space that helps overcome aversion to fitness. Expansion targets to surface more clearly: pregnant clients, older adults, people with diabetes, TAF (physical fitness test) prep, and chronic pain."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Constraints",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Stay on Wix for payment processing and finance accountability; design within Wix builder capabilities (plans/checkout, forms, SEO settings). Desktop-first marketing site; preserve brand colors (green/blue); keep Portuguese product copy and academic credibility; no fake promises or hype-led claims; improve conversion toward consultancy without inventing new product lines. Full SEO remediation planned for implementation on Wix, outside this Figma UI pass."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 50,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ferpa-lima/sobre-mim_rw_1920.webp",
+              "lightboxSrc": "/images/assets/ferpa-lima/sobre-mim.webp"
+            }
+          ]
+        },
+        {
+          "flex": 50,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ferpa-lima/homepage_rw_1920.webp",
+              "lightboxSrc": "/images/assets/ferpa-lima/homepage.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Before",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Live / capture screens relied on long text blocks, flat headers, and limited visual rhythm. Credentials were present but hard to scan, and pricing lived buried inside longer pages."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "After",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "A focused redesign of four core pages (homepage, pricing, about, and contact) with hero storytelling centered on individualized science-based training, first-class plan cards, scannable credentials, inclusive audience signals, and a dedicated contact surface."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "RESEARCH"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Audit overview",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Mapped the existing ferpalima.com.br structure into a hub-and-spoke sitemap to clarify page hierarchy and relationships before redesigning. Earlier captures (homepage composite, about, consultoria, blog, policies, exercises) completed the current-state set."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Heuristic findings",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Primary CTA and pricing paths competed with long informational sections"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Academic credentials were strong but visually underweighted vs. marketing sites"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Page-to-page navigation existed, but section rhythm made skimming difficult"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Live-site SEO needed cleanup (titles, meta, headings, and Wix SEO settings) to match exercise-science and audience search intent"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Evidence from usage",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Stakeholder meeting notes set the brief: keep Wix for payments and finance accountability; lead with credible, evidence-based exercise science (no fake promises); treat individualized routine as the main differentiator; fix SEO; serve the current audience (women and gay men 20-45, LGBT community, health and weight loss, supportive / anti-aversion tone); and surface special groups (pregnancy, older adults, diabetes, TAF, chronic pain). Those goals prioritized the four-page redesign."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ferpa-lima/sitemap_rw_1920.webp",
+      "lightboxSrc": "/images/assets/ferpa-lima/sitemap.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Old-site sitemap",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Documentation of the live website’s structure and hierarchy (not the redesigned IA). Página inicial as hub, with spokes for Quem sou, Políticas, Consultoria online, Blog, Execução de exercícios, and a member-only Área logada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "DESIGN PRINCIPLES"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Principles prioritized credibility and conversion without diluting the science-led brand or inventing outcome promises."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Lead with the differentiator: individualized, science-prescribed routine before deep biography"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Make trust scannable: testimonials, credentials, and publications as distinct beats; no fake promises"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Package decisions: pricing cards and CTAs as first-class UI, mapped to Wix-friendly checkout and contact patterns"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Signal audience clearly: inclusive / supportive tone for LGBT clients and people returning to fitness, plus scannable special-group coverage"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Tradeoff: denser academic content moved onto About so the homepage and pricing page could convert faster. Specialists still reach bio and publications without friction. SEO cleanup stays an implementation task on Wix rather than a Figma deliverable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "SOLUTION"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The redesign focuses on four primary public pages drawn from the old structure’s highest-priority visitor paths: Homepage (story + individualized offer), Pricing (dedicated plans), About (credibility and inclusive identity), and Contact (conversion). Compositions stay Wix-implementable. Portfolio screenshots below use English translations of those frames for an international audience; the live Brazilian product remains in Portuguese."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ferpa-lima/home-new_rw_1200.webp",
+              "lightboxSrc": "/images/assets/ferpa-lima/home-new.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "1. Homepage",
+                      "marks": [
+                        "bold",
+                        "italic",
+                        "display"
+                      ]
+                    }
+                  ],
+                  "align": "left"
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Hero with science-backed positioning and individualized-plan promise, Como funciona (4 steps), benefícios (including welcoming / inclusive tone), audience chips (pregnancy, older adults, diabetes, chronic pain, TAF, beginners, home training), plan teaser cards, qualificações (PhD / teaching / prescriptions), depoimentos, social proof, and an inline contact form: the main conversion surface."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ferpa-lima/home-new_rw_1920.webp",
+      "lightboxSrc": "/images/assets/ferpa-lima/home-new.webp"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ferpa-lima/pricing_rw_1200.webp",
+              "lightboxSrc": "/images/assets/ferpa-lima/pricing.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "2. Pricing",
+                      "marks": [
+                        "bold",
+                        "italic",
+                        "display"
+                      ]
+                    }
+                  ],
+                  "align": "left"
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Dedicated pricing page: three plan cards with clear inclusions and “Mais vendido,” a 4-step how-to-buy path (including Boleto, credit card, or Pix), and FAQ accordion. Pulls Valores dos planos out of long scroll into a decision page aligned with Wix checkout."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ferpa-lima/pricing_rw_1920.webp",
+      "lightboxSrc": "/images/assets/ferpa-lima/pricing.webp"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ferpa-lima/about-new_rw_1200.webp",
+              "lightboxSrc": "/images/assets/ferpa-lima/about-new.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "3. About",
+                      "marks": [
+                        "bold",
+                        "italic",
+                        "display"
+                      ]
+                    }
+                  ],
+                  "align": "left"
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Biography hero with portrait, research/teaching narrative, LGBTQIAPN+ identity and welcoming tone, university logos, publication cards, and a structured CV-style timeline. Redesigned Quem sou for scan and trust."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ferpa-lima/about-new_rw_1920.webp",
+      "lightboxSrc": "/images/assets/ferpa-lima/about-new.webp"
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 33,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ferpa-lima/contact_rw_1200.webp",
+              "lightboxSrc": "/images/assets/ferpa-lima/contact.webp"
+            }
+          ]
+        },
+        {
+          "flex": 67,
+          "blocks": [
+            {
+              "type": "richtext",
+              "paragraphs": [
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "4. Contact",
+                      "marks": [
+                        "bold",
+                        "italic",
+                        "display"
+                      ]
+                    }
+                  ],
+                  "align": "left"
+                },
+                {
+                  "kind": "paragraph",
+                  "inlines": [
+                    {
+                      "text": "Standalone contact page with dual-panel form, WhatsApp path, and shared footer. Makes the hire conversation a first-class destination instead of only a homepage footer block."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/ferpa-lima/contact_rw_1920.webp",
+      "lightboxSrc": "/images/assets/ferpa-lima/contact.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Current-state reference",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Earlier captures kept for audit contrast: consultoria/offer density before the dedicated pricing + homepage split."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tree",
+      "columns": [
+        {
+          "flex": 50,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ferpa-lima/consultoria_rw_1200.webp",
+              "lightboxSrc": "/images/assets/ferpa-lima/consultoria.webp"
+            }
+          ]
+        },
+        {
+          "flex": 50,
+          "blocks": [
+            {
+              "type": "image",
+              "src": "/images/assets/ferpa-lima/oportunidade_rw_1920.webp",
+              "lightboxSrc": "/images/assets/ferpa-lima/oportunidade.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "VISUAL LANGUAGE"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "The new system keeps Ferpa’s green identity while shifting to cleaner section rhythm, soft cards, and photography-led heroes."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Typography",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Large display headlines for heroes; numbered steps and card titles for scannability; comfortable sans body for Portuguese reading length."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Color palette",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Brand green for CTAs and accents; soft neutrals for reading surfaces; photography for atmosphere; dark footer for grounding."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Components & patterns",
+              "marks": [
+                "bold",
+                "italic",
+                "display"
+              ]
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Pricing cards with feature lists, how-it-works grids, benefit icon cards, testimonial carousel, publication cards, FAQ accordion, and dual-panel contact form."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "VALIDATION"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Reviewed the four redesign pages against stakeholder goals: credibility without hype, individualized routine as the differentiator, clear pricing and contact conversion, inclusive tone for the current audience, and scannable special-group signals. Homepage covers story + offer teaser; Pricing owns plan decisions (including Boleto / Pix / card paths suitable for Wix payments); About owns credentials and LGBTQIAPN+ identity; Contact owns hire. SEO remediation and blog/exercise/member areas were intentionally out of scope for this UI pass."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [
+            {
+              "text": "RESULTS"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Delivered a focused four-page redesign from Figma, framed against an old-site sitemap, current-state captures, and stakeholder notes (Wix constraint, science-led credibility, individualized routine, audience expansion)."
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• 4 core redesign pages: Homepage, Pricing, About, Contact"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Old-site sitemap included to document existing hierarchy"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Before/after contrast using live captures vs. new compositions"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "• Stakeholder brief reflected: Wix-ready conversion UI, individualized differentiator, inclusive / special-group signals"
+            }
+          ],
+          "align": "left"
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Implementation, Wix SEO remediation, and performance metrics pending client launch."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

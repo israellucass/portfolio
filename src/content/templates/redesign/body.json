@@ -31,7 +31,20 @@
                       "marks": ["bold", "display"]
                     },
                     {
-                      "text": " is a redesign of {{original_product_name}}, a {{product_type}} for {{client}}, {{one_sentence_context}}."
+                      "text": " is a redesign of "
+                    },
+                    {
+                      "text": "{{original_product_name}}"
+                    },
+                    {
+                      "text": ", a {{product_type}} for "
+                    },
+                    {
+                      "text": "{{client}}",
+                      "href": "{{client_url}}"
+                    },
+                    {
+                      "text": ", {{one_sentence_context}}."
                     }
                   ]
                 },
@@ -41,6 +54,15 @@
                   "inlines": [
                     {
                       "text": "{{intro_scope}}"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "align": "left",
+                  "inlines": [
+                    {
+                      "text": "{{my_contribution}}"
                     }
                   ]
                 },
@@ -108,14 +130,40 @@
       "type": "richtext",
       "paragraphs": [
         {
+          "kind": "paragraph",
+          "align": "center",
+          "inlines": [
+            {
+              "text": "How might we {{hmw_question}}?"
+            }
+          ]
+        },
+        {
           "kind": "subheading",
-          "inlines": [{ "text": "THE CHALLENGE" }]
+          "inlines": [{ "text": "PROBLEM FRAMING" }]
         },
         {
           "kind": "paragraph",
           "inlines": [
             {
-              "text": "{{challenge_context}}"
+              "text": "{{problem_framing}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Constraints",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{constraints}}"
             }
           ]
         }
@@ -152,21 +200,29 @@
         {
           "kind": "paragraph",
           "align": "left",
-          "inlines": [{ "text": "Before", "marks": ["bold"] }]
+          "inlines": [
+            {
+              "text": "Before",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
         },
         {
           "kind": "paragraph",
-          "align": "left",
           "inlines": [{ "text": "{{before_description}}" }]
         },
         {
           "kind": "paragraph",
           "align": "left",
-          "inlines": [{ "text": "After", "marks": ["bold"] }]
+          "inlines": [
+            {
+              "text": "After",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
         },
         {
           "kind": "paragraph",
-          "align": "left",
           "inlines": [{ "text": "{{after_description}}" }]
         }
       ]
@@ -176,13 +232,31 @@
       "paragraphs": [
         {
           "kind": "subheading",
-          "inlines": [{ "text": "AUDIT & DISCOVERY" }]
+          "inlines": [{ "text": "RESEARCH" }]
         },
         {
           "kind": "paragraph",
           "inlines": [
             {
-              "text": "{{audit_overview}}"
+              "text": "Audit overview",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{research_overview}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Heuristic findings",
+              "marks": ["bold", "italic", "display"]
             }
           ]
         },
@@ -200,6 +274,23 @@
           "kind": "paragraph",
           "align": "left",
           "inlines": [{ "text": "• {{audit_finding_3}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "Evidence from usage",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{research_usage}}"
+            }
+          ]
         }
       ]
     },
@@ -213,28 +304,36 @@
       "paragraphs": [
         {
           "kind": "subheading",
-          "inlines": [{ "text": "DESIGN GOALS" }]
-        },
-        {
-          "kind": "paragraph",
-          "align": "left",
-          "inlines": [{ "text": "• {{goal_1}}" }]
-        },
-        {
-          "kind": "paragraph",
-          "align": "left",
-          "inlines": [{ "text": "• {{goal_2}}" }]
-        },
-        {
-          "kind": "paragraph",
-          "align": "left",
-          "inlines": [{ "text": "• {{goal_3}}" }]
+          "inlines": [{ "text": "DESIGN PRINCIPLES" }]
         },
         {
           "kind": "paragraph",
           "inlines": [
             {
-              "text": "{{goals_context}}"
+              "text": "{{principles_intro}}"
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{principle_1}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{principle_2}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{principle_3}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{principles_tradeoff}}"
             }
           ]
         }
@@ -245,67 +344,13 @@
       "paragraphs": [
         {
           "kind": "subheading",
-          "inlines": [{ "text": "VISUAL LANGUAGE" }]
+          "inlines": [{ "text": "SOLUTION" }]
         },
         {
           "kind": "paragraph",
           "inlines": [
             {
-              "text": "{{visual_language_intro}}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "image",
-      "src": "/images/assets/{{slug}}-design-system.webp",
-      "lightboxSrc": "/images/assets/{{slug}}-design-system.webp"
-    },
-    {
-      "type": "richtext",
-      "paragraphs": [
-        {
-          "kind": "paragraph",
-          "align": "left",
-          "inlines": [{ "text": "Typography", "marks": ["bold", "italic", "display"] }]
-        },
-        {
-          "kind": "paragraph",
-          "inlines": [{ "text": "{{typography_detail}}" }]
-        },
-        {
-          "kind": "paragraph",
-          "align": "left",
-          "inlines": [{ "text": "Color palette", "marks": ["bold", "italic", "display"] }]
-        },
-        {
-          "kind": "paragraph",
-          "inlines": [{ "text": "{{color_palette_detail}}" }]
-        },
-        {
-          "kind": "paragraph",
-          "align": "left",
-          "inlines": [{ "text": "Components & patterns", "marks": ["bold", "italic", "display"] }]
-        },
-        {
-          "kind": "paragraph",
-          "inlines": [{ "text": "{{components_detail}}" }]
-        }
-      ]
-    },
-    {
-      "type": "richtext",
-      "paragraphs": [
-        {
-          "kind": "subheading",
-          "inlines": [{ "text": "KEY SCREENS" }]
-        },
-        {
-          "kind": "paragraph",
-          "inlines": [
-            {
-              "text": "{{key_screens_intro}}"
+              "text": "{{solution_intro}}"
             }
           ]
         }
@@ -433,13 +478,104 @@
       "paragraphs": [
         {
           "kind": "subheading",
-          "inlines": [{ "text": "OUTCOME" }]
+          "inlines": [{ "text": "VISUAL LANGUAGE" }]
         },
         {
           "kind": "paragraph",
           "inlines": [
             {
-              "text": "{{outcome_intro}}"
+              "text": "{{visual_language_intro}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-design-system.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-design-system.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "Typography",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [{ "text": "{{typography_detail}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "Color palette",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [{ "text": "{{color_palette_detail}}" }]
+        },
+        {
+          "kind": "paragraph",
+          "align": "left",
+          "inlines": [
+            {
+              "text": "Components & patterns",
+              "marks": ["bold", "italic", "display"]
+            }
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [{ "text": "{{components_detail}}" }]
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "VALIDATION" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{validation}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/assets/{{slug}}-validation.webp",
+      "lightboxSrc": "/images/assets/{{slug}}-validation.webp"
+    },
+    {
+      "type": "richtext",
+      "paragraphs": [
+        {
+          "kind": "subheading",
+          "inlines": [{ "text": "RESULTS" }]
+        },
+        {
+          "kind": "paragraph",
+          "inlines": [
+            {
+              "text": "{{results_intro}}"
             }
           ]
         },
@@ -455,9 +591,14 @@
         },
         {
           "kind": "paragraph",
+          "align": "left",
+          "inlines": [{ "text": "• {{metric_3}}" }]
+        },
+        {
+          "kind": "paragraph",
           "inlines": [
             {
-              "text": "{{outcome_reflection}}"
+              "text": "{{results_closing}}"
             }
           ]
         }

@@ -35,6 +35,8 @@ Read [`.cursor/skills/frontend-design/portfolio-context.md`](../skills/frontend-
 | Skill | When to use |
 |-------|-------------|
 | **frontend-design** (`.cursor/skills/frontend-design/`) | Visual direction, typography, parity with isrrr.com |
+| **ux-case-study** | Scaffold / author greenfield UX case studies |
+| **redesign-case-study** | Scaffold / author before–after redesign case studies |
 | **web-design-guidelines** | A11y/UX audit of authored components (fetch Vercel rules) |
 | **react-best-practices** | RSC vs client, images, bundle, `projects.ts` loading |
 | **visual-qa-testing** | After UI changes — screenshot `/`, grid, stripes |

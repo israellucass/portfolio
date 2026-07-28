@@ -23,15 +23,19 @@
    * Stepped chrome (Header, masthead, About, covers) at 768 / 1024.
    * Fluid editorial (fold title/description, phase/section/HMW) uses clamp(token, vw, token).
    *
+   * Display titles borrow Aprender Design habits: larger steps, tight leading,
+   * mild negative tracking, and text-wrap: balance (keep Merriweather + Inter).
+   *
    * Roles → tokens:
    *   logo              display  md → lg @ ≥1024, uppercase
    *   nav               body     md (desktop)
    *   nav-mobile        body     xl
-   *   page-title        display  2xl → 3xl @ ≥1024
-   *   fold-title        display  clamp(xl…2xl) → 3xl @ ≥1024
+   *   page-title        display  2xl → 4xl @ ≥1024
+   *   fold-title        display  clamp(2xl…4xl) → 4xl @ ≥1024
    *   fold-description  body     clamp(subtitle…lg)
    *   body              body     md (About: subtitle @ ≥768)
    *   label / TOC       body     2xs (12px floor)
+   *   section-label     display  xs → sm (uppercase; clear jump under titles)
    *   cover-title       display  md → lg (grid); larger in feature fold
    *   cover-spotlight   display  subtitle → xl → 2xl (feature main)
    *   cover-subtitle    body     sm → md (grid); scales per tier
@@ -48,10 +52,13 @@
   --type-xl: calc(var(--type-lg) * var(--type-scale-ratio));
   --type-2xl: calc(var(--type-xl) * var(--type-scale-ratio));
   --type-3xl: calc(var(--type-2xl) * var(--type-scale-ratio));
+  --type-4xl: calc(var(--type-3xl) * var(--type-scale-ratio)); /* ~48.8px — display heroes */
+  --leading-display: 1.1;
   --leading-tight: 1.25;
   --leading-snug: 1.375;
   --leading-normal: 1.5;
   --leading-relaxed: 1.625;
+  --tracking-display: -0.035em;
 
   /* Fluid gutters — 16px min, scales with viewport, 40px max */
   --gutter-inline: clamp(1rem, 4vw, 2.5rem);
@@ -149,6 +156,20 @@ body {
 
 .font-display {
   font-family: var(--font-display), sans-serif;
+}
+
+.page-masthead__title {
+  font-size: var(--type-2xl);
+  font-weight: 700;
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  text-wrap: balance;
+}
+
+@media (min-width: 1024px) {
+  .page-masthead__title {
+    font-size: var(--type-4xl);
+  }
 }
 
 a {

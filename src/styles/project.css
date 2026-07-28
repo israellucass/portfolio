@@ -31,12 +31,20 @@
 
 .project-type-2xl {
   font-size: var(--type-2xl);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
 }
 
 .project-type-3xl {
   font-size: var(--type-3xl);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+}
+
+.project-type-4xl {
+  font-size: var(--type-4xl);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
 }
 
 .project-covers {
@@ -399,6 +407,8 @@
   font-size: var(--type-sm);
   font-weight: 700;
   line-height: var(--leading-tight);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
   color: var(--text-primary);
   transition: color 0.2s ease;
 }
@@ -589,7 +599,8 @@
 
   .project-covers-feature__main .project-cover--spotlight .cover-title {
     font-size: var(--type-2xl);
-    line-height: var(--leading-tight);
+    line-height: var(--leading-display);
+    letter-spacing: var(--tracking-display);
   }
 
   .project-covers-feature__main .project-cover--spotlight .cover-subtitle {
@@ -631,7 +642,7 @@
 
 .project-html .sub-title {
   font-family: var(--font-display), sans-serif;
-  font-size: var(--type-subtitle);
+  font-size: var(--type-sm);
   font-weight: 700;
   margin-bottom: 0;
   color: var(--text-primary);
@@ -823,6 +834,7 @@
   font-weight: 500;
   font-style: normal;
   line-height: var(--leading-snug);
+  text-wrap: balance;
   color: var(--project-phase-label-color);
   margin: var(--project-design-question-margin-before) auto
     var(--project-design-question-margin-after);
@@ -844,13 +856,14 @@
 /* ── RichText: Section headings (creative showcase) ──────────── */
 .project-html .project-section-heading {
   font-family: var(--font-display), serif;
-  font-size: clamp(var(--type-md), 2.5vw, var(--type-xl));
+  font-size: clamp(var(--type-lg), 2.8vw, var(--type-2xl));
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--tracking-display);
+  text-wrap: balance;
   color: var(--text-primary);
   margin-top: 36px;
   margin-bottom: 12px;
-  line-height: var(--leading-snug);
+  line-height: var(--leading-display);
 }
 
 .project-html .project-subsection-heading {
@@ -866,12 +879,13 @@
 
 .project-html .project-section-label {
   font-family: var(--font-display), serif;
-  font-size: clamp(var(--type-xs), 1.8vw, var(--type-md));
+  font-size: clamp(var(--type-2xs), 1.5vw, var(--type-sm));
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-muted);
   margin-bottom: 8px;
+  line-height: var(--leading-snug);
 }
 
 /* ── RichText: Module width variants ──────────────────────────── */
@@ -909,7 +923,6 @@
 .project-fold {
   margin-bottom: 0;
   max-width: 100%;
-  overflow-x: clip;
 }
 
 .project-fold__header {
@@ -920,30 +933,35 @@
 
 .project-fold__title {
   font-family: var(--font-display), serif;
-  font-size: clamp(var(--type-xl), 4vw, var(--type-2xl));
+  font-size: clamp(var(--type-2xl), 5vw, var(--type-4xl));
   font-weight: 700;
-  line-height: var(--leading-tight);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  text-wrap: balance;
   color: var(--text-primary);
 }
 
 @media (min-width: 1024px) {
   .project-fold__title {
-    font-size: var(--type-3xl);
+    font-size: var(--type-4xl);
   }
 }
 
 .project-fold__description {
   font-family: var(--font-body), sans-serif;
   font-size: clamp(var(--type-subtitle), 2.5vw, var(--type-lg));
-  line-height: var(--leading-relaxed);
+  line-height: var(--leading-normal);
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
   color: var(--text-muted);
-  max-width: 48rem;
+  max-width: 42rem;
 }
 
 .project-fold__hero {
   max-width: 960px;
   margin: 24px auto 0;
   padding: 0 var(--gutter-inline);
+  overflow-x: clip;
 }
 
 .project-fold__details {
@@ -1087,8 +1105,9 @@
 /* ── MetricTooltip ────────────────────────────────────────────── */
 .project-metric-tooltip {
   position: relative;
-  display: inline;
+  display: inline-block;
   cursor: help;
+  vertical-align: baseline;
 }
 
 .project-metric-tooltip__term {
@@ -1099,11 +1118,11 @@
 
 .project-metric-tooltip__panel {
   position: absolute;
-  bottom: calc(100% + 6px);
+  top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
-  max-width: 260px;
+  max-width: min(260px, 70vw);
   padding: 8px 12px;
   border-radius: 6px;
   background: #1f2937;
@@ -1113,25 +1132,30 @@
   font-weight: 400;
   line-height: var(--leading-snug);
   text-align: left;
+  white-space: normal;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.18s ease;
-  z-index: 100;
+  visibility: hidden;
+  transition:
+    opacity 0.18s ease,
+    visibility 0.18s ease;
+  z-index: 40;
 }
 
 .project-metric-tooltip:hover .project-metric-tooltip__panel,
 .project-metric-tooltip:focus-within .project-metric-tooltip__panel {
   opacity: 1;
+  visibility: visible;
 }
 
 .project-metric-tooltip__panel::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   border: 5px solid transparent;
-  border-top-color: #1f2937;
+  border-bottom-color: #1f2937;
 }
 
 /* ── Feature gallery: consecutive image+text trees (3-col row) ── */

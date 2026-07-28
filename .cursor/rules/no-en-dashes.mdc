@@ -1,0 +1,25 @@
+---
+description: Avoid en/em dashes in written text; use hyphens or rephrase
+alwaysApply: true
+---
+
+# No en/em dashes in text
+
+Never use en dashes (`–`, U+2013) or em dashes (`—`, U+2014) in copy, UI strings, comments, commit messages, or documentation.
+
+Prefer:
+
+- A hyphen with spaces: `homepage - pricing - about`
+- A comma, colon, or parentheses: `homepage, pricing, about`
+- A rewrite that needs no dash: `four core pages: homepage, pricing, about, and contact`
+
+```text
+❌ Before — after contrast using live captures
+✅ Before / after contrast using live captures
+✅ Before-after contrast using live captures
+
+❌ Website redesign — homepage, pricing, about
+✅ Website redesign: homepage, pricing, about
+```
+
+ASCII hyphen-minus (`-`) is fine for compound words (`science-backed`) and ranges when needed (`2023-2024`).

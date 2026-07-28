@@ -7,6 +7,8 @@ src/content/
   projects/
     index.json                 # slug manifest (scrape source of truth for which projects exist)
     cubo.json                  # blocks + fallback metadata
+    docs/                      # per-slug authoring notes (not served by the site)
+      ferpa-lima/
     ...
   project-meta/
     cubo.json                  # Keystatic-owned overlay (title, subtitle, tags, …)
@@ -94,6 +96,17 @@ That writes:
 
 Authoring guide + placeholder list: [`../templates/ux-case-study/GUIDE.md`](../templates/ux-case-study/GUIDE.md)  
 Agent skill: [`.cursor/skills/ux-case-study/SKILL.md`](../../../.cursor/skills/ux-case-study/SKILL.md)
+
+## New redesign case study (template)
+
+For before/after overhauls (same fold → HMW → process → RESULTS spine as UX):
+
+```bash
+npm run new:redesign -- --slug my-redesign --title "My Redesign" --year 2026
+```
+
+Authoring guide: [`../templates/redesign/GUIDE.md`](../templates/redesign/GUIDE.md)  
+Agent skill: [`.cursor/skills/redesign-case-study/SKILL.md`](../../../.cursor/skills/redesign-case-study/SKILL.md)
 
 ## Before publishing a project
 
